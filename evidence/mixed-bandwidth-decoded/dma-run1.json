@@ -1,0 +1,155 @@
+{
+  "graph_name": "bandwidth_dma",
+  "frequency": 1200,
+  "graph": {
+    "nodes": {
+      "input": {
+        "layer node name": "input",
+        "op_type": "Input",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_dma_sg_input_0": {
+        "layer node name": "subgraph_dma_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_dma": {
+        "layer node name": "subgraph_dma",
+        "op_type": "SubGraph",
+        "plugin": "BandwidthDma",
+        "ops_count": 0,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "samples"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "dma",
+            "op_type": "Opi6BandwidthDma",
+            "plugin": "",
+            "ops_count": 0,
+            "constant_size": 6422528,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "samples"
+            ],
+            "params": {
+              "chunks": "224"
+            },
+            "constants": {
+              "stream": {
+                "dtype": "int8",
+                "shape": "[6422528]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "tensors": {
+      "input": {
+        "dtype": "int8",
+        "shape": "[1,896]"
+      },
+      "samples": {
+        "dtype": "int8",
+        "shape": "[1,14336]"
+      }
+    }
+  },
+  "profile_data": {
+    "subgraphs": [
+      {
+        "Core ID": 0,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 9240192,
+            "end": 9667039,
+            "Cycles": 426847,
+            "AIFF Busy Cycles": 0,
+            "AIFF Utilization": 0.0,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 0,
+            "Layer Name": "subgraph_dma",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,14336]",
+            "Plugin Name": "BandwidthDma",
+            "AIPU Read Bytes": 6390368,
+            "AIPU Write Bytes": 0,
+            "Constant Read Bytes": 6422528,
+            "MTP0 Busy Cycles": 0,
+            "MTP0 Utilization": 0.0,
+            "MTP1 Busy Cycles": 0,
+            "MTP1 Utilization": 0.0,
+            "ITP Busy Cycles": 0,
+            "ITP Utilization": 0.0,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 0.0,
+            "Cycles Ratio": 1.0,
+            "MAC Utilization": 0,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 17.965316846551573,
+            "BW_R(GB/s)": 17.965316846551573,
+            "BW_W(GB/s)": 0.0
+          }
+        ]
+      }
+    ],
+    "Total Cycles": 426847,
+    "Total Time(ms@1200MHz)": 0.35570583333333333,
+    "FPS@1200MHz": 2811.3117815048486,
+    "AIPU Read Bytes": 6390368,
+    "AIPU Write Bytes": 0,
+    "Constant Read Bytes": 6422528,
+    "Subgraphs Num": 1,
+    "Layers Num": 1,
+    "Total Ops(Mops)": 0.0,
+    "Ops Data Type": "",
+    "BW_RW(GB/s)": 17.965316846551573,
+    "BW_R(GB/s)": 17.965316846551573,
+    "BW_W(GB/s)": 0.0,
+    "Average MAC Utilization": 0.0,
+    "tec_num": 4,
+    "core_num": 3,
+    "Target": "X2_1204MP3"
+  }
+}

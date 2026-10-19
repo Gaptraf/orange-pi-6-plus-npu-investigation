@@ -1,0 +1,1830 @@
+{
+  "graph_name": "bandwidth_mixed_detailed",
+  "frequency": 1200,
+  "graph": {
+    "nodes": {
+      "input": {
+        "layer node name": "input",
+        "op_type": "Input",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_subgraph_matmul_0_fc_sg_input_0": {
+        "layer node name": "subgraph_subgraph_matmul_0_fc_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_matmul_0_fc": {
+        "layer node name": "subgraph_matmul_0_fc",
+        "op_type": "SubGraph",
+        "plugin": "HwaFc",
+        "ops_count": 8721152,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "matmul_0_fc_out"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "matmul_0_fc",
+            "op_type": "FullyConnected",
+            "plugin": "",
+            "ops_count": 8721152,
+            "constant_size": 4377600,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "matmul_0_fc_out"
+            ],
+            "params": {
+              "num_output": "4864",
+              "scale_type": "uint16",
+              "scale_value": "4252",
+              "shift_type": "int8",
+              "shift_value": "19",
+              "with_activation": "NONE"
+            },
+            "constants": {
+              "biases": {
+                "dtype": "int32",
+                "shape": "[4864]"
+              },
+              "weights": {
+                "dtype": "int8",
+                "shape": "[4864,896]"
+              }
+            }
+          }
+        ]
+      },
+      "reshape_0": {
+        "layer node name": "reshape_0",
+        "op_type": "Reshape",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": [
+          "matmul_0_fc_out"
+        ],
+        "outputs": [
+          "matmul_0"
+        ],
+        "params": {
+          "shape": "[1,4864]"
+        }
+      },
+      "subgraph_subgraph_matmul_fc_sg_input_0": {
+        "layer node name": "subgraph_subgraph_matmul_fc_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_matmul_fc": {
+        "layer node name": "subgraph_matmul_fc",
+        "op_type": "SubGraph",
+        "plugin": "HwaFc",
+        "ops_count": 8721152,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "matmul_fc_out"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "matmul_fc",
+            "op_type": "FullyConnected",
+            "plugin": "",
+            "ops_count": 8721152,
+            "constant_size": 4377600,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "matmul_fc_out"
+            ],
+            "params": {
+              "num_output": "4864",
+              "scale_type": "uint16",
+              "scale_value": "4772",
+              "shift_type": "int8",
+              "shift_value": "19",
+              "with_activation": "NONE"
+            },
+            "constants": {
+              "biases": {
+                "dtype": "int32",
+                "shape": "[4864]"
+              },
+              "weights": {
+                "dtype": "int8",
+                "shape": "[4864,896]"
+              }
+            }
+          }
+        ]
+      },
+      "reshape_2": {
+        "layer node name": "reshape_2",
+        "op_type": "Reshape",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": [
+          "matmul_fc_out"
+        ],
+        "outputs": [
+          "matmul"
+        ],
+        "params": {
+          "shape": "[1,4864]"
+        }
+      },
+      "subgraph_dma_sg_input_0": {
+        "layer node name": "subgraph_dma_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_dma": {
+        "layer node name": "subgraph_dma",
+        "op_type": "SubGraph",
+        "plugin": "BandwidthDma",
+        "ops_count": 0,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "samples"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "dma",
+            "op_type": "Opi6BandwidthDma",
+            "plugin": "",
+            "ops_count": 0,
+            "constant_size": 6422528,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "samples"
+            ],
+            "params": {
+              "chunks": "224"
+            },
+            "constants": {
+              "stream": {
+                "dtype": "int8",
+                "shape": "[6422528]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "tensors": {
+      "input": {
+        "dtype": "int8",
+        "shape": "[1,896]"
+      },
+      "matmul_0_fc_out": {
+        "dtype": "int8",
+        "shape": "[1,4864]"
+      },
+      "matmul_0": {
+        "dtype": "int8",
+        "shape": "[1,4864]"
+      },
+      "matmul_fc_out": {
+        "dtype": "int8",
+        "shape": "[1,4864]"
+      },
+      "matmul": {
+        "dtype": "int8",
+        "shape": "[1,4864]"
+      },
+      "samples": {
+        "dtype": "int8",
+        "shape": "[1,14336]"
+      }
+    }
+  },
+  "profile_data": {
+    "subgraphs": [
+      {
+        "Core ID": 0,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 14326366,
+            "end": 15041642,
+            "Cycles": 715276,
+            "AIFF Busy Cycles": 0,
+            "AIFF Utilization": 0.0,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {
+                "0": [
+                  {
+                    "start": 14334210,
+                    "duration": 11692
+                  }
+                ],
+                "4": [
+                  {
+                    "start": 14337224,
+                    "duration": 42538
+                  }
+                ],
+                "8": [
+                  {
+                    "start": 14346246,
+                    "duration": 67957
+                  }
+                ],
+                "12": [
+                  {
+                    "start": 14380920,
+                    "duration": 67915
+                  }
+                ],
+                "16": [
+                  {
+                    "start": 14415481,
+                    "duration": 67521
+                  }
+                ],
+                "20": [
+                  {
+                    "start": 14450116,
+                    "duration": 67871
+                  }
+                ],
+                "24": [
+                  {
+                    "start": 14485593,
+                    "duration": 67724
+                  }
+                ],
+                "28": [
+                  {
+                    "start": 14519060,
+                    "duration": 68418
+                  }
+                ],
+                "32": [
+                  {
+                    "start": 14554434,
+                    "duration": 67985
+                  }
+                ],
+                "36": [
+                  {
+                    "start": 14588335,
+                    "duration": 56751
+                  }
+                ],
+                "40": [
+                  {
+                    "start": 14623487,
+                    "duration": 41185
+                  }
+                ],
+                "44": [
+                  {
+                    "start": 14645479,
+                    "duration": 38481
+                  }
+                ],
+                "48": [
+                  {
+                    "start": 14665076,
+                    "duration": 38322
+                  }
+                ],
+                "52": [
+                  {
+                    "start": 14684294,
+                    "duration": 37682
+                  }
+                ],
+                "56": [
+                  {
+                    "start": 14704004,
+                    "duration": 26238
+                  }
+                ],
+                "60": [
+                  {
+                    "start": 14722302,
+                    "duration": 15535
+                  }
+                ],
+                "64": [
+                  {
+                    "start": 14730590,
+                    "duration": 14666
+                  }
+                ],
+                "68": [
+                  {
+                    "start": 14738209,
+                    "duration": 14644
+                  }
+                ],
+                "72": [
+                  {
+                    "start": 14745622,
+                    "duration": 14746
+                  }
+                ],
+                "76": [
+                  {
+                    "start": 14753194,
+                    "duration": 15150
+                  }
+                ],
+                "80": [
+                  {
+                    "start": 14760715,
+                    "duration": 15399
+                  }
+                ],
+                "84": [
+                  {
+                    "start": 14768718,
+                    "duration": 14861
+                  }
+                ],
+                "88": [
+                  {
+                    "start": 14776788,
+                    "duration": 14281
+                  }
+                ],
+                "92": [
+                  {
+                    "start": 14783948,
+                    "duration": 14713
+                  }
+                ],
+                "96": [
+                  {
+                    "start": 14791415,
+                    "duration": 14934
+                  }
+                ],
+                "100": [
+                  {
+                    "start": 14799006,
+                    "duration": 14749
+                  }
+                ],
+                "104": [
+                  {
+                    "start": 14806695,
+                    "duration": 14455
+                  }
+                ],
+                "108": [
+                  {
+                    "start": 14814130,
+                    "duration": 14651
+                  }
+                ],
+                "112": [
+                  {
+                    "start": 14821519,
+                    "duration": 15049
+                  }
+                ],
+                "116": [
+                  {
+                    "start": 14829121,
+                    "duration": 14845
+                  }
+                ],
+                "120": [
+                  {
+                    "start": 14837196,
+                    "duration": 14220
+                  }
+                ],
+                "124": [
+                  {
+                    "start": 14844318,
+                    "duration": 14679
+                  }
+                ],
+                "128": [
+                  {
+                    "start": 14851758,
+                    "duration": 14751
+                  }
+                ],
+                "132": [
+                  {
+                    "start": 14859366,
+                    "duration": 14564
+                  }
+                ],
+                "136": [
+                  {
+                    "start": 14866857,
+                    "duration": 14658
+                  }
+                ],
+                "140": [
+                  {
+                    "start": 14874294,
+                    "duration": 14775
+                  }
+                ],
+                "144": [
+                  {
+                    "start": 14881889,
+                    "duration": 15071
+                  }
+                ],
+                "148": [
+                  {
+                    "start": 14889489,
+                    "duration": 14973
+                  }
+                ],
+                "152": [
+                  {
+                    "start": 14897662,
+                    "duration": 14524
+                  }
+                ],
+                "156": [
+                  {
+                    "start": 14905030,
+                    "duration": 14738
+                  }
+                ],
+                "160": [
+                  {
+                    "start": 14912535,
+                    "duration": 14646
+                  }
+                ],
+                "164": [
+                  {
+                    "start": 14920217,
+                    "duration": 14394
+                  }
+                ],
+                "168": [
+                  {
+                    "start": 14927551,
+                    "duration": 14748
+                  }
+                ],
+                "172": [
+                  {
+                    "start": 14934967,
+                    "duration": 15043
+                  }
+                ],
+                "176": [
+                  {
+                    "start": 14942643,
+                    "duration": 15029
+                  }
+                ],
+                "180": [
+                  {
+                    "start": 14950471,
+                    "duration": 14662
+                  }
+                ],
+                "184": [
+                  {
+                    "start": 14958278,
+                    "duration": 14352
+                  }
+                ],
+                "188": [
+                  {
+                    "start": 14965503,
+                    "duration": 14703
+                  }
+                ],
+                "192": [
+                  {
+                    "start": 14972985,
+                    "duration": 14616
+                  }
+                ],
+                "196": [
+                  {
+                    "start": 14980611,
+                    "duration": 14626
+                  }
+                ],
+                "200": [
+                  {
+                    "start": 14988191,
+                    "duration": 14943
+                  }
+                ],
+                "204": [
+                  {
+                    "start": 14995633,
+                    "duration": 14957
+                  }
+                ],
+                "208": [
+                  {
+                    "start": 15003559,
+                    "duration": 14483
+                  }
+                ],
+                "212": [
+                  {
+                    "start": 15011169,
+                    "duration": 14292
+                  }
+                ],
+                "216": [
+                  {
+                    "start": 15018737,
+                    "duration": 14389
+                  }
+                ],
+                "220": [
+                  {
+                    "start": 15025876,
+                    "duration": 14948
+                  }
+                ]
+              },
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {
+                "1": [
+                  {
+                    "start": 14334207,
+                    "duration": 20116
+                  }
+                ],
+                "5": [
+                  {
+                    "start": 14337225,
+                    "duration": 51322
+                  }
+                ],
+                "9": [
+                  {
+                    "start": 14355803,
+                    "duration": 67391
+                  }
+                ],
+                "13": [
+                  {
+                    "start": 14391255,
+                    "duration": 66412
+                  }
+                ],
+                "17": [
+                  {
+                    "start": 14424803,
+                    "duration": 66839
+                  }
+                ],
+                "21": [
+                  {
+                    "start": 14458463,
+                    "duration": 68411
+                  }
+                ],
+                "25": [
+                  {
+                    "start": 14492551,
+                    "duration": 68935
+                  }
+                ],
+                "29": [
+                  {
+                    "start": 14528324,
+                    "duration": 67841
+                  }
+                ],
+                "33": [
+                  {
+                    "start": 14562651,
+                    "duration": 67476
+                  }
+                ],
+                "37": [
+                  {
+                    "start": 14597478,
+                    "duration": 52386
+                  }
+                ],
+                "41": [
+                  {
+                    "start": 14630476,
+                    "duration": 38905
+                  }
+                ],
+                "45": [
+                  {
+                    "start": 14650497,
+                    "duration": 38513
+                  }
+                ],
+                "49": [
+                  {
+                    "start": 14669743,
+                    "duration": 38481
+                  }
+                ],
+                "53": [
+                  {
+                    "start": 14689342,
+                    "duration": 35042
+                  }
+                ],
+                "57": [
+                  {
+                    "start": 14708575,
+                    "duration": 23492
+                  }
+                ],
+                "61": [
+                  {
+                    "start": 14724726,
+                    "duration": 14988
+                  }
+                ],
+                "65": [
+                  {
+                    "start": 14732416,
+                    "duration": 14689
+                  }
+                ],
+                "69": [
+                  {
+                    "start": 14740068,
+                    "duration": 14679
+                  }
+                ],
+                "73": [
+                  {
+                    "start": 14747556,
+                    "duration": 14684
+                  }
+                ],
+                "77": [
+                  {
+                    "start": 14755383,
+                    "duration": 14875
+                  }
+                ],
+                "81": [
+                  {
+                    "start": 14762606,
+                    "duration": 15357
+                  }
+                ],
+                "85": [
+                  {
+                    "start": 14770630,
+                    "duration": 14839
+                  }
+                ],
+                "89": [
+                  {
+                    "start": 14778371,
+                    "duration": 14554
+                  }
+                ],
+                "93": [
+                  {
+                    "start": 14785836,
+                    "duration": 14761
+                  }
+                ],
+                "97": [
+                  {
+                    "start": 14793297,
+                    "duration": 14937
+                  }
+                ],
+                "101": [
+                  {
+                    "start": 14800943,
+                    "duration": 14671
+                  }
+                ],
+                "105": [
+                  {
+                    "start": 14808601,
+                    "duration": 14420
+                  }
+                ],
+                "109": [
+                  {
+                    "start": 14816338,
+                    "duration": 14470
+                  }
+                ],
+                "113": [
+                  {
+                    "start": 14823390,
+                    "duration": 15015
+                  }
+                ],
+                "117": [
+                  {
+                    "start": 14831151,
+                    "duration": 14711
+                  }
+                ],
+                "121": [
+                  {
+                    "start": 14838854,
+                    "duration": 14458
+                  }
+                ],
+                "125": [
+                  {
+                    "start": 14846289,
+                    "duration": 14586
+                  }
+                ],
+                "129": [
+                  {
+                    "start": 14853664,
+                    "duration": 14808
+                  }
+                ],
+                "133": [
+                  {
+                    "start": 14861214,
+                    "duration": 14618
+                  }
+                ],
+                "137": [
+                  {
+                    "start": 14869068,
+                    "duration": 14356
+                  }
+                ],
+                "141": [
+                  {
+                    "start": 14876524,
+                    "duration": 14550
+                  }
+                ],
+                "145": [
+                  {
+                    "start": 14883865,
+                    "duration": 15018
+                  }
+                ],
+                "149": [
+                  {
+                    "start": 14891476,
+                    "duration": 14838
+                  }
+                ],
+                "153": [
+                  {
+                    "start": 14899539,
+                    "duration": 14472
+                  }
+                ],
+                "157": [
+                  {
+                    "start": 14906706,
+                    "duration": 14948
+                  }
+                ],
+                "161": [
+                  {
+                    "start": 14914567,
+                    "duration": 14427
+                  }
+                ],
+                "165": [
+                  {
+                    "start": 14922054,
+                    "duration": 14448
+                  }
+                ],
+                "169": [
+                  {
+                    "start": 14929649,
+                    "duration": 14501
+                  }
+                ],
+                "173": [
+                  {
+                    "start": 14937177,
+                    "duration": 14689
+                  }
+                ],
+                "177": [
+                  {
+                    "start": 14944572,
+                    "duration": 14969
+                  }
+                ],
+                "181": [
+                  {
+                    "start": 14952343,
+                    "duration": 14691
+                  }
+                ],
+                "185": [
+                  {
+                    "start": 14960132,
+                    "duration": 14321
+                  }
+                ],
+                "189": [
+                  {
+                    "start": 14967465,
+                    "duration": 14572
+                  }
+                ],
+                "193": [
+                  {
+                    "start": 14974932,
+                    "duration": 14652
+                  }
+                ],
+                "197": [
+                  {
+                    "start": 14982460,
+                    "duration": 14605
+                  }
+                ],
+                "201": [
+                  {
+                    "start": 14989948,
+                    "duration": 15055
+                  }
+                ],
+                "205": [
+                  {
+                    "start": 14997737,
+                    "duration": 14708
+                  }
+                ],
+                "209": [
+                  {
+                    "start": 15005373,
+                    "duration": 14494
+                  }
+                ],
+                "213": [
+                  {
+                    "start": 15012814,
+                    "duration": 14596
+                  }
+                ],
+                "217": [
+                  {
+                    "start": 15020207,
+                    "duration": 14809
+                  }
+                ],
+                "221": [
+                  {
+                    "start": 15027777,
+                    "duration": 15084
+                  }
+                ]
+              },
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {
+                "2": [
+                  {
+                    "start": 14334208,
+                    "duration": 5809
+                  }
+                ],
+                "6": [
+                  {
+                    "start": 14337222,
+                    "duration": 25429
+                  }
+                ],
+                "10": [
+                  {
+                    "start": 14344556,
+                    "duration": 52522
+                  }
+                ],
+                "14": [
+                  {
+                    "start": 14363828,
+                    "duration": 67823
+                  }
+                ],
+                "18": [
+                  {
+                    "start": 14398443,
+                    "duration": 67251
+                  }
+                ],
+                "22": [
+                  {
+                    "start": 14432951,
+                    "duration": 67641
+                  }
+                ],
+                "26": [
+                  {
+                    "start": 14466617,
+                    "duration": 68863
+                  }
+                ],
+                "30": [
+                  {
+                    "start": 14502369,
+                    "duration": 67940
+                  }
+                ],
+                "34": [
+                  {
+                    "start": 14537372,
+                    "duration": 67551
+                  }
+                ],
+                "38": [
+                  {
+                    "start": 14571833,
+                    "duration": 63324
+                  }
+                ],
+                "42": [
+                  {
+                    "start": 14606207,
+                    "duration": 48561
+                  }
+                ],
+                "46": [
+                  {
+                    "start": 14635490,
+                    "duration": 38846
+                  }
+                ],
+                "50": [
+                  {
+                    "start": 14655118,
+                    "duration": 38733
+                  }
+                ],
+                "54": [
+                  {
+                    "start": 14674683,
+                    "duration": 38643
+                  }
+                ],
+                "58": [
+                  {
+                    "start": 14694183,
+                    "duration": 32239
+                  }
+                ],
+                "62": [
+                  {
+                    "start": 14713671,
+                    "duration": 20281
+                  }
+                ],
+                "66": [
+                  {
+                    "start": 14727130,
+                    "duration": 14424
+                  }
+                ],
+                "70": [
+                  {
+                    "start": 14734343,
+                    "duration": 14641
+                  }
+                ],
+                "74": [
+                  {
+                    "start": 14741943,
+                    "duration": 14650
+                  }
+                ],
+                "78": [
+                  {
+                    "start": 14749329,
+                    "duration": 15055
+                  }
+                ],
+                "82": [
+                  {
+                    "start": 14757023,
+                    "duration": 15204
+                  }
+                ],
+                "86": [
+                  {
+                    "start": 14765079,
+                    "duration": 14754
+                  }
+                ],
+                "90": [
+                  {
+                    "start": 14772570,
+                    "duration": 14744
+                  }
+                ],
+                "94": [
+                  {
+                    "start": 14780218,
+                    "duration": 14656
+                  }
+                ],
+                "98": [
+                  {
+                    "start": 14787895,
+                    "duration": 14595
+                  }
+                ],
+                "102": [
+                  {
+                    "start": 14795527,
+                    "duration": 14569
+                  }
+                ],
+                "106": [
+                  {
+                    "start": 14802924,
+                    "duration": 14522
+                  }
+                ],
+                "110": [
+                  {
+                    "start": 14810550,
+                    "duration": 14381
+                  }
+                ],
+                "114": [
+                  {
+                    "start": 14817804,
+                    "duration": 14894
+                  }
+                ],
+                "118": [
+                  {
+                    "start": 14825596,
+                    "duration": 14655
+                  }
+                ],
+                "122": [
+                  {
+                    "start": 14833100,
+                    "duration": 14610
+                  }
+                ],
+                "126": [
+                  {
+                    "start": 14840684,
+                    "duration": 14479
+                  }
+                ],
+                "130": [
+                  {
+                    "start": 14848435,
+                    "duration": 14237
+                  }
+                ],
+                "134": [
+                  {
+                    "start": 14855850,
+                    "duration": 14448
+                  }
+                ],
+                "138": [
+                  {
+                    "start": 14863046,
+                    "duration": 14671
+                  }
+                ],
+                "142": [
+                  {
+                    "start": 14870649,
+                    "duration": 14671
+                  }
+                ],
+                "146": [
+                  {
+                    "start": 14878058,
+                    "duration": 14835
+                  }
+                ],
+                "150": [
+                  {
+                    "start": 14885689,
+                    "duration": 15045
+                  }
+                ],
+                "154": [
+                  {
+                    "start": 14893241,
+                    "duration": 15095
+                  }
+                ],
+                "158": [
+                  {
+                    "start": 14901105,
+                    "duration": 14804
+                  }
+                ],
+                "162": [
+                  {
+                    "start": 14908972,
+                    "duration": 14503
+                  }
+                ],
+                "166": [
+                  {
+                    "start": 14916249,
+                    "duration": 14561
+                  }
+                ],
+                "170": [
+                  {
+                    "start": 14923820,
+                    "duration": 14652
+                  }
+                ],
+                "174": [
+                  {
+                    "start": 14931167,
+                    "duration": 14865
+                  }
+                ],
+                "178": [
+                  {
+                    "start": 14938839,
+                    "duration": 14987
+                  }
+                ],
+                "182": [
+                  {
+                    "start": 14946388,
+                    "duration": 15004
+                  }
+                ],
+                "186": [
+                  {
+                    "start": 14954193,
+                    "duration": 14725
+                  }
+                ],
+                "190": [
+                  {
+                    "start": 14961737,
+                    "duration": 14580
+                  }
+                ],
+                "194": [
+                  {
+                    "start": 14969593,
+                    "duration": 14263
+                  }
+                ],
+                "198": [
+                  {
+                    "start": 14976686,
+                    "duration": 14767
+                  }
+                ],
+                "202": [
+                  {
+                    "start": 14984207,
+                    "duration": 14775
+                  }
+                ],
+                "206": [
+                  {
+                    "start": 14992134,
+                    "duration": 14805
+                  }
+                ],
+                "210": [
+                  {
+                    "start": 14999346,
+                    "duration": 14939
+                  }
+                ],
+                "214": [
+                  {
+                    "start": 15007295,
+                    "duration": 14419
+                  }
+                ],
+                "218": [
+                  {
+                    "start": 15014657,
+                    "duration": 14703
+                  }
+                ],
+                "222": [
+                  {
+                    "start": 15022063,
+                    "duration": 14828
+                  }
+                ]
+              },
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {
+                "3": [
+                  {
+                    "start": 14334209,
+                    "duration": 7621
+                  }
+                ],
+                "7": [
+                  {
+                    "start": 14337223,
+                    "duration": 34155
+                  }
+                ],
+                "11": [
+                  {
+                    "start": 14344563,
+                    "duration": 61448
+                  }
+                ],
+                "15": [
+                  {
+                    "start": 14372607,
+                    "duration": 67943
+                  }
+                ],
+                "19": [
+                  {
+                    "start": 14407132,
+                    "duration": 67660
+                  }
+                ],
+                "23": [
+                  {
+                    "start": 14442110,
+                    "duration": 66896
+                  }
+                ],
+                "27": [
+                  {
+                    "start": 14475817,
+                    "duration": 68385
+                  }
+                ],
+                "31": [
+                  {
+                    "start": 14510412,
+                    "duration": 68367
+                  }
+                ],
+                "35": [
+                  {
+                    "start": 14545383,
+                    "duration": 68020
+                  }
+                ],
+                "39": [
+                  {
+                    "start": 14580060,
+                    "duration": 60129
+                  }
+                ],
+                "43": [
+                  {
+                    "start": 14614544,
+                    "duration": 45136
+                  }
+                ],
+                "47": [
+                  {
+                    "start": 14640546,
+                    "duration": 38784
+                  }
+                ],
+                "51": [
+                  {
+                    "start": 14660163,
+                    "duration": 38431
+                  }
+                ],
+                "55": [
+                  {
+                    "start": 14679953,
+                    "duration": 37925
+                  }
+                ],
+                "59": [
+                  {
+                    "start": 14698943,
+                    "duration": 29481
+                  }
+                ],
+                "63": [
+                  {
+                    "start": 14718303,
+                    "duration": 17655
+                  }
+                ],
+                "67": [
+                  {
+                    "start": 14729082,
+                    "duration": 14324
+                  }
+                ],
+                "71": [
+                  {
+                    "start": 14736311,
+                    "duration": 14583
+                  }
+                ],
+                "75": [
+                  {
+                    "start": 14743755,
+                    "duration": 14775
+                  }
+                ],
+                "79": [
+                  {
+                    "start": 14751265,
+                    "duration": 15121
+                  }
+                ],
+                "83": [
+                  {
+                    "start": 14758870,
+                    "duration": 15373
+                  }
+                ],
+                "87": [
+                  {
+                    "start": 14767038,
+                    "duration": 14680
+                  }
+                ],
+                "91": [
+                  {
+                    "start": 14774612,
+                    "duration": 14630
+                  }
+                ],
+                "95": [
+                  {
+                    "start": 14782070,
+                    "duration": 14725
+                  }
+                ],
+                "99": [
+                  {
+                    "start": 14789582,
+                    "duration": 14899
+                  }
+                ],
+                "103": [
+                  {
+                    "start": 14797164,
+                    "duration": 14766
+                  }
+                ],
+                "107": [
+                  {
+                    "start": 14804849,
+                    "duration": 14425
+                  }
+                ],
+                "111": [
+                  {
+                    "start": 14812274,
+                    "duration": 14622
+                  }
+                ],
+                "115": [
+                  {
+                    "start": 14819622,
+                    "duration": 15090
+                  }
+                ],
+                "119": [
+                  {
+                    "start": 14827628,
+                    "duration": 14460
+                  }
+                ],
+                "123": [
+                  {
+                    "start": 14835084,
+                    "duration": 14463
+                  }
+                ],
+                "127": [
+                  {
+                    "start": 14842438,
+                    "duration": 14634
+                  }
+                ],
+                "131": [
+                  {
+                    "start": 14849919,
+                    "duration": 14708
+                  }
+                ],
+                "135": [
+                  {
+                    "start": 14857423,
+                    "duration": 14687
+                  }
+                ],
+                "139": [
+                  {
+                    "start": 14864996,
+                    "duration": 14556
+                  }
+                ],
+                "143": [
+                  {
+                    "start": 14872458,
+                    "duration": 14747
+                  }
+                ],
+                "147": [
+                  {
+                    "start": 14879897,
+                    "duration": 15109
+                  }
+                ],
+                "151": [
+                  {
+                    "start": 14887891,
+                    "duration": 14706
+                  }
+                ],
+                "155": [
+                  {
+                    "start": 14895358,
+                    "duration": 14954
+                  }
+                ],
+                "159": [
+                  {
+                    "start": 14902970,
+                    "duration": 14979
+                  }
+                ],
+                "163": [
+                  {
+                    "start": 14910678,
+                    "duration": 14666
+                  }
+                ],
+                "167": [
+                  {
+                    "start": 14918298,
+                    "duration": 14500
+                  }
+                ],
+                "171": [
+                  {
+                    "start": 14925686,
+                    "duration": 14722
+                  }
+                ],
+                "175": [
+                  {
+                    "start": 14933166,
+                    "duration": 14847
+                  }
+                ],
+                "179": [
+                  {
+                    "start": 14940759,
+                    "duration": 15012
+                  }
+                ],
+                "183": [
+                  {
+                    "start": 14948700,
+                    "duration": 14559
+                  }
+                ],
+                "187": [
+                  {
+                    "start": 14956135,
+                    "duration": 14643
+                  }
+                ],
+                "191": [
+                  {
+                    "start": 14963602,
+                    "duration": 14563
+                  }
+                ],
+                "195": [
+                  {
+                    "start": 14971127,
+                    "duration": 14591
+                  }
+                ],
+                "199": [
+                  {
+                    "start": 14978778,
+                    "duration": 14524
+                  }
+                ],
+                "203": [
+                  {
+                    "start": 14986075,
+                    "duration": 14917
+                  }
+                ],
+                "207": [
+                  {
+                    "start": 14993745,
+                    "duration": 15026
+                  }
+                ],
+                "211": [
+                  {
+                    "start": 15001361,
+                    "duration": 14836
+                  }
+                ],
+                "215": [
+                  {
+                    "start": 15009425,
+                    "duration": 14162
+                  }
+                ],
+                "219": [
+                  {
+                    "start": 15016569,
+                    "duration": 14668
+                  }
+                ],
+                "223": [
+                  {
+                    "start": 15023983,
+                    "duration": 14846
+                  }
+                ]
+              }
+            },
+            "core_id": 0,
+            "Layer Name": "subgraph_dma",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,14336]",
+            "Plugin Name": "BandwidthDma",
+            "AIPU Read Bytes": 6440352,
+            "AIPU Write Bytes": 0,
+            "Constant Read Bytes": 6422528,
+            "MTP0 Busy Cycles": 0,
+            "MTP0 Utilization": 0.0,
+            "MTP1 Busy Cycles": 0,
+            "MTP1 Utilization": 0.0,
+            "ITP Busy Cycles": 0,
+            "ITP Utilization": 0.0,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 0.0,
+            "Cycles Ratio": 1.0,
+            "MAC Utilization": 0,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 10.804811569240405,
+            "BW_R(GB/s)": 10.804811569240405,
+            "BW_W(GB/s)": 0.0
+          }
+        ]
+      },
+      {
+        "Core ID": 1,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 14327606,
+            "end": 14725012,
+            "Cycles": 397406,
+            "AIFF Busy Cycles": 380432,
+            "AIFF Utilization": 0.9572880127627665,
+            "DMA Busy Cycles": 2775,
+            "DMA Read Bytes": 24576,
+            "DMA Write Bytes": 24576,
+            "stamp": {
+              "aiff0": [
+                {
+                  "start": 14342147,
+                  "duration": 380432,
+                  "mtp0_busy_cycle": 17024,
+                  "mtp1_busy_cycle": 17024,
+                  "ptp_busy_cycle": 0,
+                  "rdma_weight_read_count": 283320,
+                  "rdma_act_read_count": 363,
+                  "udma_param_read_count": 5953,
+                  "udma_act_write_count": 0,
+                  "wdma_act_write_count": 0,
+                  "bif_read_count": 96462,
+                  "bif_write_count": 152,
+                  "itp_busy_cycle": 304,
+                  "wrb_busy_cycle": 0
+                }
+              ],
+              "dma0": [
+                {
+                  "start": 14335809,
+                  "duration": 2775,
+                  "read_bytes": 24576,
+                  "write_bytes": 24576
+                }
+              ],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 1,
+            "Layer Name": "subgraph_matmul_fc",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,4864]",
+            "Plugin Name": "HwaFc",
+            "AIPU Read Bytes": 3096512,
+            "AIPU Write Bytes": 5056,
+            "Constant Read Bytes": 3085920,
+            "MTP0 Busy Cycles": 17024,
+            "MTP0 Utilization": 0.04283780315345012,
+            "MTP1 Busy Cycles": 17024,
+            "MTP1 Utilization": 0.04283780315345012,
+            "ITP Busy Cycles": 304,
+            "ITP Utilization": 0.0007649607705973237,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 8.721152,
+            "Cycles Ratio": 0.5555981187681398,
+            "MAC Utilization": 0.002678856761095706,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 9.365438871078947,
+            "BW_R(GB/s)": 9.350171864541553,
+            "BW_W(GB/s)": 0.015267006537395007
+          }
+        ]
+      },
+      {
+        "Core ID": 2,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 14328850,
+            "end": 14636502,
+            "Cycles": 307652,
+            "AIFF Busy Cycles": 283945,
+            "AIFF Utilization": 0.9229421554223604,
+            "DMA Busy Cycles": 2512,
+            "DMA Read Bytes": 24576,
+            "DMA Write Bytes": 24576,
+            "stamp": {
+              "aiff0": [
+                {
+                  "start": 14345847,
+                  "duration": 283945,
+                  "mtp0_busy_cycle": 17024,
+                  "mtp1_busy_cycle": 17024,
+                  "ptp_busy_cycle": 0,
+                  "rdma_weight_read_count": 194233,
+                  "rdma_act_read_count": 2043,
+                  "udma_param_read_count": 5943,
+                  "udma_act_write_count": 0,
+                  "wdma_act_write_count": 0,
+                  "bif_read_count": 88312,
+                  "bif_write_count": 152,
+                  "itp_busy_cycle": 304,
+                  "wrb_busy_cycle": 0
+                }
+              ],
+              "dma0": [
+                {
+                  "start": 14339569,
+                  "duration": 2512,
+                  "read_bytes": 24576,
+                  "write_bytes": 24576
+                }
+              ],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 2,
+            "Layer Name": "subgraph_matmul_0_fc",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,4864]",
+            "Plugin Name": "HwaFc",
+            "AIPU Read Bytes": 2835776,
+            "AIPU Write Bytes": 5056,
+            "Constant Read Bytes": 2825120,
+            "MTP0 Busy Cycles": 17024,
+            "MTP0 Utilization": 0.05533524891760821,
+            "MTP1 Busy Cycles": 17024,
+            "MTP1 Utilization": 0.05533524891760821,
+            "ITP Busy Cycles": 304,
+            "ITP Utilization": 0.0009881294449572895,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 8.721152,
+            "Cycles Ratio": 0.43011648650311207,
+            "MAC Utilization": 0.003460382997672695,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 11.080696371224631,
+            "BW_R(GB/s)": 11.060975387775798,
+            "BW_W(GB/s)": 0.019720983448831796
+          }
+        ]
+      }
+    ],
+    "Total Cycles": 715276,
+    "Total Time(ms@1200MHz)": 0.5960633333333333,
+    "FPS@1200MHz": 1677.6740726656565,
+    "Total DMA Busy Cycles": 5287,
+    "Total AIFF Busy Cycles": 664377,
+    "AIPU Read Bytes": 12372640,
+    "AIPU Write Bytes": 10112,
+    "DMA Read Bytes": 49152,
+    "DMA Write Bytes": 49152,
+    "Constant Read Bytes": 12333568,
+    "Subgraphs Num": 3,
+    "Layers Num": 3,
+    "Total Ops(Mops)": 17.442304,
+    "Ops Data Type": "i8: 100.00%",
+    "BW_RW(GB/s)": 20.774221978648804,
+    "BW_R(GB/s)": 20.75725733842601,
+    "BW_W(GB/s)": 0.016964640222795122,
+    "Average MAC Utilization": 0.0009922451846093908,
+    "Average MTP Utilization(when working)": 0.06253487723214286,
+    "tec_num": 4,
+    "core_num": 3,
+    "Target": "X2_1204MP3"
+  }
+}
