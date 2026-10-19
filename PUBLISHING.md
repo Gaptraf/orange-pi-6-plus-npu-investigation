@@ -1,13 +1,13 @@
 # Publishing this project on GitHub
 
-The publication target is a separate private repository, `Gaptraf/orange-pi-6-plus-npu-investigation-clean`. The original private draft retains its old metadata and is not the publication source. Keep the clean copy private until the owner decides to publish it.
+The publication repository is `Gaptraf/orange-pi-6-plus-npu-investigation`. It remains private until the owner decides to publish it. The original private draft is stored separately as `Gaptraf/orange-pi-6-plus-npu-investigation-private-draft`; its old history is not the publication source.
 
 Use the GitHub-provided `noreply` author identity for every commit. A new commit does not remove private information from an older history. This project's clean local Git history starts from a new root commit; it does not inherit the original draft's commits.
 
 Recommended repository name:
 
 ```text
-orange-pi-6-plus-npu-investigation-clean
+orange-pi-6-plus-npu-investigation
 ```
 
 Suggested description:
@@ -32,7 +32,7 @@ Using Git from **inside this prepared project directory**, with Git installed an
 git init -b main
 git add .
 git commit -m "Publish Orange Pi 6 Plus NPU investigation and evidence"
-git remote add origin https://github.com/Gaptraf/orange-pi-6-plus-npu-investigation-clean.git
+git remote add origin https://github.com/Gaptraf/orange-pi-6-plus-npu-investigation.git
 git push -u origin main
 ```
 
@@ -41,7 +41,7 @@ Create the empty remote repository first. Git may ask you to configure your comm
 Expected repository URL after publication:
 
 ```text
-https://github.com/Gaptraf/orange-pi-6-plus-npu-investigation-clean
+https://github.com/Gaptraf/orange-pi-6-plus-npu-investigation
 ```
 
 Verify the visibility and contents of this clean destination before making it public.
@@ -60,7 +60,7 @@ After the files are pushed:
 Expected project-site URL after successful deployment:
 
 ```text
-https://gaptraf.github.io/orange-pi-6-plus-npu-investigation-clean/
+https://gaptraf.github.io/orange-pi-6-plus-npu-investigation/
 ```
 
 GitHub Pages is available for public repositories on GitHub Free. See [GitHub's site creation instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) and [publishing-source configuration](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
