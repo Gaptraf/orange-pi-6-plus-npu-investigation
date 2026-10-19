@@ -1,0 +1,260 @@
+{
+  "full-prefetch": {
+    "runs": [
+      {
+        "run": "run0",
+        "core_ids": [
+          0
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv",
+            "core": 0,
+            "start": 6080980,
+            "end": 6772372
+          }
+        ],
+        "span_us": 576.16,
+        "read_bytes": 8730176,
+        "constant_read_bytes": 8716288
+      },
+      {
+        "run": "run1",
+        "core_ids": [
+          0
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv",
+            "core": 0,
+            "start": 9236567,
+            "end": 9927052
+          }
+        ],
+        "span_us": 575.4041666666667,
+        "read_bytes": 8730176,
+        "constant_read_bytes": 8716288
+      },
+      {
+        "run": "run2",
+        "core_ids": [
+          0
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv",
+            "core": 0,
+            "start": 11946348,
+            "end": 12636883
+          }
+        ],
+        "span_us": 575.4458333333333,
+        "read_bytes": 8730176,
+        "constant_read_bytes": 8716288
+      },
+      {
+        "run": "run3",
+        "core_ids": [
+          0
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv",
+            "core": 0,
+            "start": 14092106,
+            "end": 14782906
+          }
+        ],
+        "span_us": 575.6666666666666,
+        "read_bytes": 8730176,
+        "constant_read_bytes": 8716288
+      },
+      {
+        "run": "run4",
+        "core_ids": [
+          0
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv",
+            "core": 0,
+            "start": 16456723,
+            "end": 17148270
+          }
+        ],
+        "span_us": 576.2891666666667,
+        "read_bytes": 8730176,
+        "constant_read_bytes": 8716288
+      }
+    ],
+    "cores": [
+      0
+    ],
+    "median_span_us": 575.6666666666666
+  },
+  "full-prefetch3": {
+    "runs": [
+      {
+        "run": "run0",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv2",
+            "core": 0,
+            "start": 7149147,
+            "end": 7634560
+          },
+          {
+            "name": "subgraph_gemv1",
+            "core": 1,
+            "start": 7150170,
+            "end": 7624455
+          },
+          {
+            "name": "subgraph_gemv0",
+            "core": 2,
+            "start": 7151285,
+            "end": 7628018
+          }
+        ],
+        "span_us": 404.5108333333333,
+        "read_bytes": 8738304,
+        "constant_read_bytes": 8716288
+      },
+      {
+        "run": "run1",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv2",
+            "core": 0,
+            "start": 12782751,
+            "end": 13276895
+          },
+          {
+            "name": "subgraph_gemv1",
+            "core": 1,
+            "start": 12784002,
+            "end": 13266732
+          },
+          {
+            "name": "subgraph_gemv0",
+            "core": 2,
+            "start": 12785086,
+            "end": 13278269
+          }
+        ],
+        "span_us": 412.9316666666667,
+        "read_bytes": 8738368,
+        "constant_read_bytes": 8716288
+      },
+      {
+        "run": "run2",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv2",
+            "core": 0,
+            "start": 17531408,
+            "end": 18028694
+          },
+          {
+            "name": "subgraph_gemv1",
+            "core": 1,
+            "start": 17532698,
+            "end": 18012610
+          },
+          {
+            "name": "subgraph_gemv0",
+            "core": 2,
+            "start": 17533902,
+            "end": 18015598
+          }
+        ],
+        "span_us": 414.405,
+        "read_bytes": 8738432,
+        "constant_read_bytes": 8716288
+      },
+      {
+        "run": "run3",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv2",
+            "core": 0,
+            "start": 21286931,
+            "end": 21775533
+          },
+          {
+            "name": "subgraph_gemv1",
+            "core": 1,
+            "start": 21288461,
+            "end": 21765266
+          },
+          {
+            "name": "subgraph_gemv0",
+            "core": 2,
+            "start": 21289323,
+            "end": 21777143
+          }
+        ],
+        "span_us": 408.51,
+        "read_bytes": 8738368,
+        "constant_read_bytes": 8716288
+      },
+      {
+        "run": "run4",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "nodes": [
+          {
+            "name": "subgraph_gemv2",
+            "core": 0,
+            "start": 25139323,
+            "end": 25631517
+          },
+          {
+            "name": "subgraph_gemv1",
+            "core": 1,
+            "start": 25140908,
+            "end": 25630304
+          },
+          {
+            "name": "subgraph_gemv0",
+            "core": 2,
+            "start": 25141865,
+            "end": 25625225
+          }
+        ],
+        "span_us": 410.1616666666667,
+        "read_bytes": 8738368,
+        "constant_read_bytes": 8716288
+      }
+    ],
+    "cores": [
+      0,
+      1,
+      2
+    ],
+    "median_span_us": 410.1616666666667
+  }
+}

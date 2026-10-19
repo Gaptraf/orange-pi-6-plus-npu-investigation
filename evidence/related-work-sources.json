@@ -1,0 +1,96 @@
+{
+  "accessed": "2026-10-19",
+  "sources": [
+    {
+      "owner": "happyme531",
+      "repo": "happyme531",
+      "path": "CD8180-\"\u5468\u6613\"X2-NPU-LLM-\u5b9e\u9a8c\u4e0e\u5f00\u53d1\u603b\u7ed3.md",
+      "commit": "6fce390b3b5be211118f19d73ab3acedd79e425b",
+      "latest_path_commit": "2026-07-27T17:15:24Z",
+      "oldest_path_commit_in_page": "2026-07-27T17:14:16Z",
+      "path_commits_in_page": 2,
+      "url": "https://github.com/happyme531/happyme531/blob/6fce390b3b5be211118f19d73ab3acedd79e425b/CD8180-%22%E5%91%A8%E6%98%93%22X2-NPU-LLM-%E5%AE%9E%E9%AA%8C%E4%B8%8E%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93.md",
+      "source_sha256": "48b549c96060e0ad8b18414c2e8fb66d118207a9ab18eb5f0fb491286c9385bb",
+      "bytes": 48415,
+      "saved_as": "x2-llm-report.md"
+    },
+    {
+      "owner": "n4hy",
+      "repo": "NPU_OrangePi6Plus",
+      "path": "README.md",
+      "commit": "9619be3b15d8935095adbb51cd7335c7ebbb37d0",
+      "latest_path_commit": "2026-07-06T07:26:38Z",
+      "oldest_path_commit_in_page": "2026-02-04T03:42:32Z",
+      "path_commits_in_page": 6,
+      "url": "https://github.com/n4hy/NPU_OrangePi6Plus/blob/9619be3b15d8935095adbb51cd7335c7ebbb37d0/README.md",
+      "source_sha256": "8a0d67eaec293c30cb41dd936c7b81292a10fd1b3727815bf99b721949069511",
+      "bytes": 12933,
+      "saved_as": "n4hy-readme.md"
+    },
+    {
+      "owner": "visorcraft",
+      "repo": "orange-pi-6-plus-npu",
+      "path": "README.md",
+      "commit": "c6f679de45ef0036b8926e83ee82280280657852",
+      "latest_path_commit": "2026-02-11T05:05:24Z",
+      "oldest_path_commit_in_page": "2026-02-11T05:05:24Z",
+      "path_commits_in_page": 1,
+      "url": "https://github.com/visorcraft/orange-pi-6-plus-npu/blob/c6f679de45ef0036b8926e83ee82280280657852/README.md",
+      "source_sha256": "c4838ccde2602286d1b227f5c625b976bdee33b16017eef8a473e6678897ee0f",
+      "bytes": 21677,
+      "saved_as": "visorcraft-readme.md"
+    },
+    {
+      "owner": "visorcraft",
+      "repo": "orange-pi-6-plus-npu",
+      "path": "CIXBUILDER.md",
+      "commit": "c6f679de45ef0036b8926e83ee82280280657852",
+      "latest_path_commit": "2026-02-11T05:05:24Z",
+      "oldest_path_commit_in_page": "2026-02-11T05:05:24Z",
+      "path_commits_in_page": 1,
+      "url": "https://github.com/visorcraft/orange-pi-6-plus-npu/blob/c6f679de45ef0036b8926e83ee82280280657852/CIXBUILDER.md",
+      "source_sha256": "710e6845f0c58be1e39b24ecdfdd225476f5379a2088d2601c231ed520468014",
+      "bytes": 3878,
+      "saved_as": "visorcraft-cixbuilder.md"
+    },
+    {
+      "owner": "visorcraft",
+      "repo": "orange-pi-6-plus-npu",
+      "path": "INFERENCE.md",
+      "commit": "c6f679de45ef0036b8926e83ee82280280657852",
+      "latest_path_commit": "2026-02-11T05:05:24Z",
+      "oldest_path_commit_in_page": "2026-02-11T05:05:24Z",
+      "path_commits_in_page": 1,
+      "url": "https://github.com/visorcraft/orange-pi-6-plus-npu/blob/c6f679de45ef0036b8926e83ee82280280657852/INFERENCE.md",
+      "source_sha256": "f4f2fc0a22ff6a1586ea8e8ec7341ffc06dc1ae7a108ea2576c12ecc48e0be44",
+      "bytes": 29607,
+      "saved_as": "visorcraft-inference.md"
+    },
+    {
+      "owner": "ncz-os",
+      "repo": "cix-installer",
+      "path": "docs/INFERENCE_LIMITS.md",
+      "commit": "f6e5b415da4a1dca2566ad451699b7bc2301d184",
+      "latest_path_commit": "2026-10-13T14:09:28Z",
+      "oldest_path_commit_in_page": "2026-06-23T05:55:16Z",
+      "path_commits_in_page": 8,
+      "url": "https://github.com/ncz-os/cix-installer/blob/f6e5b415da4a1dca2566ad451699b7bc2301d184/docs/INFERENCE_LIMITS.md",
+      "source_sha256": "c70916235c96b011da054a71df45e52f201bd7c9ab4487a985cdb6a69c241ff8",
+      "bytes": 10528,
+      "saved_as": "inference-limits.md"
+    },
+    {
+      "owner": "mrobinson-opi",
+      "repo": "6plus_npu",
+      "path": "README.md",
+      "commit": "42a34aad24ac8a0690b65715c9cb45b326384a2b",
+      "latest_path_commit": "2025-11-25T19:58:51Z",
+      "oldest_path_commit_in_page": "2025-11-25T17:29:19Z",
+      "path_commits_in_page": 5,
+      "url": "https://github.com/mrobinson-opi/6plus_npu/blob/42a34aad24ac8a0690b65715c9cb45b326384a2b/README.md",
+      "source_sha256": "8e074b40c4f5b408986bde2444e1c279a195766dbe80efbbe91d8bfb488f626e",
+      "bytes": 29429,
+      "saved_as": "setup-readme.md"
+    }
+  ]
+}

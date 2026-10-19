@@ -1,0 +1,141 @@
+{
+  "cpu_graphs_bit_exact": true,
+  "rows": [
+    {
+      "case": 0,
+      "cpu_original_vs_split": [
+        0,
+        0
+      ],
+      "npu_vs_cpu": [
+        [
+          57,
+          98
+        ],
+        [
+          62,
+          90
+        ]
+      ]
+    },
+    {
+      "case": 1,
+      "cpu_original_vs_split": [
+        0,
+        0
+      ],
+      "npu_vs_cpu": [
+        [
+          63,
+          79
+        ],
+        [
+          69,
+          76
+        ]
+      ]
+    },
+    {
+      "case": 2,
+      "cpu_original_vs_split": [
+        0,
+        0
+      ],
+      "npu_vs_cpu": [
+        [
+          47,
+          78
+        ],
+        [
+          50,
+          75
+        ]
+      ]
+    },
+    {
+      "case": 3,
+      "cpu_original_vs_split": [
+        0,
+        0
+      ],
+      "npu_vs_cpu": [
+        [
+          57,
+          84
+        ],
+        [
+          61,
+          82
+        ]
+      ]
+    },
+    {
+      "case": 4,
+      "cpu_original_vs_split": [
+        0,
+        0
+      ],
+      "npu_vs_cpu": [
+        [
+          57,
+          90
+        ],
+        [
+          61,
+          86
+        ]
+      ]
+    },
+    {
+      "case": 5,
+      "cpu_original_vs_split": [
+        0,
+        0
+      ],
+      "npu_vs_cpu": [
+        [
+          67,
+          79
+        ],
+        [
+          73,
+          75
+        ]
+      ]
+    },
+    {
+      "case": 6,
+      "cpu_original_vs_split": [
+        0,
+        0
+      ],
+      "npu_vs_cpu": [
+        [
+          54,
+          85
+        ],
+        [
+          58,
+          81
+        ]
+      ]
+    },
+    {
+      "case": 7,
+      "cpu_original_vs_split": [
+        0,
+        0
+      ],
+      "npu_vs_cpu": [
+        [
+          58,
+          85
+        ],
+        [
+          63,
+          81
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "rows": [
+    {
+      "group": 0,
+      "ort_captured_us": 320.02,
+      "ort_before_us": 317.9895,
+      "ort_after_us": 346.09400000000005,
+      "native_persistent_us": 112.8215,
+      "native_infer_only_us": 117.026,
+      "native_fresh_job_us": 494.359,
+      "native_load_us": 0.91,
+      "native_infer_us": 105.396,
+      "native_get_us": 5.9350000000000005,
+      "native_validation_checks": 522,
+      "bit_exact_with_ort": true,
+      "api_counts": {
+        "load_graph": 1,
+        "create_job": 1,
+        "clean_job": 1,
+        "finish_job": 268,
+        "load_tensor": 268,
+        "get_tensor": 804
+      },
+      "compiled_graph_sha256": "f9e685e1ad2232213052ba7b949dfed93ac139c07d65a55468ddf0ea1bf627a4",
+      "compiled_graph_bytes": 812036,
+      "onnx_sha256": "910bc1c152a2da143c866c96afa24688cb4427ec97fb2973bdd5b764c4a9cb57"
+    },
+    {
+      "group": 1,
+      "ort_captured_us": 252.4515,
+      "ort_before_us": 255.7365,
+      "ort_after_us": 250.54149999999998,
+      "native_persistent_us": 91.6775,
+      "native_infer_only_us": 98.5415,
+      "native_fresh_job_us": 299.5,
+      "native_load_us": 0.77,
+      "native_infer_us": 88.3575,
+      "native_get_us": 2.33,
+      "native_validation_checks": 522,
+      "bit_exact_with_ort": true,
+      "api_counts": {
+        "load_graph": 1,
+        "create_job": 1,
+        "clean_job": 1,
+        "finish_job": 268,
+        "load_tensor": 268,
+        "get_tensor": 268
+      },
+      "compiled_graph_sha256": "d58e784acd7d2c64c13a5c92ced7fa5ae90417cc428af3ae858b3b8aa252ad7a",
+      "compiled_graph_bytes": 595888,
+      "onnx_sha256": "4f4625f034642ee14c39ea912bd03e4184101abcb8b3c05e8a39421a36d52345"
+    },
+    {
+      "group": 2,
+      "ort_captured_us": 578.0115000000001,
+      "ort_before_us": 582.1865,
+      "ort_after_us": 577.9965,
+      "native_persistent_us": 348.993,
+      "native_infer_only_us": 337.009,
+      "native_fresh_job_us": 893.941,
+      "native_load_us": 0.99,
+      "native_infer_us": 335.804,
+      "native_get_us": 11.864,
+      "native_validation_checks": 522,
+      "bit_exact_with_ort": true,
+      "api_counts": {
+        "load_graph": 1,
+        "create_job": 1,
+        "clean_job": 1,
+        "finish_job": 268,
+        "load_tensor": 268,
+        "get_tensor": 536
+      },
+      "compiled_graph_sha256": "c2845b8c669d2ad36d4056ac6eaa475f8c85088c4784704e597eeaf877b581ed",
+      "compiled_graph_bytes": 5985224,
+      "onnx_sha256": "e169ab33211b5823313860b4028e1d087ea99f371c619b40c838632f839356af"
+    },
+    {
+      "group": 3,
+      "ort_captured_us": 382.517,
+      "ort_before_us": 381.9075,
+      "ort_after_us": 392.623,
+      "native_persistent_us": 206.928,
+      "native_infer_only_us": 204.3885,
+      "native_fresh_job_us": 511.1585,
+      "native_load_us": 1.04,
+      "native_infer_us": 202.8535,
+      "native_get_us": 2.63,
+      "native_validation_checks": 522,
+      "bit_exact_with_ort": true,
+      "api_counts": {
+        "load_graph": 1,
+        "create_job": 1,
+        "clean_job": 1,
+        "finish_job": 268,
+        "load_tensor": 268,
+        "get_tensor": 268
+      },
+      "compiled_graph_sha256": "73e62c1fb7a2db687ea3f4b71b517e26329ee89cac1cdc90c2cab75352da2e18",
+      "compiled_graph_bytes": 3047792,
+      "onnx_sha256": "d749f49f59aa0f61c45706383808a3b379dc702b2129714f4d32cdc1fcd82b8c"
+    }
+  ],
+  "sum_of_individual_graph_medians_us": {
+    "ort_captured_us": 1533.0,
+    "ort_before_us": 1537.8200000000002,
+    "ort_after_us": 1567.255,
+    "native_persistent_us": 760.42,
+    "native_infer_only_us": 756.965,
+    "native_fresh_job_us": 2198.9585,
+    "native_load_us": 3.71,
+    "native_infer_us": 732.411,
+    "native_get_us": 22.759
+  },
+  "note": "Sums of separately measured medians, not a measured integrated block or whole LLM. Infer API time includes submit, driver, device execution and completion wait.",
+  "ort_config_check": {
+    "load_graph": 1,
+    "create_job": 1,
+    "clean_job": 1,
+    "finish_job": 268,
+    "load_tensor": 268,
+    "get_tensor": 804,
+    "job_misc": 0,
+    "global_types": 2048,
+    "poll_in_commit_thread": -1,
+    "enable_tec_done_irq": -1
+  },
+  "recompiled_group0_binary_identical": false,
+  "suite": [
+    {
+      "group": 0,
+      "phase": "ort_before",
+      "rc": 0,
+      "stdout": "{\"group\": 0, \"tag\": \"ort_before\", \"source\": \"/opt/opi6-npu-llm/performance/npu_fused_m1/group0.onnx\", \"source_sha256\": \"910bc1c152a2da143c866c96afa24688cb4427ec97fb2973bdd5b764c4a9cb57\", \"affinity\": [0], \"runs\": 240, \"input_shape\": [1, 896], \"validation_max_lsb\": 1, \"p50_us\": 317.9895, \"p95_us\": 331.0275}\n",
+      "stderr": "Total errors: 0,  warnings: 0\n"
+    },
+    {
+      "group": 0,
+      "phase": "aipu",
+      "rc": 0,
+      "stdout": "aipu /opt/opi6-npu-llm/native-api/group0 persistent_io p50_us=112.822 p95_us=130.247\naipu /opt/opi6-npu-llm/native-api/group0 persistent_infer_only p50_us=117.026 p95_us=128.391\naipu /opt/opi6-npu-llm/native-api/group0 fresh_job_io p50_us=494.359 p95_us=695.922\n",
+      "stderr": ""
+    },
+    {
+      "group": 0,
+      "phase": "noe",
+      "rc": -11,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "group": 0,
+      "phase": "ort_after",
+      "rc": 0,
+      "stdout": "{\"group\": 0, \"tag\": \"ort_after\", \"source\": \"/opt/opi6-npu-llm/performance/npu_fused_m1/group0.onnx\", \"source_sha256\": \"910bc1c152a2da143c866c96afa24688cb4427ec97fb2973bdd5b764c4a9cb57\", \"affinity\": [0], \"runs\": 240, \"input_shape\": [1, 896], \"validation_max_lsb\": 1, \"p50_us\": 346.09400000000005, \"p95_us\": 386.34944999999993}\n",
+      "stderr": "Total errors: 0,  warnings: 0\n"
+    },
+    {
+      "group": 1,
+      "phase": "ort_before",
+      "rc": 0,
+      "stdout": "{\"group\": 1, \"tag\": \"ort_before\", \"source\": \"/opt/opi6-npu-llm/performance/npu_fused_m1/group1.onnx\", \"source_sha256\": \"4f4625f034642ee14c39ea912bd03e4184101abcb8b3c05e8a39421a36d52345\", \"affinity\": [0], \"runs\": 240, \"input_shape\": [1, 896], \"validation_max_lsb\": 1, \"p50_us\": 255.7365, \"p95_us\": 333.544}\n",
+      "stderr": "Total errors: 0,  warnings: 0\n"
+    },
+    {
+      "group": 1,
+      "phase": "aipu",
+      "rc": 0,
+      "stdout": "aipu /opt/opi6-npu-llm/native-api/group1 persistent_io p50_us=91.6775 p95_us=93.7885\naipu /opt/opi6-npu-llm/native-api/group1 persistent_infer_only p50_us=98.5415 p95_us=104.075\naipu /opt/opi6-npu-llm/native-api/group1 fresh_job_io p50_us=299.5 p95_us=499.634\n",
+      "stderr": ""
+    },
+    {
+      "group": 1,
+      "phase": "noe",
+      "rc": -11,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "group": 1,
+      "phase": "ort_after",
+      "rc": 0,
+      "stdout": "{\"group\": 1, \"tag\": \"ort_after\", \"source\": \"/opt/opi6-npu-llm/performance/npu_fused_m1/group1.onnx\", \"source_sha256\": \"4f4625f034642ee14c39ea912bd03e4184101abcb8b3c05e8a39421a36d52345\", \"affinity\": [0], \"runs\": 240, \"input_shape\": [1, 896], \"validation_max_lsb\": 1, \"p50_us\": 250.54149999999998, \"p95_us\": 270.9255}\n",
+      "stderr": "Total errors: 0,  warnings: 0\n"
+    },
+    {
+      "group": 2,
+      "phase": "ort_before",
+      "rc": 0,
+      "stdout": "{\"group\": 2, \"tag\": \"ort_before\", \"source\": \"/opt/opi6-npu-llm/performance/npu_fused_m1/group2.onnx\", \"source_sha256\": \"e169ab33211b5823313860b4028e1d087ea99f371c619b40c838632f839356af\", \"affinity\": [0], \"runs\": 240, \"input_shape\": [1, 896], \"validation_max_lsb\": 1, \"p50_us\": 582.1865, \"p95_us\": 796.021}\n",
+      "stderr": "Total errors: 0,  warnings: 0\n"
+    },
+    {
+      "group": 2,
+      "phase": "aipu",
+      "rc": 0,
+      "stdout": "aipu /opt/opi6-npu-llm/native-api/group2 persistent_io p50_us=348.993 p95_us=363.72\naipu /opt/opi6-npu-llm/native-api/group2 persistent_infer_only p50_us=337.009 p95_us=354.024\naipu /opt/opi6-npu-llm/native-api/group2 fresh_job_io p50_us=893.941 p95_us=1138.14\n",
+      "stderr": ""
+    },
+    {
+      "group": 2,
+      "phase": "noe",
+      "rc": -11,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "group": 2,
+      "phase": "ort_after",
+      "rc": 0,
+      "stdout": "{\"group\": 2, \"tag\": \"ort_after\", \"source\": \"/opt/opi6-npu-llm/performance/npu_fused_m1/group2.onnx\", \"source_sha256\": \"e169ab33211b5823313860b4028e1d087ea99f371c619b40c838632f839356af\", \"affinity\": [0], \"runs\": 240, \"input_shape\": [1, 896], \"validation_max_lsb\": 1, \"p50_us\": 577.9965, \"p95_us\": 701.5609499999999}\n",
+      "stderr": "Total errors: 0,  warnings: 0\n"
+    },
+    {
+      "group": 3,
+      "phase": "ort_before",
+      "rc": 0,
+      "stdout": "{\"group\": 3, \"tag\": \"ort_before\", \"source\": \"/opt/opi6-npu-llm/performance/npu_fused_m1/group3.onnx\", \"source_sha256\": \"d749f49f59aa0f61c45706383808a3b379dc702b2129714f4d32cdc1fcd82b8c\", \"affinity\": [0], \"runs\": 240, \"input_shape\": [1, 4864], \"validation_max_lsb\": 1, \"p50_us\": 381.9075, \"p95_us\": 522.5224999999999}\n",
+      "stderr": "Total errors: 0,  warnings: 0\n"
+    },
+    {
+      "group": 3,
+      "phase": "aipu",
+      "rc": 0,
+      "stdout": "aipu /opt/opi6-npu-llm/native-api/group3 persistent_io p50_us=206.928 p95_us=218.626\naipu /opt/opi6-npu-llm/native-api/group3 persistent_infer_only p50_us=204.389 p95_us=408.84\naipu /opt/opi6-npu-llm/native-api/group3 fresh_job_io p50_us=511.159 p95_us=582.585\n",
+      "stderr": ""
+    },
+    {
+      "group": 3,
+      "phase": "noe",
+      "rc": -11,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "group": 3,
+      "phase": "ort_after",
+      "rc": 0,
+      "stdout": "{\"group\": 3, \"tag\": \"ort_after\", \"source\": \"/opt/opi6-npu-llm/performance/npu_fused_m1/group3.onnx\", \"source_sha256\": \"d749f49f59aa0f61c45706383808a3b379dc702b2129714f4d32cdc1fcd82b8c\", \"affinity\": [0], \"runs\": 240, \"input_shape\": [1, 4864], \"validation_max_lsb\": 1, \"p50_us\": 392.623, \"p95_us\": 447.3639499999999}\n",
+      "stderr": "Total errors: 0,  warnings: 0\n"
+    }
+  ],
+  "module_build_id_hex": "040000001400000003000000474e5500fe9d1845f77ba5d4880d83f73d7a04fd5ae9ae3f",
+  "hashes": {
+    "/lib/modules/6.6.89-cix/extra/aipu.ko": "1d7a4a955e5024cb0e17d56f19c21c322f82ac845c33afe6e63b51dbd799d5d6",
+    "/usr/src/aipu-5.11.0/armchina-npu/aipu_job_manager.c": "1841a5f691abeb6f89d16a264e4044701c33027b2a50e690d5809f8617a2a751",
+    "/usr/share/cix/lib/libnoe.so": "9021ff309a052c435a2d6905a2dd7c1f7603a29305e1b692949dc0b011f51aeb",
+    "/opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/libaipu_driver.so": "f17f9c1bfdf026419e0768ed10b623d20975902fa5df7340f86377f467e45e61"
+  }
+}

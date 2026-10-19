@@ -1,0 +1,1170 @@
+{
+  "date": "2026-10-19",
+  "policy": "Curated public evidence, not a byte-identical mirror of the private workspace. No model weights, SDK binaries, SSH helpers, keys or unrelated system inventories.",
+  "source_report_sha256": {
+    "GEMV_REPRODUCE.md": "cc594b7193e0245ce91ff8526b8318a4228bc730b01b337b81eb48b4f3bf44d9",
+    "GEMV_RESULTS_RU.md": "630af7196d6b06468866312d81698b197acf53f6cbd0d952665486a25141adc7",
+    "MIXED_BANDWIDTH_REPRODUCE.md": "ebb6c9775451b1f4da92accac06544031fce240218b4a4e3884ae219ec371eef",
+    "MIXED_BANDWIDTH_RESULTS_RU.md": "25af367b09d876a958c31d433921b061382dbf88ac16368efb7d0d65cc29ee21",
+    "MMHUB_SMMU_REPRODUCE.md": "ab7a841d433c9bf283d28da9810d781ea56759cbc1f3068cc1545ad8fe243336",
+    "MMHUB_SMMU_RESULTS_RU.md": "a2914690c5ec3a27a969b0aba9451955fc05c433209ba485b5b6c9f8e2be2404",
+    "NATIVE_API_REPRODUCE.md": "e2229f73406daa900803924d12beaee20b380e85d647b09d54a9a90c43718b21",
+    "NATIVE_API_RESULTS_RU.md": "f7e35db9f5204c83c904cf072e67cc6a907a7c14b9871365f5dba51062add2da",
+    "NI700_PMU_ACCESS_RESULTS_RU.md": "5bbe1406f1a98f391d26f860d5846d30ba6d0a18a081b16f24a86d55eeaa5ef5",
+    "NPU_BUS_TOPOLOGY_REPRODUCE.md": "5d3aa46d0a484faa4d7f67da4e12bdcf9af782f7c1f50da4eab2442cb43e52ca",
+    "NPU_BUS_TOPOLOGY_RESULTS_RU.md": "3880c676ca3afae42b95d868fd504e1879fba977564bfccd2ac1edafbb2b7518",
+    "NPU_DDR_BANDWIDTH_REVIEW_RU.md": "c189c07ef36331789a56cdee9cc6096c8526b380df4b5028a7df97a00e12dddb",
+    "NPU_LLM_PLAN_RU.md": "e8948909d4de8cb155139d200e27d7e961d836c3a864a65823d824946658ccb5",
+    "PERFORMANCE_REPRODUCE.md": "9cd6bb771bb3d1f9cc5276bf454cb13ba96eb1e969534cde2b87efef26fd487a",
+    "PERFORMANCE_RESULTS_RU.md": "c4facc48b68f640a574903d73791d7fd726be8d711a6df100e0a2f8d3eb4a00b",
+    "PROFILE_REPRODUCE.md": "aa524b6b788b341d3730bb891dd62f3767310cba65636030e6dc44d884ef5f07",
+    "PROFILE_RESULTS_RU.md": "f92b277c452001261401377f0f821c5615f6b02952a33fd2a80d4a97266ec0d4",
+    "QOS_RESULTS_RU.md": "ee73ec92317918dbb985b226812c50468c6af148930c42f541feb55ecd55cd8c",
+    "REVIEW_REPRODUCE.md": "e69ea14da37fbb12445402a74b78b7ebdefbc2bb515b244099ff2a5ecaa243c3",
+    "REVIEW_RESULTS_RU.md": "4edd79aabd749520e222533bb3bf4e1d6d8ce4697fdc189bc6a647a1e80e4194",
+    "SMMU_PMCG_REPRODUCE.md": "dcbe94aa026f13a8cfe8a178206f6461842b5dbcc2b87c84227fec6fc998d934",
+    "SMMU_PMCG_RESULTS_RU.md": "dec045bd26794aa36c3246f25a58f3f22857049993ab86eb541f5e231d218d12",
+    "SOFTWARE_LIMIT_REVIEW_RU.md": "bbabe437c088ef28766faefe6d9e6a3bc44e02c76795a344037602786d2c3ddb",
+    "STAGE1_REPRODUCE.md": "87e8f266d24b80d3906e28b1b53c6def768854eeec462a6b3df29a0782f7c27d",
+    "STAGE1_RESULTS_RU.md": "efd32b6e430dc0b12bcfc7f5055af156664ed0198f6388bc154df38679138831",
+    "STAGE2_REPRODUCE.md": "c915d02e774f7981d17c10f643469fc0ce2e039af664bf9f66d6036578fd8d27",
+    "STAGE2_RESULTS_RU.md": "c167f18a0d60f389a9a5b200c4205d09767464040714794bac2970a1e420740d"
+  },
+  "files": [
+    {
+      "source": "artifacts/stage1-evidence.json",
+      "source_sha256": "746a164ff35909b52b36d9d9f07b77691ee0e2822a1072ce16690fd5065cced6",
+      "published": "evidence/stage1-evidence.json",
+      "published_sha256": "dfceedb8c708982acc4d67b8c4426ac75410804f6f2845aeb4b3eba6226ec91a",
+      "omitted_top_level_fields": [
+        "kernel_log_tail"
+      ],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage1-precision.json",
+      "source_sha256": "5480334ee368215f28c547e224fa0e7c50e1f18a426697d54328700a5e3ac64f",
+      "published": "evidence/stage1-precision.json",
+      "published_sha256": "5480334ee368215f28c547e224fa0e7c50e1f18a426697d54328700a5e3ac64f",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage2-evidence.json",
+      "source_sha256": "44848050c44c9450a5050ec710902b71bfee12c35da5e0e48230f66eff725e6c",
+      "published": "evidence/stage2-evidence.json",
+      "published_sha256": "469b846f5f88f0e28aae162219637059dc8bf2228bf5a7a238e711112e987478",
+      "omitted_top_level_fields": [
+        "boot_id",
+        "services",
+        "npu_users",
+        "disk",
+        "memory",
+        "kernel",
+        "thermal_celsius",
+        "power"
+      ],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/review-summary.json",
+      "source_sha256": "8eab4ce42a9a55597265acc9f0c70ed7c9c089c71baa5ca2f262eb563978d5e4",
+      "published": "evidence/review-summary.json",
+      "published_sha256": "69133e04e5be61d7575edf77c536f879eefaed88ad73dd0cae2351d80a51d6da",
+      "omitted_top_level_fields": [
+        "audit"
+      ],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/review-graph-suite.json",
+      "source_sha256": "e6111c7a7d9391c5a54d2e8aef0a34338f1d7b7c41871a9943e30e3f6cd0ae44",
+      "published": "evidence/review-graph-suite.json",
+      "published_sha256": "5aa269e4d9cf5226228b81ac6101797ea72f2e328b9218361daee47f46259a99",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained; vendor-internal compiler build SSH URIs replaced with placeholders"
+    },
+    {
+      "source": "artifacts/review-matched-cpu.json",
+      "source_sha256": "ec29e90c519588ddac094322a78062b52a15765151f4ca84791d51f9241008f4",
+      "published": "evidence/review-matched-cpu.json",
+      "published_sha256": "aeb2e477978b82a7060a0547ce62acbfce3f7723c9ee72726c05e3ffcbb0754e",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained; unrelated conversion interpreter/source paths replaced with placeholders"
+    },
+    {
+      "source": "artifacts/native-summary.json",
+      "source_sha256": "949bad8e66f46b2bc7bd57b3f33bc13bd4412e32088e95e9b8787f6fa999cdc8",
+      "published": "evidence/native-summary.json",
+      "published_sha256": "dfc7a7c872ac1862883eb4882bef6de4d6b77c03c7db2578a17274a4f5324fde",
+      "omitted_top_level_fields": [
+        "audit"
+      ],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/review-weights.json",
+      "source_sha256": "0fe9750718025d011f6a13b71547f08d7ef82b9df5029262b52f608a1e6e63ec",
+      "published": "evidence/review-weights.json",
+      "published_sha256": "0fe9750718025d011f6a13b71547f08d7ef82b9df5029262b52f608a1e6e63ec",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/review-split-correctness.json",
+      "source_sha256": "a0f535ac73b178e98b3444a9af6c20121f7d6146ecf70b036980187b79d00b19",
+      "published": "evidence/review-split-correctness.json",
+      "published_sha256": "a0f535ac73b178e98b3444a9af6c20121f7d6146ecf70b036980187b79d00b19",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-summary.json",
+      "source_sha256": "f6d1674968116c34e190c933143018473b4f8adbae90b08082158f8ea39d3f7b",
+      "published": "evidence/profile-summary.json",
+      "published_sha256": "81cd593ea8ed38462ecb9db56398ceceab6b300eebe17c3fb00e958736c54a02",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-paired-host.json",
+      "source_sha256": "026d3854f187732224a68d60ad1b60ad2be3b7c416478665ab11166913a721dc",
+      "published": "evidence/profile-paired-host.json",
+      "published_sha256": "026d3854f187732224a68d60ad1b60ad2be3b7c416478665ab11166913a721dc",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-concat-fix.json",
+      "source_sha256": "49fe405ebd989af314ffb5411ed307494fd6539dd7a624f809fae6f7df849e30",
+      "published": "evidence/profile-concat-fix.json",
+      "published_sha256": "e96eb5800cba9b89b3822be3ebf832395f925a9a54317e8eb94e04477050ae82",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-final-state.json",
+      "source_sha256": "5df5feec348ac1ee71c80b2a07a20ca28b370070f239cef73637f985f7230d4b",
+      "published": "evidence/profile-final-state.json",
+      "published_sha256": "3865e0b3c13d6db4127ea343f10e14bfbfd6fb1f1a2c353d4910be6acc07f174",
+      "omitted_top_level_fields": [
+        "services",
+        "npu_users",
+        "disk",
+        "dmesg_tail",
+        "boot_id"
+      ],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-summary.json",
+      "source_sha256": "90b44ba20dc4c9a1a52fd1bf120531b9de2dcc0968ed3df54abca0012a4aee21",
+      "published": "evidence/gemv-profile-summary.json",
+      "published_sha256": "eac9850065f4442020b66e75fe773d7842e979225588b5f51d374c082740ca22",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-full-prefetch3-accuracy.json",
+      "source_sha256": "d2c33ddfc9afa2682e15995c640e1e9c07c971087952b64d146dc972a9d6dc95",
+      "published": "evidence/gemv-full-prefetch3-accuracy.json",
+      "published_sha256": "a93bf1ed9b86a56e7a9eee88a99d0761e89dbe89745b2459bf2410e8d904062f",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-stress.json",
+      "source_sha256": "21dde5a6bf764de95977b48e832677dd7f35debb815d7d85ce661b453eab145e",
+      "published": "evidence/gemv-stress.json",
+      "published_sha256": "ebf8ca9b89dea02faafa6dae1b2e13eb819476747d9b4826be361493c15ee851",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-summary.json",
+      "source_sha256": "adfcde3bfdf248028147eea37a2f6637957e75cf82b699e0175988f51d002cd5",
+      "published": "evidence/mixed-bandwidth-summary.json",
+      "published_sha256": "d5bed6032a8cd3185f99146f35bb3b407b3eb51db4a383c8f7f3130d45f9934e",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-summary.json",
+      "source_sha256": "b094a46e4fa6438872934e72fa7ddb2d19964592b3c955591ce3e4d6db61de45",
+      "published": "evidence/qos-summary.json",
+      "published_sha256": "71938dbf2e95204b0648590eb05238176dfb047bce85b81d5d267599ceb313d9",
+      "omitted_top_level_fields": [
+        "old_evidence_verified_unchanged"
+      ],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/bandwidth-review/analysis.json",
+      "source_sha256": "eee28f3b275cfa6d7f4abac1a4f9322062fa048a2eb7e8546b4a00dbf8ba2639",
+      "published": "evidence/bandwidth-review/analysis.json",
+      "published_sha256": "1972ebd25ba95abbaaa539c2fdb45936d943112776a90c0f10e9b42ea3b02c91",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/software-limit-audit/queue-analysis.json",
+      "source_sha256": "638e619969b9e0d7e7bd52e3f1866c661d3460ee4545c6830ec1451102fdf2a9",
+      "published": "evidence/software-limit-audit/queue-analysis.json",
+      "published_sha256": "0a52b549b1bc5db64d69a385b564c0ddfe85203c84c5020cc35c820f534b0ded",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mmhub-smmu/analysis.json",
+      "source_sha256": "76a26ad3491acf6e65f17220bee237da4e8a66abf50659655acc7c98eac12e9f",
+      "published": "evidence/mmhub-smmu/analysis.json",
+      "published_sha256": "c1699c14b5b1d068ca7ed148897f1e53c0738603a19f5327a718c8284627dbec",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/smmu-pmcg/analysis.json",
+      "source_sha256": "e96afbda4d65f1e0bade671151a2378da31dbff843cd54fc68797f52233f133d",
+      "published": "evidence/smmu-pmcg/analysis.json",
+      "published_sha256": "b88f68cc21207fa6cd8b9c5d28076973927b23f33112ead592e9a1b56abcb257",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/smmu-pmcg/profile-summary.json",
+      "source_sha256": "ac63b6889a32bac3c1340edae99202ba85857702aee180d58c3e97b232d8923a",
+      "published": "evidence/smmu-pmcg/profile-summary.json",
+      "published_sha256": "05dd1e796601a8bb3fba42e36872ccbb07f23983a4481e65e606ef0821a6b8a6",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/npu-bus-topology/analysis.json",
+      "source_sha256": "bf7006c9fcf389268b65621b03523032c1d94fcabfcdf07dfca4f85d540aa733",
+      "published": "evidence/npu-bus-topology/analysis.json",
+      "published_sha256": "3d31d94125aece06fa2c45c0224fe10cb7705bc32d0d2ff882ec7208bdf68bb6",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/ni700-pmu-access/analysis.json",
+      "source_sha256": "6e86c8e79178d835b05e9b2b7e9be999da7c93d003a0064dd430b3609b667f16",
+      "published": "evidence/ni700-pmu-access/analysis.json",
+      "published_sha256": "accc6542a95457f073a323c8c318b2b5c01b4c4be89063d37838a2efd6c7e9b6",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage1-diagnosis.log",
+      "source_sha256": "cc1c37f849f64fe50c30dcf144ee921f5634a3e39f36f5e6a18dfaf36c980399",
+      "published": "evidence/logs/stage1-diagnosis.log",
+      "published_sha256": "cc1c37f849f64fe50c30dcf144ee921f5634a3e39f36f5e6a18dfaf36c980399",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage1-suite.log",
+      "source_sha256": "33cd4f255b183fd6ef88449f29118cfaee0ab681e245ab057be3c18ae2ace194",
+      "published": "evidence/logs/stage1-suite.log",
+      "published_sha256": "33cd4f255b183fd6ef88449f29118cfaee0ab681e245ab057be3c18ae2ace194",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage1-patched-dynamic.log",
+      "source_sha256": "7ee8b4c01bebe687744ba718dbbca0c1807f033b577cddcee728a389477a818e",
+      "published": "evidence/logs/stage1-patched-dynamic.log",
+      "published_sha256": "7ee8b4c01bebe687744ba718dbbca0c1807f033b577cddcee728a389477a818e",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage2-ops.log",
+      "source_sha256": "e2f9bc02edf3b757e255c38aeb20cc810f983ccaf17f64bb1cf0e776f6f4b67a",
+      "published": "evidence/logs/stage2-ops.log",
+      "published_sha256": "e2f9bc02edf3b757e255c38aeb20cc810f983ccaf17f64bb1cf0e776f6f4b67a",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage2-cpu-controls.log",
+      "source_sha256": "642aba2f0d93d861e6dc2b3aba3547763425a541595f2810a868dde7dc10796b",
+      "published": "evidence/logs/stage2-cpu-controls.log",
+      "published_sha256": "642aba2f0d93d861e6dc2b3aba3547763425a541595f2810a868dde7dc10796b",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage2-remaining-ops.log",
+      "source_sha256": "277e656b0d959781c8d14f968abedc13e16664212716e19a46ad8b67d13ae76c",
+      "published": "evidence/logs/stage2-remaining-ops.log",
+      "published_sha256": "277e656b0d959781c8d14f968abedc13e16664212716e19a46ad8b67d13ae76c",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage2-rewrites.log",
+      "source_sha256": "95c316437d063141375cc5b78c8ed9d81b3270bd43fbabe523b9804e9f7a90a8",
+      "published": "evidence/logs/stage2-rewrites.log",
+      "published_sha256": "95c316437d063141375cc5b78c8ed9d81b3270bd43fbabe523b9804e9f7a90a8",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage2-rewrites2.log",
+      "source_sha256": "07c499cbda481816328bdb8b1eb9bf2414a311c7b57c4bdf71b60cec8249b435",
+      "published": "evidence/logs/stage2-rewrites2.log",
+      "published_sha256": "07c499cbda481816328bdb8b1eb9bf2414a311c7b57c4bdf71b60cec8249b435",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/stage2-silu-split.log",
+      "source_sha256": "af58983ad1a9385f974f652967fff33cb9d60a93d86928c6631e9bfc306e6db6",
+      "published": "evidence/logs/stage2-silu-split.log",
+      "published_sha256": "af58983ad1a9385f974f652967fff33cb9d60a93d86928c6631e9bfc306e6db6",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-comparison.log",
+      "source_sha256": "948bf08438997fe4f9f291f7efbccd53ad45270dfdeeaa5e7eba62c2656ee244",
+      "published": "evidence/logs/gemv-comparison.log",
+      "published_sha256": "948bf08438997fe4f9f291f7efbccd53ad45270dfdeeaa5e7eba62c2656ee244",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-comparison.log.stderr",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published": "evidence/logs/gemv-comparison.log.stderr",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/gate-up-m1-run0.json",
+      "source_sha256": "606586b5e33092d80d34938008c3f1eba5f66e9c7b4694b927df7d1a7b8bae60",
+      "published": "evidence/profile-decoded/gate-up-m1-run0.json",
+      "published_sha256": "38de000aeceb8f0fabb0c1e72b44561b5eac3edb751e54f0c210baadfd99b828",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/gate-up-m1-run1.json",
+      "source_sha256": "5b4663adae3ed5fe8aa7d2dc5eb57ffa1615592326adf3bde0fef68504913f0a",
+      "published": "evidence/profile-decoded/gate-up-m1-run1.json",
+      "published_sha256": "523a37c11996a73eeae609b63d77f37c2ff975094788cac06694991e1c3c75de",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/gate-up-m1-run2.json",
+      "source_sha256": "06459da55aab9ea0ff874d619101c6918892bb911383163cbd4a3adc5f9d2200",
+      "published": "evidence/profile-decoded/gate-up-m1-run2.json",
+      "published_sha256": "0279efc75ca8667e4e91498cf315ca94c8659dae883818225444efa67c4f046d",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/gate-up-m1-run3.json",
+      "source_sha256": "f14a00c91f2a5b3b91a5107612bb6154aec9195773352266f2f10075b04ecdbb",
+      "published": "evidence/profile-decoded/gate-up-m1-run3.json",
+      "published_sha256": "9393d741eb2c9cd843f26ed1e24b4095ea6415bca5b18d087e980591c823ba4e",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/gate-up-m1-run4.json",
+      "source_sha256": "47de7eaef02c0779066ed4769dc5bf8785e9df7115c1d56726da20a441e59a22",
+      "published": "evidence/profile-decoded/gate-up-m1-run4.json",
+      "published_sha256": "b03de5ca2399bdac8fd47472574bf569434983e23547e1a2d9dbb9ee1ba3fe30",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g0-run0.json",
+      "source_sha256": "92ae2b82de1662a899d79421182d23a3547614ea6b91c346b12cd06a04fe6d42",
+      "published": "evidence/profile-decoded/m1-g0-run0.json",
+      "published_sha256": "9aa2b7817c805a5cb3f19a26e9c82de80b0bf9ab3d59b5a974dc0cf6d775fa13",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g0-run1.json",
+      "source_sha256": "7d693f682691a93b429cf1e53290532df9f7a276ec3bd3ff0d87e2e9464fb3db",
+      "published": "evidence/profile-decoded/m1-g0-run1.json",
+      "published_sha256": "58c40eaef9497505b3b92f5019c627cf4fed8fdfe05ed81bfee68bcd591be9b2",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g0-run2.json",
+      "source_sha256": "ee5a7fae1a6596123a80313fbd49e9eb2045f713adb3a9af4e10057f989a72cb",
+      "published": "evidence/profile-decoded/m1-g0-run2.json",
+      "published_sha256": "74efc12d6a1d39c59e411dd7d1534a10e148ad63df0d3ac58a9b621127c234f8",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g0-run3.json",
+      "source_sha256": "62d0c72c97beb6dead2c1795122deeff3adb3db48bab6e6e1ec7d96ad511ffb9",
+      "published": "evidence/profile-decoded/m1-g0-run3.json",
+      "published_sha256": "c4da17ab45ba18478697bc9f8e7c8389de887da6b5a16e9c489bc1f98de94947",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g0-run4.json",
+      "source_sha256": "6c5ca0fa1234880ecf80b44eb1341872541032033e60d1d16d5087951df78c0e",
+      "published": "evidence/profile-decoded/m1-g0-run4.json",
+      "published_sha256": "0e185cb605a551e9e11209a3114f5f7af500d4dcbd63af34046c1958f5366937",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g1-run0.json",
+      "source_sha256": "fa17b3b476675cea67b1bbb105f0bfc3f6f59aad658e4237f759e8a5a2e7de08",
+      "published": "evidence/profile-decoded/m1-g1-run0.json",
+      "published_sha256": "36d34b934572dc0df627ae05eee908d6e615d61149ef3835e8d808e3124603d1",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g1-run1.json",
+      "source_sha256": "c1d67cdb7efe1035a074f912a5222b0b69105f43aea3a873fc8f1a49ce455b46",
+      "published": "evidence/profile-decoded/m1-g1-run1.json",
+      "published_sha256": "2733a8adfb027bc7b585442e9939a5d0c154afc2e1d1532088eeae176bfd8600",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g1-run2.json",
+      "source_sha256": "ee2f2aada6f136f1e56c1ac42ed7a905c05f80ed55f0a87bc8414cd1be75e76a",
+      "published": "evidence/profile-decoded/m1-g1-run2.json",
+      "published_sha256": "40cb5684454ba60073dd34238c3f6b85aef6e3878382db97d93473e9e9ab674d",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g1-run3.json",
+      "source_sha256": "2c075c5b3b4738fef97563b91fe481316f07a2dd75bfea0e491807a0968a64a0",
+      "published": "evidence/profile-decoded/m1-g1-run3.json",
+      "published_sha256": "15c91629860b1c14c0ce3b997fd2d2b9bc36e44e8ebf2caac423d3e0cbc8ba6a",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g1-run4.json",
+      "source_sha256": "1d8a321ac59afa43b6330abe19faf35f576fc7deec66b5ae87fb95192081a192",
+      "published": "evidence/profile-decoded/m1-g1-run4.json",
+      "published_sha256": "0b5b6c1e002f1dee310202d1522e36b768f53ed49ebe498cf6db519580e5ddf4",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g3-run0.json",
+      "source_sha256": "b2984609d2af43aefe203ac0c525aa8d2d989659d7cbd762995cd22809cf0f24",
+      "published": "evidence/profile-decoded/m1-g3-run0.json",
+      "published_sha256": "78dfc5c8855ee76c70c8d0433cd875ece896a1e3e8570b5b5b8ac3c68991ac99",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g3-run1.json",
+      "source_sha256": "d766d8bd1777fba6ae4da95b8c751e8e9a6dbe6c569e463c36dc797b17563387",
+      "published": "evidence/profile-decoded/m1-g3-run1.json",
+      "published_sha256": "4d6fab9fc4a56831ac3c8436efca8bad3507e80fac51b899695679c059c3a57b",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g3-run2.json",
+      "source_sha256": "90de3ba1c1dabd3a674fe2212fb9546de6e2a17b4a3052a0b5ab54b5915de6fd",
+      "published": "evidence/profile-decoded/m1-g3-run2.json",
+      "published_sha256": "4e020a39bb27fa2176d5970750ab15755b482cb490c87a041db82e40e6d90f7c",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g3-run3.json",
+      "source_sha256": "6a0159eabcd825d67059100f1785fa134dc3e66a138305d1e3f536c5ac849013",
+      "published": "evidence/profile-decoded/m1-g3-run3.json",
+      "published_sha256": "91f67d125734ea547a09916a3de229664b3099e42548623cde19aaa94135bcfa",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m1-g3-run4.json",
+      "source_sha256": "e6d3c6609f2aa324983b1094c0a07973061733a6702c577118c0541845e13ef8",
+      "published": "evidence/profile-decoded/m1-g3-run4.json",
+      "published_sha256": "27d12ff2675cd960ac394a6192af7170f0ee06655a536a2bb850f2aca93f23ed",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m64-g2-run0.json",
+      "source_sha256": "54c7c7cb3a5da5d8a2eb5bb02d2a4ea408dafb6b86ea1a7fbde52d3010dc2fe9",
+      "published": "evidence/profile-decoded/m64-g2-run0.json",
+      "published_sha256": "71a6882a5f5994568c442ac5d4d197a6879af538fe85e551f9385bf153989719",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m64-g2-run1.json",
+      "source_sha256": "dd602034659d2eb4d0d3c5d948122138e6b71f70446788fe32dba9c85eb5393b",
+      "published": "evidence/profile-decoded/m64-g2-run1.json",
+      "published_sha256": "d1b0e4fdacc0d42bfe202f6cb6727407d25cea1c560f70edb3c3bc385f4322fe",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m64-g2-run2.json",
+      "source_sha256": "7e86743e009ad41e8ad9368137179f6c69da86ce1d894c37867a59f31dcf359a",
+      "published": "evidence/profile-decoded/m64-g2-run2.json",
+      "published_sha256": "5dee35ad447b920dea2eca7ee478d0ecec186f57379ce94be6b839110847cd19",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m64-g2-run3.json",
+      "source_sha256": "9e45102893023d3041f8fa7e4891fddc8a47bb007e108febff8f61226d481e07",
+      "published": "evidence/profile-decoded/m64-g2-run3.json",
+      "published_sha256": "8709c97f77abd5144f1800957aae2f96c78f456b84632204e51dbf4db9aa635f",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/m64-g2-run4.json",
+      "source_sha256": "14b1aa02631821d93df1e8c004e3efedd775c64bb8e20608d70d29893a4304f4",
+      "published": "evidence/profile-decoded/m64-g2-run4.json",
+      "published_sha256": "4a83143b2c7dce5dba96755dfeca4097b0b171f16a3cc36d01bc37ad5a697663",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/manifest.json",
+      "source_sha256": "bd358a9d9a971ba44c9b54c2947d1848fe9cb67b15f944fac1b9c021f92d23c7",
+      "published": "evidence/profile-decoded/manifest.json",
+      "published_sha256": "697a366036fe30cabf0c250eeb618508c9c43b74f87e8f54778bf51c2909f02e",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/split-no-concat-profile-run0.json",
+      "source_sha256": "20cce8a9434a4e25924b245079e5e4401dc4b8eaae1aa86e6b7584317939429e",
+      "published": "evidence/profile-decoded/split-no-concat-profile-run0.json",
+      "published_sha256": "f5aee51d53fa28182fe49f07712fae52e6e974215d2879f5d11cc79b20e48340",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/split-no-concat-profile-run1.json",
+      "source_sha256": "1f9488a70d18afd5d996ea8b08005dba6707a84ff83baa29a4ea1b8cb93e18a7",
+      "published": "evidence/profile-decoded/split-no-concat-profile-run1.json",
+      "published_sha256": "1a6a0ec9f3f558b39abb1e9be23fa936354a7dcc9281b106d68d33652e6545f1",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/split-no-concat-profile-run2.json",
+      "source_sha256": "f0d938c2df5d7d6fbe2878638e63e67bc0cff09da5308b59e68ef5a8477b9f18",
+      "published": "evidence/profile-decoded/split-no-concat-profile-run2.json",
+      "published_sha256": "5ef1c8835a0fba29da75c7c916b12329b81285fde1aa43cf285e3bdc318699e0",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/split-no-concat-profile-run3.json",
+      "source_sha256": "b67068abf7bce4eb13d26ac3bd230e398977a19139133c4cb4401841bb336fa6",
+      "published": "evidence/profile-decoded/split-no-concat-profile-run3.json",
+      "published_sha256": "fe35c72865d2c9de38e6141aad2d2a96eadcb86ecf89c6a49052443aae4d6d17",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/profile-decoded/split-no-concat-profile-run4.json",
+      "source_sha256": "49891ea4b7086878e5b815b78f3fd4a09eaecd5bfa88dc2c383c8bf3cb921612",
+      "published": "evidence/profile-decoded/split-no-concat-profile-run4.json",
+      "published_sha256": "8fe9ae9ee573b9a686e5d69ef6c7d69720f7d8b0af080a1cd1a38ddbbace8c47",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch-run0.json",
+      "source_sha256": "5479a23b421802a4dafc995889e5e74c6838f8810f9c7b911ed6a7c73a65a683",
+      "published": "evidence/gemv-profile-decoded/full-prefetch-run0.json",
+      "published_sha256": "2599a19091f9657b825380b8ae49c417f4d7de4f165a5869ec9d45b4174b3f4f",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch-run1.json",
+      "source_sha256": "01bfe3b958d238ee081ea1db594c362868e6703592649f7052b04d392bbb7050",
+      "published": "evidence/gemv-profile-decoded/full-prefetch-run1.json",
+      "published_sha256": "c894d06e9d9e50f6000b5792273276034c74237886285b30634d41af907b8ce3",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch-run2.json",
+      "source_sha256": "0ebdcb832e7480570b6a8e3252c666e400442726037edf9f6cb82a580664ae01",
+      "published": "evidence/gemv-profile-decoded/full-prefetch-run2.json",
+      "published_sha256": "395d1102213f2a39ad24d653d091d4d5b8dab8d8c698e8367334ed4d544af27b",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch-run3.json",
+      "source_sha256": "0c3fe34adb45ee21f845c6525410eb62b750e95f29750779c8bbc417cb71fed2",
+      "published": "evidence/gemv-profile-decoded/full-prefetch-run3.json",
+      "published_sha256": "84788fa0925f9b2323ecc5188cd89ba1723c1fcc939cb6285868820e0a4a299e",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch-run4.json",
+      "source_sha256": "f73ff5f4d731fa62b27076a590fe9882b12f1cf48d9cd778afc313750f2b84e9",
+      "published": "evidence/gemv-profile-decoded/full-prefetch-run4.json",
+      "published_sha256": "3a8873261a78a4c76fa1d4986f482fbfb9612d64e5d70556981b9080d1b14d64",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch3-run0.json",
+      "source_sha256": "7a2ceb51c7c0dd609f4ca0a182dea86bebfbe50c043bdbfe41661be8e44a43e6",
+      "published": "evidence/gemv-profile-decoded/full-prefetch3-run0.json",
+      "published_sha256": "b22e77c70f69f1d44590eeb9b80f7f84a90d1ab01e6b26cefc021ba9a5faa3a2",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch3-run1.json",
+      "source_sha256": "308ee57349698549acd90de3fbee0c0b799eacb4817bb00fbd3bcc4529f4f89f",
+      "published": "evidence/gemv-profile-decoded/full-prefetch3-run1.json",
+      "published_sha256": "286a42ac316fe718b03fdd1c047a41a13afb611b3996b22ca3a3c8f950620d3a",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch3-run2.json",
+      "source_sha256": "39686ef84702f6ecb62c996746d681b3edb6b2e2ab477acc03b0dd55c2bd64cd",
+      "published": "evidence/gemv-profile-decoded/full-prefetch3-run2.json",
+      "published_sha256": "a235307ebfe5061ba77fa39ef5df85874f8f3c0916a447ad3cbb8aa6012924fd",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch3-run3.json",
+      "source_sha256": "4d46fc5311403e806599c84371fcf405d0d107e565d57e19ba967dc23fd96a3c",
+      "published": "evidence/gemv-profile-decoded/full-prefetch3-run3.json",
+      "published_sha256": "6eda8278555a7279b09d878a5bb7bdd2d41dd6743bd95b69721052507715c246",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/gemv-profile-decoded/full-prefetch3-run4.json",
+      "source_sha256": "68c7c5d51116fc3731dd52da8e591035a48023065f5e5edd7cf0622f3fb7fd80",
+      "published": "evidence/gemv-profile-decoded/full-prefetch3-run4.json",
+      "published_sha256": "a55092700aa3ecae4304841c4ad74703732d5324f6dba108a200ce3f4ca9e6c7",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/dma-run0.json",
+      "source_sha256": "f2934868022bb5c23fed019b1b4a34ccfc90255e4e791152936de07f96ae6fcd",
+      "published": "evidence/mixed-bandwidth-decoded/dma-run0.json",
+      "published_sha256": "d96405164192a5625bc9eca8c63694adcedc18490c13026742e38c3dccc6a109",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/dma-run1.json",
+      "source_sha256": "27314a0e0eebda9d0194d4dc76b7273e9cd3ec37228f7157212783ad9b30de6f",
+      "published": "evidence/mixed-bandwidth-decoded/dma-run1.json",
+      "published_sha256": "fad1dece206ac8d2821dfbb60d990c2f4e70452ea79d4bae7c3127d6fbe101be",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/dma-run2.json",
+      "source_sha256": "064cdd4e8099e5a6d96223af0bcb0e4da15ec7669ef5fcaddcc174ed71ada12f",
+      "published": "evidence/mixed-bandwidth-decoded/dma-run2.json",
+      "published_sha256": "80007e196fdbe42e08329d6ee708ab3cae523e8ad775b3a7392e68eb3dcc818d",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/dma-run3.json",
+      "source_sha256": "0aef16594ec4e7a3c4c8d9d0ac01ab072f6722484e2f205c5534a97456154f19",
+      "published": "evidence/mixed-bandwidth-decoded/dma-run3.json",
+      "published_sha256": "25e6b0b2069d8a982a2ecdceb4b0c85622ea9c62591ff7c48c7d01910d8fecb7",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/dma-run4.json",
+      "source_sha256": "4e93e50887c9f4e0b5be75a6e09179efcc13797dd852631604d50c48f9d9be4e",
+      "published": "evidence/mixed-bandwidth-decoded/dma-run4.json",
+      "published_sha256": "88713f5d3a7d40cdbe5ef052eb7850cfecb476297b51523a053de4675b7153dd",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/mixed-detailed-run0.json",
+      "source_sha256": "7c3bc3a2abadd754e9d4d161bbdc3ee0d0036b216701cfc1a1625a63f27302c1",
+      "published": "evidence/mixed-bandwidth-decoded/mixed-detailed-run0.json",
+      "published_sha256": "35aced87a25f40c0c688504ec1a7857af1718163dd4418837b0f491eb7e9f5ef",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/mixed-run0.json",
+      "source_sha256": "26034cc06fa854a96e0812fee63f01ea533235e0a9b39ea25240507d3f2d6291",
+      "published": "evidence/mixed-bandwidth-decoded/mixed-run0.json",
+      "published_sha256": "5ea370c2bbe8bb3339f57ebcb09a71f5a6674e8f21c89f8e19154d28750dfaa2",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/mixed-run1.json",
+      "source_sha256": "bc38c370924d38f598ee820a11c6455b7b867513c6f90dbcc9ec77688468aa5b",
+      "published": "evidence/mixed-bandwidth-decoded/mixed-run1.json",
+      "published_sha256": "bfdb55fd7ef8b2f76f741d6e5f2e7959565e1e0661af4379413039c53b37b4fd",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/mixed-run2.json",
+      "source_sha256": "6d4d6c233e988ab2e180de366081c098e9570fbd685c80d99e898fe535d908f2",
+      "published": "evidence/mixed-bandwidth-decoded/mixed-run2.json",
+      "published_sha256": "d5d25a5d08d551be24eabe94b475a8c07320f1e9ba75260d3f0da1d3b2c35e3a",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/mixed-run3.json",
+      "source_sha256": "7ba23c28addae04d0d03040baf4f21fe4bd4b2f5442ed1713ac9464d36859dac",
+      "published": "evidence/mixed-bandwidth-decoded/mixed-run3.json",
+      "published_sha256": "13024cd216a93c8071d302dc9a18461f53214861826831d3d16330b1caf90cb5",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/mixed-run4.json",
+      "source_sha256": "8e332fa4398437d321240ffb89ce7b4e72d92620f1856fb9305e16a5f41ccad8",
+      "published": "evidence/mixed-bandwidth-decoded/mixed-run4.json",
+      "published_sha256": "1edc477fc892121f49f18def3b4a3e8c852a3c716941d5731e3697ab31ff65b7",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/mixed-bandwidth-decoded/mixed-ticks-run0.json",
+      "source_sha256": "26dfc8e8b347bb563b15538ce0e4cdbeb22ee544ea89504eddab4ab52a08e4d1",
+      "published": "evidence/mixed-bandwidth-decoded/mixed-ticks-run0.json",
+      "published_sha256": "bbe466a06dd9265d4ddc00491e5875ad432170cb847694abbee8caa7684e24d0",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run00-q0.json",
+      "source_sha256": "f12589a7c7e93c15f52b92d9fe608a72900b59bccfe55ba0b4fb485f280153d6",
+      "published": "evidence/qos-decoded/run00-q0.json",
+      "published_sha256": "b6c94de2a5bea4e919978b11fda8c7a426679b4bff0403201129c22c847e2b0c",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run01-q1.json",
+      "source_sha256": "c0742765b7a3ed21252c437149a4e5b90891f4abe4e6e6580c9cdf410be650b5",
+      "published": "evidence/qos-decoded/run01-q1.json",
+      "published_sha256": "c6bb2308bf7a8ebdc15680062101be0f06f6894e75a590b5d556ef97f72d249d",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run02-q1.json",
+      "source_sha256": "36a0231ba826de8fa715eef20c19cf83e34db307a252a6a99fc405fdd5b8c461",
+      "published": "evidence/qos-decoded/run02-q1.json",
+      "published_sha256": "efa453228787b4809262490c373b4cb87eb7f188198a0d30ffa92428d7601ec4",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run03-q0.json",
+      "source_sha256": "d99cf87068a6442a46ec11b9e11a25f84341d841b049fede82be56fc80124961",
+      "published": "evidence/qos-decoded/run03-q0.json",
+      "published_sha256": "65e7e9f615f263224fe8757e3ca51bae23148ccc484b9ac8531c909165bf802f",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run04-q0.json",
+      "source_sha256": "d388c8f89d69c5e4deee4e5299e9bda4e29d69980615c2e821e850b4b7e0c9c6",
+      "published": "evidence/qos-decoded/run04-q0.json",
+      "published_sha256": "2fa4e59b29cc7132ad95fcdc636a6b006a1b2802b393b403df7c28d2d719451e",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run05-q1.json",
+      "source_sha256": "3b008469317eb0ba7b238e8fba5923d9c9dd63085da5b0d683c647f45adf8696",
+      "published": "evidence/qos-decoded/run05-q1.json",
+      "published_sha256": "66cbdc9eed9c2b83b4adc5585ff001a0103f41c66a228d7559a10795d9f36ed7",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run06-q1.json",
+      "source_sha256": "eb3eec3eace0577f1d3f800de52c103f196cafd05ef52d342c1d66797174e06a",
+      "published": "evidence/qos-decoded/run06-q1.json",
+      "published_sha256": "506eded88dfec22e8f19fc6d0f544e2f0d9f97033481623df0fb39b8ddae6fb3",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run07-q0.json",
+      "source_sha256": "aa9b993a22ae176ea92021cf7d0c87bacf9b8dd3ce0b3ed6f09b254233698e1e",
+      "published": "evidence/qos-decoded/run07-q0.json",
+      "published_sha256": "3fedbec2b0e9adc5b83eb7cf8e1af690aa1e59df82c0bcda85a5bc1fc4bfcc7b",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run08-q0.json",
+      "source_sha256": "3fca963b003759c7273dab4d02903d97dbd7ecac5ee6fc1841056e242ca94563",
+      "published": "evidence/qos-decoded/run08-q0.json",
+      "published_sha256": "dea98038f4cf138002bea9a6861f4b859bad6e6112f3149fdb6a7455ba4b7059",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run09-q1.json",
+      "source_sha256": "3359ab406c748fff829730b0bf4e1faa441414b27a1de279a9e0dc1dcdd76ad5",
+      "published": "evidence/qos-decoded/run09-q1.json",
+      "published_sha256": "aee43fb807887a17cf4925d4007620b7eadc85f376b2150156d0a8e26e04e65f",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run10-q1.json",
+      "source_sha256": "02f61b0c2aec273b3229ce61f77243935b1e22fe6019b32eab74b9982577ad67",
+      "published": "evidence/qos-decoded/run10-q1.json",
+      "published_sha256": "7ff139fb9d313800325aa40c657ce2799d6544cacfd4dcfc8c7efe9af2846ee6",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run11-q0.json",
+      "source_sha256": "67b6e45cb874fe357f92866202cf9dba701e6eb0b9685174c661c716eab20134",
+      "published": "evidence/qos-decoded/run11-q0.json",
+      "published_sha256": "4880d753f27617be9b18d9101a08485cbdfa01ca60f27d6cf78639ed399f4144",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run12-q0.json",
+      "source_sha256": "12a47768d0b16310b878382ba06ee9b838b9d08e611e26ecf2b4d57110d8269a",
+      "published": "evidence/qos-decoded/run12-q0.json",
+      "published_sha256": "718d7687f9bdeddf236671f1e26fc8ba898b541797eeeaf1896e559818eddb77",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run13-q1.json",
+      "source_sha256": "180ee91c016a5fe386bbc9952704472be3826882403b3c543f2190c62ac9aef7",
+      "published": "evidence/qos-decoded/run13-q1.json",
+      "published_sha256": "145cc3bc53c0e625454ec2e76b4dfb6d87344085137a46fb889af2b58ffec18a",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run14-q1.json",
+      "source_sha256": "3a9f692d1cf6844d10b74cb296c533afd3f69e41c884bc9bdc09fd0bcdf0b09e",
+      "published": "evidence/qos-decoded/run14-q1.json",
+      "published_sha256": "86fb88057de1114b61bb619b30f1285d08bb65b6d0ed65eaa07b80aad810af22",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run15-q0.json",
+      "source_sha256": "cfc9bae1973b626ac53a1dc6315e9c338a6a718523f4e2113cc1f97f1467d392",
+      "published": "evidence/qos-decoded/run15-q0.json",
+      "published_sha256": "35a20668317ad4521ce2aeec8089e61407f7607678f16a591c2f1eff54172d3f",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run16-q0.json",
+      "source_sha256": "98f008d7eff0ae162f81a3509149c62177557227fefb9bb8f07c8324f16b355d",
+      "published": "evidence/qos-decoded/run16-q0.json",
+      "published_sha256": "3ea2e54474ccb662b270ca0c56842daa742dc982ef049463934bbaa2b306a44a",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run17-q1.json",
+      "source_sha256": "458bcea35efbc66937648b36b3097e05e1242da297274b6ba74a70be43786b7f",
+      "published": "evidence/qos-decoded/run17-q1.json",
+      "published_sha256": "22315be3b846f192af81a04c6b60b4c13c383d4ba4ff8cb7ca42fa9197a54215",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run18-q1.json",
+      "source_sha256": "b5f9c268691958e6de53db817c72fa321484f8b6acdf22ffe5aa306eb7babcee",
+      "published": "evidence/qos-decoded/run18-q1.json",
+      "published_sha256": "24f478659365606b1dd42fdf49e34c7e1dbc86e13ac0f6320fe5cd16d094b58d",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "artifacts/qos-decoded/run19-q0.json",
+      "source_sha256": "fd53720d3c62367b6a8217b52cd735f0915714980d06c31b50bef835d86ede1a",
+      "published": "evidence/qos-decoded/run19-q0.json",
+      "published_sha256": "8b2a3a13169e18e56deeeb0e93057141a085052ea284fe2af853dee00bc51962",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/stage1_runner.py",
+      "source_sha256": "b90a0515e179b4e46656191ad206c1acf13a10378e0c3964d765dc4140ffbaef",
+      "published": "experiments/operators/stage1_runner.py",
+      "published_sha256": "5d64395ea56a2c7aedef3ee13f65b45919345ec66dded4c38ed5d55bc5791f8d",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained; experiment output root optionally set by OPI6_EXPERIMENT_ROOT"
+    },
+    {
+      "source": "scripts/stage1_precision.py",
+      "source_sha256": "279ec01215f2c3a7a9a52adfd9f801ac9c34e0abd0abf9482c9321cdea14da91",
+      "published": "experiments/operators/stage1_precision.py",
+      "published_sha256": "279ec01215f2c3a7a9a52adfd9f801ac9c34e0abd0abf9482c9321cdea14da91",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/stage2_ops.py",
+      "source_sha256": "cfbfe9e7e41646bc794c2b7f0aed218e83c65825b39082f54e42a0042d01735e",
+      "published": "experiments/operators/stage2_ops.py",
+      "published_sha256": "b7605ec84a5b122721c425a9979f77a8f53d8d4835b72fc4372f16921a153037",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained; experiment output root optionally set by OPI6_EXPERIMENT_ROOT"
+    },
+    {
+      "source": "scripts/stage2_silu_split.py",
+      "source_sha256": "e6da7a08de8ddee0420fef15af2cdf9531411b82cd8c7236290a22c91a7f4be8",
+      "published": "experiments/operators/stage2_silu_split.py",
+      "published_sha256": "e6da7a08de8ddee0420fef15af2cdf9531411b82cd8c7236290a22c91a7f4be8",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/stage2_block.py",
+      "source_sha256": "a40fbcc3c18eb81e672855b3bfe86e28a4ab7e57772b14ca843bd72d27e29daa",
+      "published": "experiments/operators/stage2_block.py",
+      "published_sha256": "a40fbcc3c18eb81e672855b3bfe86e28a4ab7e57772b14ca843bd72d27e29daa",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/stage2_reference.py",
+      "source_sha256": "9c646638debc2738034bc57583cf88e3b095056e1ce6127f125728f13ccba5c6",
+      "published": "experiments/operators/stage2_reference.py",
+      "published_sha256": "9c646638debc2738034bc57583cf88e3b095056e1ce6127f125728f13ccba5c6",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/native_runner.cpp",
+      "source_sha256": "8b2fedc9ce7cc8592ef7f50854cde6fa1e5f1a1a7d50ea591fcf7a5b6e3cd350",
+      "published": "experiments/runtime/native_runner.cpp",
+      "published_sha256": "8b2fedc9ce7cc8592ef7f50854cde6fa1e5f1a1a7d50ea591fcf7a5b6e3cd350",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/gemv_native.cpp",
+      "source_sha256": "77bed6e9eeb9c23229848f642af9521a8b229b24e14d0717c924cd8f798df295",
+      "published": "experiments/runtime/gemv_native.cpp",
+      "published_sha256": "77bed6e9eeb9c23229848f642af9521a8b229b24e14d0717c924cd8f798df295",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/profile_capture.cpp",
+      "source_sha256": "bc718f436577cf0c8011a8b031792340ef7940ea9963d13f125162871cdde265",
+      "published": "experiments/runtime/profile_capture.cpp",
+      "published_sha256": "bc718f436577cf0c8011a8b031792340ef7940ea9963d13f125162871cdde265",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/qos_capture.cpp",
+      "source_sha256": "6b97d576837a83b8310a6ae348d8e4d4728c284537c905b3cbc9a51fbe87d07e",
+      "published": "experiments/runtime/qos_capture.cpp",
+      "published_sha256": "6b97d576837a83b8310a6ae348d8e4d4728c284537c905b3cbc9a51fbe87d07e",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/qos_ioctl_observer.cpp",
+      "source_sha256": "50c09235200d3b2dc596f501a445edcf86365152b48f9bfcbba6888096d68578",
+      "published": "experiments/runtime/qos_ioctl_observer.cpp",
+      "published_sha256": "50c09235200d3b2dc596f501a445edcf86365152b48f9bfcbba6888096d68578",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/gemv_dma.cl",
+      "source_sha256": "7b33f5327ed7ab8fc31f7b9e07aef7f8f61b5a38e4a3264f78223117f8056748",
+      "published": "experiments/gemv/gemv_dma.cl",
+      "published_sha256": "7b33f5327ed7ab8fc31f7b9e07aef7f8f61b5a38e4a3264f78223117f8056748",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/gemv_prefetch.cl",
+      "source_sha256": "1e68ec72ad81dd70bd21d8d586e5ad9604684421f810e8ff67f4093f3a77ead4",
+      "published": "experiments/gemv/gemv_prefetch.cl",
+      "published_sha256": "1e68ec72ad81dd70bd21d8d586e5ad9604684421f810e8ff67f4093f3a77ead4",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/aipubt_gemv.py",
+      "source_sha256": "cd9647b5d90d8865bdbb2d4f9bb125789329cfef1830fb4524f7d9b192ac31bf",
+      "published": "experiments/gemv/aipubt_gemv.py",
+      "published_sha256": "cd9647b5d90d8865bdbb2d4f9bb125789329cfef1830fb4524f7d9b192ac31bf",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/bandwidth_dma.cl",
+      "source_sha256": "b801a104785426414db224cd6323ee7e5bc9f20619959a299b2345a4155716f6",
+      "published": "experiments/gemv/bandwidth_dma.cl",
+      "published_sha256": "b801a104785426414db224cd6323ee7e5bc9f20619959a299b2345a4155716f6",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/aipubt_bandwidth.py",
+      "source_sha256": "10b77793ea3a40585c033e80ebf5590f10e38aba5f9d5e082fa7cd133d76d59a",
+      "published": "experiments/gemv/aipubt_bandwidth.py",
+      "published_sha256": "10b77793ea3a40585c033e80ebf5590f10e38aba5f9d5e082fa7cd133d76d59a",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/gemv_build.py",
+      "source_sha256": "78122ca053d44b89c1374ca11c98e3d602d550d38e7b5074879b5d8a5f23cfa0",
+      "published": "experiments/gemv/gemv_build.py",
+      "published_sha256": "6cde58caf012e44cfe6bb4a9671d47ec38b40b4398834257f0138a06490e80b8",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/gemv_match_cases.py",
+      "source_sha256": "385b32aa2660717e5ae0c34872a58a4db4ba5382d1db0490ede8b087666ded20",
+      "published": "experiments/gemv/gemv_match_cases.py",
+      "published_sha256": "385b32aa2660717e5ae0c34872a58a4db4ba5382d1db0490ede8b087666ded20",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/gemv_profile_build.py",
+      "source_sha256": "bbbafdc96587638e41150eb90400c247cdcf9515ece609d9d0c9e419a6f71f1b",
+      "published": "experiments/gemv/gemv_profile_build.py",
+      "published_sha256": "b6fb4348164d4adddf4cad1ac5f54103e032e410b7c1838de075d2df1f4dea69",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/gemv_profile_decode.py",
+      "source_sha256": "a90f8a80e2be34045d218bacaa3545891180cdb1269bbbca656b428d7bef76be",
+      "published": "experiments/gemv/gemv_profile_decode.py",
+      "published_sha256": "a90f8a80e2be34045d218bacaa3545891180cdb1269bbbca656b428d7bef76be",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/profile_fix_concat.py",
+      "source_sha256": "b92555d17b27b38df818e1354d9f69ea572c929d71504e112885121bb844e196",
+      "published": "experiments/graph-rewrite/profile_fix_concat.py",
+      "published_sha256": "b92555d17b27b38df818e1354d9f69ea572c929d71504e112885121bb844e196",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/review_split_projection.py",
+      "source_sha256": "cfa9f5b2b170ceb37c80df90952cfff210aaf708451688b91704f112c3f64fa6",
+      "published": "experiments/graph-rewrite/review_split_projection.py",
+      "published_sha256": "cfa9f5b2b170ceb37c80df90952cfff210aaf708451688b91704f112c3f64fa6",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/profile_split_no_concat.py",
+      "source_sha256": "1acd418edb231fc39c8aa6b1a4e6f10114904f91a9b5da91afa0a0a072d78dbf",
+      "published": "experiments/graph-rewrite/profile_split_no_concat.py",
+      "published_sha256": "1acd418edb231fc39c8aa6b1a4e6f10114904f91a9b5da91afa0a0a072d78dbf",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/npu_ni700_probe.c",
+      "source_sha256": "253e848f3ddabdcdbe6ffb5ef85959073328a75586125d84c9167cf76d502407",
+      "published": "experiments/diagnostics/npu_ni700_probe.c",
+      "published_sha256": "253e848f3ddabdcdbe6ffb5ef85959073328a75586125d84c9167cf76d502407",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/npu_ni700_config.c",
+      "source_sha256": "fb20f2920910306043e8b68491364ad3ad9f55472b0734e06435de7387e15cf0",
+      "published": "experiments/diagnostics/npu_ni700_config.c",
+      "published_sha256": "fb20f2920910306043e8b68491364ad3ad9f55472b0734e06435de7387e15cf0",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/ni700_pmu_access.c",
+      "source_sha256": "71823f47d776db290c7045145c47dbe7f56806b86a861af191ef0c1388a985b1",
+      "published": "experiments/diagnostics/ni700_pmu_access.c",
+      "published_sha256": "71823f47d776db290c7045145c47dbe7f56806b86a861af191ef0c1388a985b1",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/smmu_path_probe.c",
+      "source_sha256": "c9c52c2884176560c48f095166ba14884dbab8168a28947a3bd8462733f8aa55",
+      "published": "experiments/diagnostics/smmu_path_probe.c",
+      "published_sha256": "c9c52c2884176560c48f095166ba14884dbab8168a28947a3bd8462733f8aa55",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/smmu_pmcg_capture.c",
+      "source_sha256": "c599dc37439ec214b0622f449c5968dd5f102a0eb96a11828633c73bd11b20d7",
+      "published": "experiments/diagnostics/smmu_pmcg_capture.c",
+      "published_sha256": "c599dc37439ec214b0622f449c5968dd5f102a0eb96a11828633c73bd11b20d7",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/scmi_clock_get_probe.c",
+      "source_sha256": "2dea1a36e0cba744bcb7b02791d16147a4a1ba6598d1df3868e822720b8cfa88",
+      "published": "experiments/diagnostics/scmi_clock_get_probe.c",
+      "published_sha256": "2dea1a36e0cba744bcb7b02791d16147a4a1ba6598d1df3868e822720b8cfa88",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    },
+    {
+      "source": "scripts/scmi_perf_get_probe.c",
+      "source_sha256": "a24ed63fbfd8bced13ccd1869ab76d65c7f64f2eec022622c47db3d311297cd3",
+      "published": "experiments/diagnostics/scmi_perf_get_probe.c",
+      "published_sha256": "a24ed63fbfd8bced13ccd1869ab76d65c7f64f2eec022622c47db3d311297cd3",
+      "omitted_top_level_fields": [],
+      "transformation": "UTF-8 text / JSON normalization and host metadata redaction; numerical values retained"
+    }
+  ]
+}

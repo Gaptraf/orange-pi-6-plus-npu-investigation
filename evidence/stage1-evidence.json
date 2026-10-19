@@ -1,0 +1,1694 @@
+{
+  "documents": {
+    "suite.json": [
+      {
+        "tag": "support",
+        "case": "add_fp32",
+        "returncode": 2,
+        "wall_s": 0.5660641670692712,
+        "result": {
+          "case": "add_fp32",
+          "runs_requested": 5,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            4,
+            32
+          ],
+          "dtype": "float32",
+          "runs_completed": 5,
+          "numerical_failures": 5,
+          "max_abs_error": 0.0004264265298843384,
+          "edge_inputs": false,
+          "session_create_s": 0.1934438340831548,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": {
+            "atol": 0.0001,
+            "rtol": 0.001
+          },
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 5
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.2293800245970488,
+          "warm_ms": {
+            "p50": 0.3617129987105727,
+            "p95": 0.38466014666482806,
+            "mean": 0.3666754928417504
+          },
+          "success": false
+        }
+      },
+      {
+        "tag": "support",
+        "case": "add_fp16",
+        "returncode": 0,
+        "wall_s": 0.6175958230160177,
+        "result": {
+          "case": "add_fp16",
+          "runs_requested": 5,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            4,
+            32
+          ],
+          "dtype": "float16",
+          "runs_completed": 5,
+          "numerical_failures": 0,
+          "max_abs_error": 0.000244140625,
+          "edge_inputs": false,
+          "session_create_s": 0.18766138900537044,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": {
+            "atol": 0.002,
+            "rtol": 0.002
+          },
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 5
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.1722620110958815,
+          "warm_ms": {
+            "p50": 0.44586550211533904,
+            "p95": 0.4559519758913666,
+            "mean": 0.4386982473079115
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "stress",
+        "case": "qadd_int8",
+        "returncode": 0,
+        "wall_s": 1.0677670589648187,
+        "result": {
+          "case": "qadd_int8",
+          "runs_requested": 1000,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            4,
+            32
+          ],
+          "dtype": "int8",
+          "runs_completed": 1000,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": true,
+          "session_create_s": 0.1893444750458002,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 1000
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.1409040307626128,
+          "warm_ms": {
+            "p50": 0.31892897095531225,
+            "p95": 0.4279300337657332,
+            "mean": 0.33532037190884145
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "stress",
+        "case": "qmatmul_const_int8",
+        "returncode": 0,
+        "wall_s": 1.0180496170651168,
+        "result": {
+          "case": "qmatmul_const_int8",
+          "runs_requested": 1000,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            32,
+            16
+          ],
+          "dtype": "int8",
+          "runs_completed": 1000,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": true,
+          "session_create_s": 0.19558562501333654,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 1000
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.2236509937793016,
+          "warm_ms": {
+            "p50": 0.31956005841493607,
+            "p95": 0.41949298465624446,
+            "mean": 0.3305951824870419
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "stress",
+        "case": "qmatmul_dynamic_int8",
+        "returncode": -9,
+        "wall_s": 65.05363551701885,
+        "stdout_tail": "{\"event\": \"create_session\", \"case\": \"qmatmul_dynamic_int8\", \"runs_requested\": 1000, \"provider_requested\": \"ZhouyiExecutionProvider\", \"ort_version\": \"1.20.0\", \"available_providers\": [\"ZhouyiExecutionProvider\", \"CPUExecutionProvider\"], \"input_shape\": [4, 32], \"weight_shape\": [32, 16], \"dtype\": \"int8\", \"runs_completed\": 0, \"numerical_failures\": 0, \"max_abs_error\": 0.0, \"edge_inputs\": true}\n{\"event\": \"session_ready\", \"seconds\": 0.18075766891706735}\n{\"event\": \"inference\", \"iteration\": 1, \"ms\": 1.0450959671288729, \"error\": 0.0, \"pass\": true}\n",
+        "stderr_tail": "us_t*, int) at ??:?\n7 /opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/libaipu_driver.so\taipu_finish_job at ??:?\n8 /opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/libcompass_runtime_midware.so\tzhouyi_driver::Device::sync_execute_core(unsigned long, unsigned long, std::vector<ZhouyiRequestTensorInfo, std::allocator<ZhouyiRequestTensorInfo> > const&, std::vector<ZhouyiRequestTensorInfo, std::allocator<ZhouyiRequestTensorInfo> >&, unsigned int) at ??:?\n9 /opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/libcompass_runtime_midware.so\tzhouyi_driver::Hardware::execute(unsigned long, std::vector<ZhouyiRequestTensorInfo, std::allocator<ZhouyiRequestTensorInfo> > const&, std::vector<ZhouyiRequestTensorInfo, std::allocator<ZhouyiRequestTensorInfo> >&, unsigned int, zhouyi_driver::GraphPropertyConfig const&) at ??:?\n10 /opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/libcompass_runtime_midware.so\tcompass_runtime_midware_execute at ??:?\n11 /opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so\tonnxruntime::zhouyi::ZhouyiInterface::Execute(unsigned int, ZhouyiRequestTensorInfo const*, unsigned int, ZhouyiRequestTensorInfo*, unsigned int) at /project/ai/zhouyi_compass/alezhe01/project/Compass_Runtime_onnxruntime_arm64/onnxruntime/onnxruntime/core/providers/zhouyi/builder/zhouyi_interface.cc:116\n12 /opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so\tonnxruntime::zhouyi::ZhouyiModelImpl::ExecuteGraph(Ort::KernelContext const&) at /project/ai/zhouyi_compass/alezhe01/project/Compass_Runtime_onnxruntime_arm64/onnxruntime/onnxruntime/core/providers/zhouyi/builder/zhouyi_model_impl.cc:443 (discriminator 1)\n13 /opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so\tonnxruntime::ZhouyiExecutionProvider::CreateComputeFunc(std::vector<onnxruntime::NodeComputeInfo, std::allocator<onnxruntime::NodeComputeInfo> >&, onnxruntime::logging::Logger const&)::{lambda(void*, OrtApi const*, OrtKernelContext*)#3}::operator()(void*, OrtApi const*, OrtKernelContext*) const at /project/ai/zhouyi_compass/alezhe01/project/Compass_Runtime_onnxruntime_arm64/onnxruntime/onnxruntime/core/providers/zhouyi/zhouyi_execution_provider.cc:395\n14 /opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so\t"
+      }
+    ],
+    "diagnosis.json": [
+      {
+        "tag": "recovery",
+        "returncode": 0,
+        "result": {
+          "case": "qmatmul_const_int8",
+          "runs_requested": 5,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            32,
+            16
+          ],
+          "dtype": "int8",
+          "runs_completed": 5,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": false,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "session_create_s": 0.1852379870833829,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 5
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.333798049017787,
+          "warm_ms": {
+            "p50": 0.3605490201152861,
+            "p95": 0.4856718704104423,
+            "mean": 0.3943575138691813
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "dynamic_random",
+        "returncode": -9,
+        "stdout_tail": "{\"event\": \"create_session\", \"case\": \"qmatmul_dynamic_int8\", \"runs_requested\": 5, \"provider_requested\": \"ZhouyiExecutionProvider\", \"ort_version\": \"1.20.0\", \"available_providers\": [\"ZhouyiExecutionProvider\", \"CPUExecutionProvider\"], \"input_shape\": [4, 32], \"weight_shape\": [32, 16], \"dtype\": \"int8\", \"runs_completed\": 0, \"numerical_failures\": 0, \"max_abs_error\": 0.0, \"edge_inputs\": false, \"pause_ms\": 0, \"start_pattern\": 0}\n{\"event\": \"session_ready\", \"seconds\": 0.18750854302197695}\n{\"event\": \"inference\", \"iteration\": 1, \"ms\": 1.059766043908894, \"error\": 0.0, \"pass\": true}\n"
+      },
+      {
+        "tag": "dynamic_paused",
+        "returncode": -9,
+        "stdout_tail": "{\"event\": \"create_session\", \"case\": \"qmatmul_dynamic_int8\", \"runs_requested\": 20, \"provider_requested\": \"ZhouyiExecutionProvider\", \"ort_version\": \"1.20.0\", \"available_providers\": [\"ZhouyiExecutionProvider\", \"CPUExecutionProvider\"], \"input_shape\": [4, 32], \"weight_shape\": [32, 16], \"dtype\": \"int8\", \"runs_completed\": 0, \"numerical_failures\": 0, \"max_abs_error\": 0.0, \"edge_inputs\": true, \"pause_ms\": 10.0, \"start_pattern\": 0}\n{\"event\": \"session_ready\", \"seconds\": 0.18762379989493638}\n{\"event\": \"inference\", \"iteration\": 1, \"ms\": 1.0264070006087422, \"error\": 0.0, \"pass\": true}\n"
+      },
+      {
+        "tag": "dynamic_high_first",
+        "returncode": 0,
+        "result": {
+          "case": "qmatmul_dynamic_int8",
+          "runs_requested": 1,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            32,
+            16
+          ],
+          "dtype": "int8",
+          "runs_completed": 1,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": true,
+          "pause_ms": 0,
+          "start_pattern": 1,
+          "session_create_s": 0.1815957820508629,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 1
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.017388072796166,
+          "warm_ms": {
+            "p50": 1.017388072796166,
+            "p95": 1.017388072796166,
+            "mean": 1.017388072796166
+          },
+          "success": true
+        }
+      }
+    ],
+    "verification.json": [
+      {
+        "tag": "fixed",
+        "returncode": 0,
+        "wall_s": 1.0681733869714662,
+        "result": {
+          "case": "qadd_int8",
+          "runs_requested": 1000,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            4,
+            32
+          ],
+          "dtype": "int8",
+          "runs_completed": 1000,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": true,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "quantization_scales": {
+            "a": 0.0625,
+            "b": 0.0625,
+            "y": 0.25
+          },
+          "session_create_s": 0.19970111397560686,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 1000
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.1011050082743168,
+          "warm_ms": {
+            "p50": 0.316109973937273,
+            "p95": 0.375800032634288,
+            "mean": 0.32595515337859365
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "fixed",
+        "returncode": 0,
+        "wall_s": 1.0682352640433237,
+        "result": {
+          "case": "qmatmul_const_int8",
+          "runs_requested": 1000,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            32,
+            16
+          ],
+          "dtype": "int8",
+          "runs_completed": 1000,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": true,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "quantization_scales": {
+            "a": 0.0625,
+            "b": 0.0625,
+            "y": 0.25
+          },
+          "session_create_s": 0.19398948701564223,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 1000
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.2846390018239617,
+          "warm_ms": {
+            "p50": 0.31172996386885643,
+            "p95": 0.4236190347000956,
+            "mean": 0.32909931190819053
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "fixed_scaled",
+        "returncode": 0,
+        "wall_s": 1.0687244279542938,
+        "result": {
+          "case": "qmatmul_dynamic_int8",
+          "runs_requested": 1000,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            32,
+            16
+          ],
+          "dtype": "int8",
+          "runs_completed": 1000,
+          "numerical_failures": 0,
+          "max_abs_error": 1.0,
+          "edge_inputs": true,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "quantization_scales": {
+            "a": 0.03099999949336052,
+            "b": 0.023000000044703484,
+            "y": 1.7000000476837158
+          },
+          "session_create_s": 0.18428260600194335,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 1000
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.0720760328695178,
+          "warm_ms": {
+            "p50": 0.322229927405715,
+            "p95": 0.38878401974216104,
+            "mean": 0.33208089043946565
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "fixed",
+        "returncode": 0,
+        "wall_s": 1.067681293003261,
+        "result": {
+          "case": "add_fp16",
+          "runs_requested": 1000,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            4,
+            32
+          ],
+          "weight_shape": [
+            4,
+            32
+          ],
+          "dtype": "float16",
+          "runs_completed": 1000,
+          "numerical_failures": 0,
+          "max_abs_error": 0.000244140625,
+          "edge_inputs": false,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "quantization_scales": null,
+          "session_create_s": 0.18440563196782023,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": {
+            "atol": 0.002,
+            "rtol": 0.002
+          },
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 1000
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.1904219863936305,
+          "warm_ms": {
+            "p50": 0.33395003993064165,
+            "p95": 0.44562797993421543,
+            "mean": 0.3530938959996532
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "decode512",
+        "returncode": 0,
+        "wall_s": 0.6672293569426984,
+        "result": {
+          "case": "qmatmul_const_int8",
+          "runs_requested": 100,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            1,
+            512
+          ],
+          "weight_shape": [
+            512,
+            512
+          ],
+          "dtype": "int8",
+          "runs_completed": 100,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": false,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "quantization_scales": {
+            "a": 0.0625,
+            "b": 0.0625,
+            "y": 0.25
+          },
+          "session_create_s": 0.1894487019162625,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 100
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.0844148928299546,
+          "warm_ms": {
+            "p50": 0.3775180084630847,
+            "p95": 0.5009558750316501,
+            "mean": 0.3917016749825291
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "prefill512",
+        "returncode": 0,
+        "wall_s": 0.9683140139095485,
+        "result": {
+          "case": "qmatmul_const_int8",
+          "runs_requested": 100,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            64,
+            512
+          ],
+          "weight_shape": [
+            512,
+            512
+          ],
+          "dtype": "int8",
+          "runs_completed": 100,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": false,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "quantization_scales": {
+            "a": 0.0625,
+            "b": 0.0625,
+            "y": 0.25
+          },
+          "session_create_s": 0.21347630489617586,
+          "session_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "ZhouyiExecutionProvider": 100
+          },
+          "npu_execution_proven": true,
+          "first_run_ms": 1.309918938204646,
+          "warm_ms": {
+            "p50": 0.5263129714876413,
+            "p95": 0.6096419179812074,
+            "mean": 0.5192941612084255
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "cpu_decode512",
+        "returncode": 0,
+        "wall_s": 0.416523362044245,
+        "result": {
+          "case": "qmatmul_const_int8",
+          "runs_requested": 100,
+          "provider_requested": "CPUExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            1,
+            512
+          ],
+          "weight_shape": [
+            512,
+            512
+          ],
+          "dtype": "int8",
+          "runs_completed": 100,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": false,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "quantization_scales": {
+            "a": 0.0625,
+            "b": 0.0625,
+            "y": 0.25
+          },
+          "session_create_s": 0.010595642030239105,
+          "session_providers": [
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "CPUExecutionProvider": 100
+          },
+          "npu_execution_proven": false,
+          "first_run_ms": 0.7385569624602795,
+          "warm_ms": {
+            "p50": 0.24402199778705835,
+            "p95": 0.2696121344342828,
+            "mean": 0.24798420384864917
+          },
+          "success": true
+        }
+      },
+      {
+        "tag": "cpu_prefill512",
+        "returncode": 0,
+        "wall_s": 0.7176486470270902,
+        "result": {
+          "case": "qmatmul_const_int8",
+          "runs_requested": 100,
+          "provider_requested": "CPUExecutionProvider",
+          "ort_version": "1.20.0",
+          "available_providers": [
+            "ZhouyiExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          "input_shape": [
+            64,
+            512
+          ],
+          "weight_shape": [
+            512,
+            512
+          ],
+          "dtype": "int8",
+          "runs_completed": 100,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "edge_inputs": false,
+          "pause_ms": 0,
+          "start_pattern": 0,
+          "quantization_scales": {
+            "a": 0.0625,
+            "b": 0.0625,
+            "y": 0.25
+          },
+          "session_create_s": 0.010608712094835937,
+          "session_providers": [
+            "CPUExecutionProvider"
+          ],
+          "tolerance": "absolute <= 1 INT8 output unit",
+          "profile_provider_events": {
+            "CPUExecutionProvider": 100
+          },
+          "npu_execution_proven": false,
+          "first_run_ms": 1.1990410275757313,
+          "warm_ms": {
+            "p50": 0.7844249485060573,
+            "p95": 0.8087979280389845,
+            "mean": 0.7887653103380492
+          },
+          "success": true
+        }
+      }
+    ],
+    "precision.json": {
+      "float32": {
+        "exact_match": false,
+        "max_abs_error": 0.0003808736801147461
+      },
+      "round_output_to_fp16": {
+        "exact_match": false,
+        "max_abs_error": 0.00048828125
+      },
+      "fp16_inputs_and_output": {
+        "exact_match": true,
+        "max_abs_error": 0.0
+      }
+    },
+    "driver-test/manifest.json": {
+      "original_module_path": "/lib/modules/6.6.89-cix/extra/aipu.ko",
+      "original_module_sha256": "1d7a4a955e5024cb0e17d56f19c21c322f82ac845c33afe6e63b51dbd799d5d6",
+      "original_source_sha256": "1841a5f691abeb6f89d16a264e4044701c33027b2a50e690d5809f8617a2a751",
+      "kernel_release": "6.6.89-cix",
+      "patch_source": "https://github.com/n4hy/NPU_OrangePi6Plus",
+      "patch_installer_sha256": "c1f1ebacba7d4412bc2fcbd77e89ce4ea3ee4f898ed66de5bc233dfdf9b5eff1",
+      "original_power_control": "auto",
+      "patched_module_sha256": "11389850fe5237732e8dbc485f512a4d6766119fee95ba7b6ceffdf56f9e0a44",
+      "patched_vermagic": "6.6.89-cix SMP preempt mod_unload aarch64"
+    },
+    "driver-test/active.json": {
+      "variant": "racefix",
+      "path": "/opt/opi6-npu-llm/stage1/driver-test/aipu-5.11.0/aipu.ko",
+      "sha256": "11389850fe5237732e8dbc485f512a4d6766119fee95ba7b6ceffdf56f9e0a44",
+      "persistent_install": false,
+      "power_control": "auto",
+      "srcversion": null
+    },
+    "lifecycle/result.json": {
+      "recreated_sessions": 20,
+      "resident_sessions": 3,
+      "runs": 100,
+      "failures": 0,
+      "provider_events": {
+        "ZhouyiExecutionProvider": 100
+      },
+      "success": true
+    },
+    "runs/cpu_prefill512_qmatmul_const_int8/result.json": {
+      "case": "qmatmul_const_int8",
+      "runs_requested": 100,
+      "provider_requested": "CPUExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        64,
+        512
+      ],
+      "weight_shape": [
+        512,
+        512
+      ],
+      "dtype": "int8",
+      "runs_completed": 100,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": false,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "quantization_scales": {
+        "a": 0.0625,
+        "b": 0.0625,
+        "y": 0.25
+      },
+      "session_create_s": 0.010608712094835937,
+      "session_providers": [
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "CPUExecutionProvider": 100
+      },
+      "npu_execution_proven": false,
+      "first_run_ms": 1.1990410275757313,
+      "warm_ms": {
+        "p50": 0.7844249485060573,
+        "p95": 0.8087979280389845,
+        "mean": 0.7887653103380492
+      },
+      "success": true
+    },
+    "runs/decode512_qmatmul_const_int8/result.json": {
+      "case": "qmatmul_const_int8",
+      "runs_requested": 100,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        1,
+        512
+      ],
+      "weight_shape": [
+        512,
+        512
+      ],
+      "dtype": "int8",
+      "runs_completed": 100,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": false,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "quantization_scales": {
+        "a": 0.0625,
+        "b": 0.0625,
+        "y": 0.25
+      },
+      "session_create_s": 0.1894487019162625,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 100
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.0844148928299546,
+      "warm_ms": {
+        "p50": 0.3775180084630847,
+        "p95": 0.5009558750316501,
+        "mean": 0.3917016749825291
+      },
+      "success": true
+    },
+    "runs/initial_qmatmul_const_int8/result.json": {
+      "case": "qmatmul_const_int8",
+      "runs_requested": 5,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        32,
+        16
+      ],
+      "dtype": "int8",
+      "runs_completed": 5,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "session_create_s": 0.2444589550141245,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 5
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.8846601014956832,
+      "warm_ms": {
+        "p50": 0.5662025650963187,
+        "p95": 0.6511474552098662,
+        "mean": 0.588306545978412
+      },
+      "success": true
+    },
+    "runs/patched_qmatmul_dynamic_int8/result.json": {
+      "case": "qmatmul_dynamic_int8",
+      "runs_requested": 1000,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        32,
+        16
+      ],
+      "dtype": "int8",
+      "runs_completed": 1000,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": true,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "session_create_s": 0.19066808302886784,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 1000
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.0277769761160016,
+      "warm_ms": {
+        "p50": 0.31378993298858404,
+        "p95": 0.3836360643617809,
+        "mean": 0.325157593873267
+      },
+      "success": true
+    },
+    "runs/dynamic_high_first_qmatmul_dynamic_int8/result.json": {
+      "case": "qmatmul_dynamic_int8",
+      "runs_requested": 1,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        32,
+        16
+      ],
+      "dtype": "int8",
+      "runs_completed": 1,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": true,
+      "pause_ms": 0,
+      "start_pattern": 1,
+      "session_create_s": 0.1815957820508629,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 1
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.017388072796166,
+      "warm_ms": {
+        "p50": 1.017388072796166,
+        "p95": 1.017388072796166,
+        "mean": 1.017388072796166
+      },
+      "success": true
+    },
+    "runs/prefill512_qmatmul_const_int8/result.json": {
+      "case": "qmatmul_const_int8",
+      "runs_requested": 100,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        64,
+        512
+      ],
+      "weight_shape": [
+        512,
+        512
+      ],
+      "dtype": "int8",
+      "runs_completed": 100,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": false,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "quantization_scales": {
+        "a": 0.0625,
+        "b": 0.0625,
+        "y": 0.25
+      },
+      "session_create_s": 0.21347630489617586,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 100
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.309918938204646,
+      "warm_ms": {
+        "p50": 0.5263129714876413,
+        "p95": 0.6096419179812074,
+        "mean": 0.5192941612084255
+      },
+      "success": true
+    },
+    "runs/stress_qadd_int8/result.json": {
+      "case": "qadd_int8",
+      "runs_requested": 1000,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        4,
+        32
+      ],
+      "dtype": "int8",
+      "runs_completed": 1000,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": true,
+      "session_create_s": 0.1893444750458002,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 1000
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.1409040307626128,
+      "warm_ms": {
+        "p50": 0.31892897095531225,
+        "p95": 0.4279300337657332,
+        "mean": 0.33532037190884145
+      },
+      "success": true
+    },
+    "runs/stress_qmatmul_const_int8/result.json": {
+      "case": "qmatmul_const_int8",
+      "runs_requested": 1000,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        32,
+        16
+      ],
+      "dtype": "int8",
+      "runs_completed": 1000,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": true,
+      "session_create_s": 0.19558562501333654,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 1000
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.2236509937793016,
+      "warm_ms": {
+        "p50": 0.31956005841493607,
+        "p95": 0.41949298465624446,
+        "mean": 0.3305951824870419
+      },
+      "success": true
+    },
+    "runs/recovery_qmatmul_const_int8/result.json": {
+      "case": "qmatmul_const_int8",
+      "runs_requested": 5,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        32,
+        16
+      ],
+      "dtype": "int8",
+      "runs_completed": 5,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": false,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "session_create_s": 0.1852379870833829,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 5
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.333798049017787,
+      "warm_ms": {
+        "p50": 0.3605490201152861,
+        "p95": 0.4856718704104423,
+        "mean": 0.3943575138691813
+      },
+      "success": true
+    },
+    "runs/fixed_scaled_qmatmul_dynamic_int8/result.json": {
+      "case": "qmatmul_dynamic_int8",
+      "runs_requested": 1000,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        32,
+        16
+      ],
+      "dtype": "int8",
+      "runs_completed": 1000,
+      "numerical_failures": 0,
+      "max_abs_error": 1.0,
+      "edge_inputs": true,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "quantization_scales": {
+        "a": 0.03099999949336052,
+        "b": 0.023000000044703484,
+        "y": 1.7000000476837158
+      },
+      "session_create_s": 0.18428260600194335,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 1000
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.0720760328695178,
+      "warm_ms": {
+        "p50": 0.322229927405715,
+        "p95": 0.38878401974216104,
+        "mean": 0.33208089043946565
+      },
+      "success": true
+    },
+    "runs/cpu_decode512_qmatmul_const_int8/result.json": {
+      "case": "qmatmul_const_int8",
+      "runs_requested": 100,
+      "provider_requested": "CPUExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        1,
+        512
+      ],
+      "weight_shape": [
+        512,
+        512
+      ],
+      "dtype": "int8",
+      "runs_completed": 100,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": false,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "quantization_scales": {
+        "a": 0.0625,
+        "b": 0.0625,
+        "y": 0.25
+      },
+      "session_create_s": 0.010595642030239105,
+      "session_providers": [
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "CPUExecutionProvider": 100
+      },
+      "npu_execution_proven": false,
+      "first_run_ms": 0.7385569624602795,
+      "warm_ms": {
+        "p50": 0.24402199778705835,
+        "p95": 0.2696121344342828,
+        "mean": 0.24798420384864917
+      },
+      "success": true
+    },
+    "runs/support_add_fp16/result.json": {
+      "case": "add_fp16",
+      "runs_requested": 5,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        4,
+        32
+      ],
+      "dtype": "float16",
+      "runs_completed": 5,
+      "numerical_failures": 0,
+      "max_abs_error": 0.000244140625,
+      "edge_inputs": false,
+      "session_create_s": 0.18766138900537044,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": {
+        "atol": 0.002,
+        "rtol": 0.002
+      },
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 5
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.1722620110958815,
+      "warm_ms": {
+        "p50": 0.44586550211533904,
+        "p95": 0.4559519758913666,
+        "mean": 0.4386982473079115
+      },
+      "success": true
+    },
+    "runs/fixed_add_fp16/result.json": {
+      "case": "add_fp16",
+      "runs_requested": 1000,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        4,
+        32
+      ],
+      "dtype": "float16",
+      "runs_completed": 1000,
+      "numerical_failures": 0,
+      "max_abs_error": 0.000244140625,
+      "edge_inputs": false,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "quantization_scales": null,
+      "session_create_s": 0.18440563196782023,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": {
+        "atol": 0.002,
+        "rtol": 0.002
+      },
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 1000
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.1904219863936305,
+      "warm_ms": {
+        "p50": 0.33395003993064165,
+        "p95": 0.44562797993421543,
+        "mean": 0.3530938959996532
+      },
+      "success": true
+    },
+    "runs/support_add_fp32/result.json": {
+      "case": "add_fp32",
+      "runs_requested": 5,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        4,
+        32
+      ],
+      "dtype": "float32",
+      "runs_completed": 5,
+      "numerical_failures": 5,
+      "max_abs_error": 0.0004264265298843384,
+      "edge_inputs": false,
+      "session_create_s": 0.1934438340831548,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": {
+        "atol": 0.0001,
+        "rtol": 0.001
+      },
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 5
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.2293800245970488,
+      "warm_ms": {
+        "p50": 0.3617129987105727,
+        "p95": 0.38466014666482806,
+        "mean": 0.3666754928417504
+      },
+      "success": false
+    },
+    "runs/fixed_qadd_int8/result.json": {
+      "case": "qadd_int8",
+      "runs_requested": 1000,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        4,
+        32
+      ],
+      "dtype": "int8",
+      "runs_completed": 1000,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": true,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "quantization_scales": {
+        "a": 0.0625,
+        "b": 0.0625,
+        "y": 0.25
+      },
+      "session_create_s": 0.19970111397560686,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 1000
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.1011050082743168,
+      "warm_ms": {
+        "p50": 0.316109973937273,
+        "p95": 0.375800032634288,
+        "mean": 0.32595515337859365
+      },
+      "success": true
+    },
+    "runs/fixed_qmatmul_const_int8/result.json": {
+      "case": "qmatmul_const_int8",
+      "runs_requested": 1000,
+      "provider_requested": "ZhouyiExecutionProvider",
+      "ort_version": "1.20.0",
+      "available_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "input_shape": [
+        4,
+        32
+      ],
+      "weight_shape": [
+        32,
+        16
+      ],
+      "dtype": "int8",
+      "runs_completed": 1000,
+      "numerical_failures": 0,
+      "max_abs_error": 0.0,
+      "edge_inputs": true,
+      "pause_ms": 0,
+      "start_pattern": 0,
+      "quantization_scales": {
+        "a": 0.0625,
+        "b": 0.0625,
+        "y": 0.25
+      },
+      "session_create_s": 0.19398948701564223,
+      "session_providers": [
+        "ZhouyiExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tolerance": "absolute <= 1 INT8 output unit",
+      "profile_provider_events": {
+        "ZhouyiExecutionProvider": 1000
+      },
+      "npu_execution_proven": true,
+      "first_run_ms": 1.2846390018239617,
+      "warm_ms": {
+        "p50": 0.31172996386885643,
+        "p95": 0.4236190347000956,
+        "mean": 0.32909931190819053
+      },
+      "success": true
+    }
+  },
+  "models": {
+    "runs/initial_matmul_const_fp32/model.onnx": {
+      "bytes": 2154,
+      "sha256": "d04457c8e5b8ba70ea686c2def3b596b89ea3052180aa0c86bcef802170b645b"
+    },
+    "runs/cpu_prefill512_qmatmul_const_int8/model.onnx": {
+      "bytes": 262364,
+      "sha256": "5023ccc402746667f255e80aaaf9fba08bdf4f91b38a3cd3ea61e6292baf7bd5"
+    },
+    "runs/decode512_qmatmul_const_int8/model.onnx": {
+      "bytes": 262364,
+      "sha256": "cf450955a4a28607a3899c12a01c3dde5fc8411a3ddde7926d5109255a790296"
+    },
+    "runs/initial_qmatmul_const_int8/model.onnx": {
+      "bytes": 725,
+      "sha256": "c162bffc5176cb9ff4dd24277fdeaaf19a45501a1a555764e18e1cacc489db42"
+    },
+    "runs/patched_qmatmul_dynamic_int8/model.onnx": {
+      "bytes": 221,
+      "sha256": "2769b2a529ddf95aa3469f7f89e83b0f607e6b0553f7012f60110ec52ba527a7"
+    },
+    "runs/dynamic_random_qmatmul_dynamic_int8/model.onnx": {
+      "bytes": 221,
+      "sha256": "2769b2a529ddf95aa3469f7f89e83b0f607e6b0553f7012f60110ec52ba527a7"
+    },
+    "runs/dynamic_high_first_qmatmul_dynamic_int8/model.onnx": {
+      "bytes": 221,
+      "sha256": "2769b2a529ddf95aa3469f7f89e83b0f607e6b0553f7012f60110ec52ba527a7"
+    },
+    "runs/initial_matmul_const_fp16/model.onnx": {
+      "bytes": 1130,
+      "sha256": "8b56fa17133e13dac65b5e658d09c0ab2208ffe0ee7fdd925c36f096fecf559f"
+    },
+    "runs/prefill512_qmatmul_const_int8/model.onnx": {
+      "bytes": 262364,
+      "sha256": "5023ccc402746667f255e80aaaf9fba08bdf4f91b38a3cd3ea61e6292baf7bd5"
+    },
+    "runs/stress_qadd_int8/model.onnx": {
+      "bytes": 282,
+      "sha256": "6c3b1a2cbe9dc832c5e53f22167796c1a3b836a260d47b5b96d9bf6e3dec2b92"
+    },
+    "runs/dynamic_paused_qmatmul_dynamic_int8/model.onnx": {
+      "bytes": 221,
+      "sha256": "2769b2a529ddf95aa3469f7f89e83b0f607e6b0553f7012f60110ec52ba527a7"
+    },
+    "runs/stress_qmatmul_const_int8/model.onnx": {
+      "bytes": 725,
+      "sha256": "c162bffc5176cb9ff4dd24277fdeaaf19a45501a1a555764e18e1cacc489db42"
+    },
+    "runs/recovery_qmatmul_const_int8/model.onnx": {
+      "bytes": 725,
+      "sha256": "c162bffc5176cb9ff4dd24277fdeaaf19a45501a1a555764e18e1cacc489db42"
+    },
+    "runs/stress_qmatmul_dynamic_int8/model.onnx": {
+      "bytes": 221,
+      "sha256": "2769b2a529ddf95aa3469f7f89e83b0f607e6b0553f7012f60110ec52ba527a7"
+    },
+    "runs/fixed_scaled_qmatmul_dynamic_int8/model.onnx": {
+      "bytes": 221,
+      "sha256": "8777b548fec91cf801b0cd6115878d4a6c44698f6972b97729232b9835f7f44f"
+    },
+    "runs/cpu_decode512_qmatmul_const_int8/model.onnx": {
+      "bytes": 262364,
+      "sha256": "cf450955a4a28607a3899c12a01c3dde5fc8411a3ddde7926d5109255a790296"
+    },
+    "runs/support_add_fp16/model.onnx": {
+      "bytes": 99,
+      "sha256": "00c63d23a7a92016981abb9ca1023babf773ee42c27c73c9efa41487d409470c"
+    },
+    "runs/fixed_add_fp16/model.onnx": {
+      "bytes": 99,
+      "sha256": "00c63d23a7a92016981abb9ca1023babf773ee42c27c73c9efa41487d409470c"
+    },
+    "runs/support_add_fp32/model.onnx": {
+      "bytes": 99,
+      "sha256": "a7f82b9b867a827936624ec314a9fdddbda3e0ee21bd4e43a65e2f98ce98df53"
+    },
+    "runs/fixed_qadd_int8/model.onnx": {
+      "bytes": 282,
+      "sha256": "6c3b1a2cbe9dc832c5e53f22167796c1a3b836a260d47b5b96d9bf6e3dec2b92"
+    },
+    "runs/fixed_qmatmul_const_int8/model.onnx": {
+      "bytes": 725,
+      "sha256": "c162bffc5176cb9ff4dd24277fdeaaf19a45501a1a555764e18e1cacc489db42"
+    }
+  },
+  "profiles": {
+    "runs/initial_matmul_const_fp32/ort_profile_2026-10-15_08-32-17.json": {
+      "bytes": 124,
+      "sha256": "ca5ce6c2c3a3375e0ee938b42495fcdd49e805e628fc6c57517e54dd0a31f568"
+    },
+    "runs/cpu_prefill512_qmatmul_const_int8/ort_profile_2026-10-15_08-45-08.json": {
+      "bytes": 105229,
+      "sha256": "8486d6fa65b2fb85ec121a57d1cbc15256d66ebfd0816350ca4c7992c4af24dc"
+    },
+    "runs/decode512_qmatmul_const_int8/ort_profile_2026-10-15_08-45-06.json": {
+      "bytes": 114256,
+      "sha256": "3d828cdc63059419ae0059c4f7e3dc941bc20eea884b73f3f05ff8e38cf25e8b"
+    },
+    "runs/initial_qmatmul_const_int8/ort_profile_2026-10-15_08-32-42.json": {
+      "bytes": 5913,
+      "sha256": "3b3b172f43f6e4612c92ea17d82779ae41dafbd069cc5c844995c10aa1c03bee"
+    },
+    "runs/patched_qmatmul_dynamic_int8/ort_profile_2026-10-15_08-42-54.json": {
+      "bytes": 1148259,
+      "sha256": "d08beb1bf75f5f79f7824177f5a593172346fe37238a65a60ceacce8083cd740"
+    },
+    "runs/dynamic_random_qmatmul_dynamic_int8/ort_profile_2026-10-15_08-37-43.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/dynamic_high_first_qmatmul_dynamic_int8/ort_profile_2026-10-15_08-38-28.json": {
+      "bytes": 1409,
+      "sha256": "d478685fd9491ff73508b0840fcaf147f8379e87c8cf64bc4901cb0fe1d60ecb"
+    },
+    "runs/initial_matmul_const_fp16/ort_profile_2026-10-15_08-32-33.json": {
+      "bytes": 124,
+      "sha256": "799927b190dedb1ba9f41f8367c9118ecdff85a9a64086941415827f2366208b"
+    },
+    "runs/prefill512_qmatmul_const_int8/ort_profile_2026-10-15_08-45-06.json": {
+      "bytes": 114256,
+      "sha256": "252c2f9c13efe83c87b6109a87ef352935314a15a9f8dd560e9673ff4dcd3078"
+    },
+    "runs/stress_qadd_int8/ort_profile_2026-10-15_08-34-44.json": {
+      "bytes": 1148257,
+      "sha256": "345e5e6c29cb1789c7bf0e2f2445dbe4699b32d74c12e52ee366cfb6ff116d32"
+    },
+    "runs/dynamic_paused_qmatmul_dynamic_int8/ort_profile_2026-10-15_08-38-05.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/stress_qmatmul_const_int8/ort_profile_2026-10-15_08-34-45.json": {
+      "bytes": 1131255,
+      "sha256": "8aee4a124d1c5fe4fdacada3b5699157f1301698bb4d7d6fc64232b34005a657"
+    },
+    "runs/recovery_qmatmul_const_int8/ort_profile_2026-10-15_08-37-43.json": {
+      "bytes": 5940,
+      "sha256": "dd07640285366eeb78ead248f0340a138c45b3d8247c5d4c18414b23357f0d1f"
+    },
+    "runs/stress_qmatmul_dynamic_int8/ort_profile_2026-10-15_08-34-46.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/fixed_scaled_qmatmul_dynamic_int8/ort_profile_2026-10-15_08-45-03.json": {
+      "bytes": 1148255,
+      "sha256": "d9e62bb6399188a4af682596d2588a9785cbf0c33c4557df005ed73c77846337"
+    },
+    "runs/cpu_decode512_qmatmul_const_int8/ort_profile_2026-10-15_08-45-07.json": {
+      "bytes": 104157,
+      "sha256": "85ac54ef24345e106a5b3b3797830e86f6b3806b792b13f312798bf5dc86d15f"
+    },
+    "runs/support_add_fp16/ort_profile_2026-10-15_08-34-43.json": {
+      "bytes": 6041,
+      "sha256": "458fc054c786c0b8abcd338d75c2be96a4e2fe1b2ba2b6355d8b0ab9bb167177"
+    },
+    "runs/fixed_add_fp16/ort_profile_2026-10-15_08-45-05.json": {
+      "bytes": 1157258,
+      "sha256": "5cef13d4277848b59967b3d829afe52cdf72947aa54d52a3b31d6079cb62c383"
+    },
+    "runs/support_add_fp32/ort_profile_2026-10-15_08-34-43.json": {
+      "bytes": 6016,
+      "sha256": "706e7898bd9bfa2c75e6466664a16c1711c331733df231e4589d4f3e6337b209"
+    },
+    "runs/fixed_qadd_int8/ort_profile_2026-10-15_08-45-01.json": {
+      "bytes": 1142256,
+      "sha256": "240c961397b31435b00a2bddc0266c64b346e59142f975ce6da457c6095da7f7"
+    },
+    "runs/fixed_qmatmul_const_int8/ort_profile_2026-10-15_08-45-02.json": {
+      "bytes": 1137255,
+      "sha256": "9d19fc9337b659963e9d4ac1f581e970e1a9674c29d4473d09c0b9b7250529ec"
+    }
+  },
+  "commands": {
+    "services": {
+      "rc": 0,
+      "stdout": "Id=nova-server.service\nActiveState=inactive\nUnitFileState=disabled\n\nId=nova-library.service\nActiveState=inactive\nUnitFileState=disabled\n\nId=nova-llm.service\nActiveState=inactive\nUnitFileState=disabled\n\nId=opi6-llm.service\nActiveState=inactive\nUnitFileState=disabled\n",
+      "stderr": ""
+    },
+    "npu_users": {
+      "rc": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    "experiment_size": {
+      "rc": 0,
+      "stdout": "2.0G\t/opt/opi6-npu-llm/stage1\n",
+      "stderr": ""
+    },
+    "disk": {
+      "rc": 0,
+      "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/root       112G   75G   32G  71% /\n",
+      "stderr": ""
+    },
+    "memory": {
+      "rc": 0,
+      "stdout": "               total        used        free      shared  buff/cache   available\nMem:           15610        4931        4500         138        6565       10678\nSwap:              0           0           0\n",
+      "stderr": ""
+    },
+    "kernel": {
+      "rc": 0,
+      "stdout": "6.6.89-cix\n",
+      "stderr": ""
+    }
+  },
+  "original_installed_module_sha256": "1d7a4a955e5024cb0e17d56f19c21c322f82ac845c33afe6e63b51dbd799d5d6",
+  "original_installed_source_sha256": "1841a5f691abeb6f89d16a264e4044701c33027b2a50e690d5809f8617a2a751",
+  "power_control": "auto",
+  "runtime_status": "suspended",
+  "requirements": "coloredlogs==15.0.1\nflatbuffers==25.2.10\nhumanfriendly==10.0\nmpmath==1.3.0\nnumpy==1.26.4\nonnx==1.17.0\nonnxruntime-zhouyi @ file:///usr/share/cix/pypi/onnxruntime_zhouyi-1.20.0-cp311-cp311-linux_aarch64.whl#sha256=45b42cafce2e334ccba331067bda9e121d18cb88e1febd7ee55011d249f9e175\npackaging==24.2\nprotobuf==4.25.8\nsympy==1.13.3\n",
+  "temperatures": {
+    "thermal_zone2": "39000",
+    "thermal_zone0": "37000",
+    "thermal_zone9": "40000",
+    "thermal_zone12": "38000",
+    "thermal_zone7": "40000",
+    "thermal_zone10": "38000",
+    "thermal_zone5": "39000",
+    "thermal_zone3": "40000",
+    "thermal_zone1": "37000",
+    "thermal_zone8": "39000",
+    "thermal_zone11": "40000",
+    "thermal_zone6": "39000",
+    "thermal_zone4": "41000"
+  }
+}

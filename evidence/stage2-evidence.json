@@ -1,0 +1,604 @@
+{
+  "collected_utc": "2026-10-15T11:53:00.827149+00:00",
+  "root": "/opt/opi6-npu-llm/stage2",
+  "results": {
+    "ops_results.json": [
+      {
+        "case": "mul_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "mul_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0006494522094726562,
+          "compile_seconds": 0.18117268499918282,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.3478990402072668,
+          "p95_ms": 0.39306082762777805,
+          "success": true
+        }
+      },
+      {
+        "case": "silu_fp16",
+        "returncode": -9,
+        "stdout_tail": "{\"event\": \"session_start\", \"case\": \"silu_fp16\"}\n",
+        "stderr_tail": "Fatal glibc error: malloc.c:2599 (sysmalloc): assertion failed: (old_top == initial_top (av) && old_size == 0) || ((unsigned long) (old_size) >= MINSIZE && prev_inuse (old_top) && ((unsigned long) old_end & (pagesize - 1)) == 0)\nBackTrace with 8 stack frames. \n"
+      }
+    ],
+    "remaining_ops.json": [
+      {
+        "case": "rmsnorm_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "rmsnorm_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.004150098481341402,
+          "compile_seconds": 0.19236569094937295,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.4061170620843768,
+          "p95_ms": 0.4513493273407221,
+          "success": true
+        }
+      },
+      {
+        "case": "masked_softmax_fp16",
+        "returncode": 2,
+        "result": {
+          "case": "masked_softmax_fp16",
+          "runs": 10,
+          "numerical_failures": 10,
+          "max_abs_error": 0.9730072021484375,
+          "compile_seconds": 0.1817600759677589,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.340369064360857,
+          "p95_ms": 0.368830026127398,
+          "success": false
+        }
+      },
+      {
+        "case": "rope_fp16",
+        "returncode": 2,
+        "result": {
+          "case": "rope_fp16",
+          "runs": 10,
+          "numerical_failures": 10,
+          "max_abs_error": 2.1108455657958984,
+          "compile_seconds": 0.20587510091718286,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.3871680237352848,
+          "p95_ms": 0.4678289871662855,
+          "success": false
+        }
+      },
+      {
+        "case": "kv_concat_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "kv_concat_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "compile_seconds": 0.1875750879989937,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.3383390139788389,
+          "p95_ms": 0.4645314533263445,
+          "success": true
+        }
+      },
+      {
+        "case": "qattention_bmm_int8",
+        "returncode": 0,
+        "result": {
+          "case": "qattention_bmm_int8",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0,
+          "compile_seconds": 0.18960754107683897,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.4646249581128359,
+          "p95_ms": 0.4998774500563741,
+          "success": true
+        }
+      }
+    ],
+    "cpu_controls.json": [
+      {
+        "case": "silu_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "silu_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0004794065133466585,
+          "compile_seconds": 0.010779090109281242,
+          "profile_providers": {
+            "CPUExecutionProvider": 40
+          },
+          "npu_only": false,
+          "p50_ms": 0.9409489575773478,
+          "p95_ms": 0.9770023636519909,
+          "provider_requested": "CPUExecutionProvider",
+          "success": true
+        }
+      },
+      {
+        "case": "masked_softmax_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "masked_softmax_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.00024375875108573197,
+          "compile_seconds": 0.01429308601655066,
+          "profile_providers": {
+            "CPUExecutionProvider": 90
+          },
+          "npu_only": false,
+          "p50_ms": 0.8824219694361091,
+          "p95_ms": 0.9633184177801013,
+          "provider_requested": "CPUExecutionProvider",
+          "success": true
+        }
+      },
+      {
+        "case": "rope_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "rope_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0005782842636108398,
+          "compile_seconds": 0.014289316022768617,
+          "profile_providers": {
+            "CPUExecutionProvider": 130
+          },
+          "npu_only": false,
+          "p50_ms": 1.1043739505112171,
+          "p95_ms": 1.1774598620831966,
+          "provider_requested": "CPUExecutionProvider",
+          "success": true
+        }
+      }
+    ],
+    "rewrite_ops.json": [
+      {
+        "case": "masked_softmax_inputs_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "masked_softmax_inputs_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0002409134561299764,
+          "compile_seconds": 0.18386201502289623,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.46193506568670273,
+          "p95_ms": 0.49466381315141916,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "success": true
+        }
+      },
+      {
+        "case": "rope_inputs_fp16",
+        "returncode": 1,
+        "stdout_tail": "{\"event\": \"session_start\", \"case\": \"rope_inputs_fp16\"}\n",
+        "stderr_tail": "\u001b[0;93m2026-10-15 13:45:09.261289369 [W:onnxruntime:, zhouyi_execution_provider.cc:67 IsNodeSupported] Operators of type `Neg` are not supported by ZHOUYI.Neg node `` will not be assigned to ZHOUYI.\u001b[m\n\u001b[0;93m2026-10-15 13:45:09.261582230 [W:onnxruntime:, zhouyi_execution_provider.cc:290 GetCapability] Unsupported nodes in ZHOUYI:\n{ name: , type: Neg }\n\u001b[m\n\u001b[1;31m2026-10-15 13:45:09.459078642 [E:onnxruntime:, inference_session.cc:2005 Initialize] This session contains graph nodes that are assigned to the default CPU EP, but fallback to CPU EP has been explicitly disabled by the user.\u001b[m\nTraceback (most recent call last):\n  File \"/opt/opi6-npu-llm/stage2/stage2_ops.py\", line 86, in <module>\n    session=ort.InferenceSession(str(work/'model.onnx'),sess_options=so,providers=[a.provider]);session.disable_fallback()\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py\", line 465, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"/opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py\", line 537, in _create_inference_session\n    sess.initialize_session(providers, provider_options, disabled_optimizers)\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : This session contains graph nodes that are assigned to the default CPU EP, but fallback to CPU EP has been explicitly disabled by the user.\nTotal errors: 0,  warnings: 0\n"
+      },
+      {
+        "case": "silu_exp_fp16",
+        "returncode": 1,
+        "stdout_tail": "{\"event\": \"session_start\", \"case\": \"silu_exp_fp16\"}\n",
+        "stderr_tail": "\u001b[0;93m2026-10-15 13:45:09.831523718 [W:onnxruntime:, zhouyi_execution_provider.cc:67 IsNodeSupported] Operators of type `Neg` are not supported by ZHOUYI.Neg node `` will not be assigned to ZHOUYI.\u001b[m\n\u001b[0;93m2026-10-15 13:45:09.831572027 [W:onnxruntime:, zhouyi_execution_provider.cc:67 IsNodeSupported] Operators of type `Exp` are not supported by ZHOUYI.Exp node `` will not be assigned to ZHOUYI.\u001b[m\n\u001b[0;93m2026-10-15 13:45:09.832054921 [W:onnxruntime:, zhouyi_execution_provider.cc:290 GetCapability] Unsupported nodes in ZHOUYI:\n{ name: , type: Neg }\n{ name: , type: Exp }\n\u001b[m\n\u001b[1;31m2026-10-15 13:45:10.010554720 [E:onnxruntime:, inference_session.cc:2005 Initialize] This session contains graph nodes that are assigned to the default CPU EP, but fallback to CPU EP has been explicitly disabled by the user.\u001b[m\nTraceback (most recent call last):\n  File \"/opt/opi6-npu-llm/stage2/stage2_ops.py\", line 86, in <module>\n    session=ort.InferenceSession(str(work/'model.onnx'),sess_options=so,providers=[a.provider]);session.disable_fallback()\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py\", line 465, in __init__\n    self._create_inference_session(providers, provider_options, disabled_optimizers)\n  File \"/opt/opi6-npu-llm/stage1/venv/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py\", line 537, in _create_inference_session\n    sess.initialize_session(providers, provider_options, disabled_optimizers)\nonnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : This session contains graph nodes that are assigned to the default CPU EP, but fallback to CPU EP has been explicitly disabled by the user.\nTotal errors: 0,  warnings: 0\n"
+      }
+    ],
+    "rewrite_ops2.json": [
+      {
+        "case": "rope_inputs_mul_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "rope_inputs_mul_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0009465217590332031,
+          "compile_seconds": 0.18984462099615484,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.45301509089767933,
+          "p95_ms": 0.529572437517345,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "success": true
+        }
+      },
+      {
+        "case": "sigmoid_fp16",
+        "returncode": 0,
+        "result": {
+          "case": "sigmoid_fp16",
+          "runs": 10,
+          "numerical_failures": 0,
+          "max_abs_error": 0.0002441664495008711,
+          "compile_seconds": 0.1787463310174644,
+          "profile_providers": {
+            "ZhouyiExecutionProvider": 10
+          },
+          "npu_only": true,
+          "p50_ms": 0.3639881033450365,
+          "p95_ms": 0.4430895904079079,
+          "provider_requested": "ZhouyiExecutionProvider",
+          "success": true
+        }
+      }
+    ],
+    "silu_split/result.json": {
+      "shape": [
+        1,
+        8,
+        4864
+      ],
+      "input_range": [
+        -10,
+        10
+      ],
+      "runs": 10,
+      "npu_calls": 20,
+      "max_abs_error": 0.005772866192987891,
+      "numerical_failures": 0,
+      "profile_providers": {
+        "ZhouyiExecutionProvider": 20
+      },
+      "p50_ms": 0.8817820344120264,
+      "note": "Two NPU graphs; sigmoid intermediate returns through host memory; not fused SiLU",
+      "success": true
+    },
+    "hybrid_block/result.json": {
+      "reference_matches_transformers": true,
+      "reference_max_abs_error": 8.809566497802734e-05,
+      "sequence_length": 8,
+      "evaluation_sequences": 8,
+      "calibration_sequences": 12,
+      "npu_projection_calls": {
+        "self_attn.q_proj": 8,
+        "self_attn.k_proj": 8,
+        "self_attn.v_proj": 8,
+        "self_attn.o_proj": 8,
+        "mlp.gate_proj": 8,
+        "mlp.up_proj": 8,
+        "mlp.down_proj": 8
+      },
+      "profile_providers": {
+        "ZhouyiExecutionProvider": 56
+      },
+      "projection_max_int8_error": {
+        "self_attn.q_proj": 1,
+        "self_attn.k_proj": 1,
+        "self_attn.v_proj": 1,
+        "self_attn.o_proj": 1,
+        "mlp.gate_proj": 1,
+        "mlp.up_proj": 1,
+        "mlp.down_proj": 0
+      },
+      "npu_vs_fp32": {
+        "max_abs_error": 0.3508739173412323,
+        "relative_l2_error": 0.19261829223034327,
+        "cosine_similarity": 0.9815226231910671
+      },
+      "cpu_quant_vs_fp32": {
+        "max_abs_error": 0.3415107727050781,
+        "relative_l2_error": 0.1921397515789973,
+        "cosine_similarity": 0.9815975039763867
+      },
+      "npu_vs_cpu_quant": {
+        "max_abs_error": 0.11692863702774048,
+        "relative_l2_error": 0.07198133522055901,
+        "cosine_similarity": 0.9974116645069483
+      },
+      "compilation_seconds": {
+        "self_attn.q_proj": 0.2701455099740997,
+        "self_attn.k_proj": 0.058181985979899764,
+        "self_attn.v_proj": 0.05737168400082737,
+        "self_attn.o_proj": 0.11051531392149627,
+        "mlp.gate_proj": 0.40864150400739163,
+        "mlp.up_proj": 0.4560336219146848,
+        "mlp.down_proj": 0.43022690201178193
+      },
+      "npu_call_p50_ms": 0.8106285240501165,
+      "input_saturation_fraction": {
+        "self_attn.q_proj": 0.0,
+        "self_attn.k_proj": 0.0,
+        "self_attn.v_proj": 0.0,
+        "self_attn.o_proj": 0.0,
+        "mlp.gate_proj": 0.0,
+        "mlp.up_proj": 0.0,
+        "mlp.down_proj": 0.0
+      },
+      "cpu_operations": [
+        "RMSNorm",
+        "RoPE",
+        "attention QK/PV",
+        "causal mask and softmax",
+        "bias and residual",
+        "SiLU",
+        "quantization/dequantization"
+      ],
+      "npu_operations": [
+        "self_attn.q_proj",
+        "self_attn.k_proj",
+        "self_attn.v_proj",
+        "self_attn.o_proj",
+        "mlp.gate_proj",
+        "mlp.up_proj",
+        "mlp.down_proj"
+      ],
+      "all_npu_calls_within_1_lsb": true,
+      "note": "Synthetic token sequences from real embedding rows 0..511; not language quality or speed benchmark",
+      "numerical_prototype_valid": true
+    },
+    "hybrid_block/quantization.json": {
+      "self_attn.q_proj": {
+        "sx": 0.01871480420231819,
+        "sw": 0.009657972492277622,
+        "sy": 0.15835894644260406
+      },
+      "self_attn.k_proj": {
+        "sx": 0.01871480420231819,
+        "sw": 0.008058562874794006,
+        "sy": 0.04861742630600929
+      },
+      "self_attn.v_proj": {
+        "sx": 0.01871480420231819,
+        "sw": 0.0009534941054880619,
+        "sy": 0.002836595056578517
+      },
+      "self_attn.o_proj": {
+        "sx": 0.0026379115879535675,
+        "sw": 0.004429134074598551,
+        "sy": 0.003953556064516306
+      },
+      "mlp.gate_proj": {
+        "sx": 0.16166281700134277,
+        "sw": 0.003875492140650749,
+        "sy": 0.07724948227405548
+      },
+      "mlp.up_proj": {
+        "sx": 0.16166281700134277,
+        "sw": 0.00219918810762465,
+        "sy": 0.03906264156103134
+      },
+      "mlp.down_proj": {
+        "sx": 0.06435772776603699,
+        "sw": 0.00239911419339478,
+        "sy": 0.038976218551397324
+      }
+    },
+    "reference_manifest.json": {
+      "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "torch_version": "2.5.1",
+      "dtype": "float32",
+      "real_layer_weights": true,
+      "embedding_rows": 512,
+      "calibration_sequences": 12,
+      "evaluation_sequences": 8,
+      "sequence_length": 8,
+      "input_selection": "seeded sequences of token IDs 0..511, not natural-language evaluation",
+      "embedding_sha256": "39cb4987de7b6fd6332ce17578dd5ec679660e56855298d6751a6d5ec0f8a028"
+    },
+    "qwen-layer0/manifest.json": {
+      "repository": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "config": {
+        "architectures": [
+          "Qwen2ForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "bos_token_id": 151643,
+        "eos_token_id": 151645,
+        "hidden_act": "silu",
+        "hidden_size": 896,
+        "initializer_range": 0.02,
+        "intermediate_size": 4864,
+        "max_position_embeddings": 32768,
+        "max_window_layers": 21,
+        "model_type": "qwen2",
+        "num_attention_heads": 14,
+        "num_hidden_layers": 24,
+        "num_key_value_heads": 2,
+        "rms_norm_eps": 1e-06,
+        "rope_theta": 1000000.0,
+        "sliding_window": 32768,
+        "tie_word_embeddings": true,
+        "torch_dtype": "bfloat16",
+        "transformers_version": "4.43.1",
+        "use_cache": true,
+        "use_sliding_window": false,
+        "vocab_size": 151936
+      },
+      "tensors": {
+        "model.layers.0.input_layernorm.weight": {
+          "dtype": "BF16",
+          "shape": [
+            896
+          ],
+          "data_offsets": [
+            272269312,
+            272271104
+          ],
+          "file": "model.layers.0.input_layernorm.weight.bin",
+          "sha256": "19538c2a97694618c00dba54859800c7548a1ebf913c7d4f65afefc098267f4e"
+        },
+        "model.layers.0.mlp.down_proj.weight": {
+          "dtype": "BF16",
+          "shape": [
+            896,
+            4864
+          ],
+          "data_offsets": [
+            272271104,
+            280987392
+          ],
+          "file": "model.layers.0.mlp.down_proj.weight.bin",
+          "sha256": "195f2fd5f3bc96980f509c46b59180cfe3eacba58cb890381900d4c118157200"
+        },
+        "model.layers.0.mlp.gate_proj.weight": {
+          "dtype": "BF16",
+          "shape": [
+            4864,
+            896
+          ],
+          "data_offsets": [
+            280987392,
+            289703680
+          ],
+          "file": "model.layers.0.mlp.gate_proj.weight.bin",
+          "sha256": "e3346225575baaf568a0835e2c8f4bb682652093afdab5ff1a49224853c156a2"
+        },
+        "model.layers.0.mlp.up_proj.weight": {
+          "dtype": "BF16",
+          "shape": [
+            4864,
+            896
+          ],
+          "data_offsets": [
+            289703680,
+            298419968
+          ],
+          "file": "model.layers.0.mlp.up_proj.weight.bin",
+          "sha256": "c66e277c3f509f8b2e3b40155a954f98ac5753870d344c9f67005f7108991862"
+        },
+        "model.layers.0.post_attention_layernorm.weight": {
+          "dtype": "BF16",
+          "shape": [
+            896
+          ],
+          "data_offsets": [
+            298419968,
+            298421760
+          ],
+          "file": "model.layers.0.post_attention_layernorm.weight.bin",
+          "sha256": "ae7bbd7452729967e9d4c6e38bef80143b7154fbf2db4c7189055bccc8e5e543"
+        },
+        "model.layers.0.self_attn.k_proj.bias": {
+          "dtype": "BF16",
+          "shape": [
+            128
+          ],
+          "data_offsets": [
+            298421760,
+            298422016
+          ],
+          "file": "model.layers.0.self_attn.k_proj.bias.bin",
+          "sha256": "f636bb912548a6c9beb7ed5eb1c0e8d2567a9cc012df905f9e0195462d4098fa"
+        },
+        "model.layers.0.self_attn.k_proj.weight": {
+          "dtype": "BF16",
+          "shape": [
+            128,
+            896
+          ],
+          "data_offsets": [
+            298422016,
+            298651392
+          ],
+          "file": "model.layers.0.self_attn.k_proj.weight.bin",
+          "sha256": "e26298921de4a3580417534336302070ab0e25f64a0a2dec7f9cbee98dfe5f15"
+        },
+        "model.layers.0.self_attn.o_proj.weight": {
+          "dtype": "BF16",
+          "shape": [
+            896,
+            896
+          ],
+          "data_offsets": [
+            298651392,
+            300257024
+          ],
+          "file": "model.layers.0.self_attn.o_proj.weight.bin",
+          "sha256": "550df0b768809efcfc3cda7f8bf86e5c1d64ec5a456fa8c443a51d6bbf20c8d6"
+        },
+        "model.layers.0.self_attn.q_proj.bias": {
+          "dtype": "BF16",
+          "shape": [
+            896
+          ],
+          "data_offsets": [
+            300257024,
+            300258816
+          ],
+          "file": "model.layers.0.self_attn.q_proj.bias.bin",
+          "sha256": "05b10855b7e34b02cd21ac7a7bf81c98c3904308269dc83e162f6bc8a4eaf95f"
+        },
+        "model.layers.0.self_attn.q_proj.weight": {
+          "dtype": "BF16",
+          "shape": [
+            896,
+            896
+          ],
+          "data_offsets": [
+            300258816,
+            301864448
+          ],
+          "file": "model.layers.0.self_attn.q_proj.weight.bin",
+          "sha256": "7af566022f07072d911a22135d8835121b1fe44e05e2d9a009c1263cba98fdef"
+        },
+        "model.layers.0.self_attn.v_proj.bias": {
+          "dtype": "BF16",
+          "shape": [
+            128
+          ],
+          "data_offsets": [
+            301864448,
+            301864704
+          ],
+          "file": "model.layers.0.self_attn.v_proj.bias.bin",
+          "sha256": "c3fbc78e7b21c1713bbfc2aff9a08b9cd08a1bd515689602e5ecdaadab4b38b6"
+        },
+        "model.layers.0.self_attn.v_proj.weight": {
+          "dtype": "BF16",
+          "shape": [
+            128,
+            896
+          ],
+          "data_offsets": [
+            301864704,
+            302094080
+          ],
+          "file": "model.layers.0.self_attn.v_proj.weight.bin",
+          "sha256": "e91cd98736944a3939585889527255165ace900bc926e85b1f13d90d3cad6e0c"
+        }
+      },
+      "downloaded_tensor_bytes": 29824768
+    }
+  },
+  "live_module_notes": {
+    ".note.Linux": "0600000004000000010100004c696e7578000000000000000600000001000000000100004c696e757800000000000000",
+    ".note.gnu.build-id": "040000001400000003000000474e5500fe9d1845f77ba5d4880d83f73d7a04fd5ae9ae3f",
+    ".note.gnu.property": "040000001000000005000000474e5500000000c0040000000200000000000000"
+  },
+  "driver_sha256": {
+    "/lib/modules/6.6.89-cix/extra/aipu.ko": "1d7a4a955e5024cb0e17d56f19c21c322f82ac845c33afe6e63b51dbd799d5d6",
+    "/opt/opi6-npu-llm/stage1/driver-test/aipu-5.11.0/aipu.ko": "11389850fe5237732e8dbc485f512a4d6766119fee95ba7b6ceffdf56f9e0a44",
+    "/usr/src/aipu-5.11.0/armchina-npu/aipu_job_manager.c": "1841a5f691abeb6f89d16a264e4044701c33027b2a50e690d5809f8617a2a751"
+  }
+}

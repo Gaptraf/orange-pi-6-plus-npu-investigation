@@ -1,0 +1,2697 @@
+{
+  "m1-g0": {
+    "runs": [
+      {
+        "file": "m1-g0-run0.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 42.766666666666666,
+        "counter_span_us": 42.766666666666666,
+        "read_bytes": 730880,
+        "write_bytes": 1536,
+        "constant_bytes": 714592,
+        "read_GBs": 17.089945440374127,
+        "mac_util_pct": 0.16377021628994545,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 2.065536,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 23368253,
+            "end": 23391371,
+            "us": 19.265,
+            "aiff_busy_us": 6.395833333333333,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.019378838999913488,
+            "read_bytes": 94912
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 1,
+            "start": 23369473,
+            "end": 23419573,
+            "us": 41.75,
+            "aiff_busy_us": 29.493333333333332,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.06259481037924151,
+            "read_bytes": 545760
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 23370406,
+            "end": 23399409,
+            "us": 24.169166666666666,
+            "aiff_busy_us": 7.5975,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.015446677929869325,
+            "read_bytes": 90208
+          }
+        ]
+      },
+      {
+        "file": "m1-g0-run1.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 42.774166666666666,
+        "counter_span_us": 42.774166666666666,
+        "read_bytes": 730880,
+        "write_bytes": 1536,
+        "constant_bytes": 714592,
+        "read_GBs": 17.086948898283623,
+        "mac_util_pct": 0.16374150090592063,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 2.065536,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 27619044,
+            "end": 27644485,
+            "us": 21.200833333333332,
+            "aiff_busy_us": 8.314166666666667,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.01760937070083723,
+            "read_bytes": 94912
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 1,
+            "start": 27620010,
+            "end": 27670373,
+            "us": 41.969166666666666,
+            "aiff_busy_us": 30.49,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.06226793479339992,
+            "read_bytes": 545760
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 27621109,
+            "end": 27650732,
+            "us": 24.685833333333335,
+            "aiff_busy_us": 9.0975,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.015123383857138035,
+            "read_bytes": 90208
+          }
+        ]
+      },
+      {
+        "file": "m1-g0-run2.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 42.82083333333333,
+        "counter_span_us": 42.82083333333333,
+        "read_bytes": 730880,
+        "write_bytes": 1536,
+        "constant_bytes": 714592,
+        "read_GBs": 17.068327332879246,
+        "mac_util_pct": 0.16356305342025884,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 2.065536,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 31466607,
+            "end": 31489429,
+            "us": 19.018333333333334,
+            "aiff_busy_us": 6.448333333333333,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.01963018140390851,
+            "read_bytes": 94912
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 1,
+            "start": 31468054,
+            "end": 31517992,
+            "us": 41.615,
+            "aiff_busy_us": 29.294166666666666,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.06279786935800392,
+            "read_bytes": 545760
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 31468968,
+            "end": 31497826,
+            "us": 24.048333333333332,
+            "aiff_busy_us": 7.62,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.015524291357682445,
+            "read_bytes": 90208
+          }
+        ]
+      },
+      {
+        "file": "m1-g0-run3.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 42.79083333333333,
+        "counter_span_us": 42.79083333333333,
+        "read_bytes": 730880,
+        "write_bytes": 1536,
+        "constant_bytes": 714592,
+        "read_GBs": 17.080293676605194,
+        "mac_util_pct": 0.16367772498003857,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 2.065536,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 34684420,
+            "end": 34708937,
+            "us": 20.430833333333332,
+            "aiff_busy_us": 7.363333333333333,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.018273035036913163,
+            "read_bytes": 94912
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 1,
+            "start": 34685583,
+            "end": 34735769,
+            "us": 41.821666666666665,
+            "aiff_busy_us": 29.514166666666668,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.0624875463276611,
+            "read_bytes": 545760
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 34686716,
+            "end": 34715426,
+            "us": 23.925,
+            "aiff_busy_us": 8.465833333333334,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.015604319052594915,
+            "read_bytes": 90208
+          }
+        ]
+      },
+      {
+        "file": "m1-g0-run4.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 43.130833333333335,
+        "counter_span_us": 43.130833333333335,
+        "read_bytes": 730880,
+        "write_bytes": 1536,
+        "constant_bytes": 714592,
+        "read_GBs": 16.945649863786542,
+        "mac_util_pct": 0.16238745483702688,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 2.065536,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 37773853,
+            "end": 37797981,
+            "us": 20.106666666666666,
+            "aiff_busy_us": 7.200833333333334,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.01856763925729443,
+            "read_bytes": 94912
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 1,
+            "start": 37775455,
+            "end": 37825610,
+            "us": 41.795833333333334,
+            "aiff_busy_us": 30.395833333333332,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.06252616887648291,
+            "read_bytes": 545760
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 37776710,
+            "end": 37806847,
+            "us": 25.114166666666666,
+            "aiff_busy_us": 7.59,
+            "mtp0_busy_us": 0.37333333333333335,
+            "mtp0_busy_fraction": 0.014865447788432823,
+            "read_bytes": 90208
+          }
+        ]
+      }
+    ],
+    "medians": {
+      "vendor_us": 42.79083333333333,
+      "counter_span_us": 42.79083333333333,
+      "read_bytes": 730880,
+      "write_bytes": 1536,
+      "constant_bytes": 714592,
+      "read_GBs": 17.080293676605194,
+      "mac_util_pct": 0.16367772498003857,
+      "mtp_working_util_pct": 6.2534877232142865,
+      "ops_M": 2.065536
+    },
+    "core_ids": [
+      0,
+      1,
+      2
+    ]
+  },
+  "m1-g1": {
+    "runs": [
+      {
+        "file": "m1-g1-run0.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 33.87083333333333,
+        "counter_span_us": 33.87083333333333,
+        "read_bytes": 511872,
+        "write_bytes": 1024,
+        "constant_bytes": 506528,
+        "read_GBs": 15.112471398696027,
+        "mac_util_pct": 0.16083107803337846,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 1.606528,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 18805136,
+            "end": 18845781,
+            "us": 33.87083333333333,
+            "aiff_busy_us": 22.844166666666666,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.07715586172961003,
+            "read_bytes": 511872
+          }
+        ]
+      },
+      {
+        "file": "m1-g1-run1.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 33.526666666666664,
+        "counter_span_us": 33.526666666666664,
+        "read_bytes": 511872,
+        "write_bytes": 1024,
+        "constant_bytes": 506528,
+        "read_GBs": 15.26760787432889,
+        "mac_util_pct": 0.16248208308477496,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 1.606528,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 21043395,
+            "end": 21083627,
+            "us": 33.526666666666664,
+            "aiff_busy_us": 22.746666666666666,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.07794790216742892,
+            "read_bytes": 511872
+          }
+        ]
+      },
+      {
+        "file": "m1-g1-run2.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 33.64416666666666,
+        "counter_span_us": 33.64416666666666,
+        "read_bytes": 511872,
+        "write_bytes": 1024,
+        "constant_bytes": 506528,
+        "read_GBs": 15.214286775815518,
+        "mac_util_pct": 0.16191462528587586,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 1.606528,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 23185302,
+            "end": 23225675,
+            "us": 33.64416666666666,
+            "aiff_busy_us": 22.6725,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.07767567433680925,
+            "read_bytes": 511872
+          }
+        ]
+      },
+      {
+        "file": "m1-g1-run3.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 33.62416666666667,
+        "counter_span_us": 33.62416666666667,
+        "read_bytes": 511872,
+        "write_bytes": 1024,
+        "constant_bytes": 506528,
+        "read_GBs": 15.223336389997277,
+        "mac_util_pct": 0.16201093376952755,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 1.606528,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 24942995,
+            "end": 24983344,
+            "us": 33.62416666666667,
+            "aiff_busy_us": 22.5025,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.07772187662643436,
+            "read_bytes": 511872
+          }
+        ]
+      },
+      {
+        "file": "m1-g1-run4.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 33.92,
+        "counter_span_us": 33.92,
+        "read_bytes": 511872,
+        "write_bytes": 1024,
+        "constant_bytes": 506528,
+        "read_GBs": 15.090566037735849,
+        "mac_util_pct": 0.16059795515592243,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 1.606528,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 26848123,
+            "end": 26888827,
+            "us": 33.92,
+            "aiff_busy_us": 22.648333333333333,
+            "mtp0_busy_us": 2.6133333333333333,
+            "mtp0_busy_fraction": 0.0770440251572327,
+            "read_bytes": 511872
+          }
+        ]
+      }
+    ],
+    "medians": {
+      "vendor_us": 33.64416666666666,
+      "counter_span_us": 33.64416666666666,
+      "read_bytes": 511872,
+      "write_bytes": 1024,
+      "constant_bytes": 506528,
+      "read_GBs": 15.214286775815518,
+      "mac_util_pct": 0.16191462528587586,
+      "mtp_working_util_pct": 6.2534877232142865,
+      "ops_M": 1.606528
+    },
+    "core_ids": [
+      0
+    ]
+  },
+  "gate-up-m1": {
+    "runs": [
+      {
+        "file": "gate-up-m1-run0.json",
+        "core_ids": [
+          0,
+          1
+        ],
+        "vendor_us": 259.185,
+        "counter_span_us": 259.185,
+        "read_bytes": 5932032,
+        "write_bytes": 9984,
+        "constant_bytes": 5911040,
+        "read_GBs": 22.88725041958447,
+        "mac_util_pct": 0.22819259302128678,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 5149456,
+            "end": 5460478,
+            "us": 259.185,
+            "aiff_busy_us": 247.995,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.05473567786201619,
+            "read_bytes": 3096384
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 1,
+            "start": 5150663,
+            "end": 5452494,
+            "us": 251.52583333333334,
+            "aiff_busy_us": 236.705,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.05640242387296202,
+            "read_bytes": 2835648
+          }
+        ]
+      },
+      {
+        "file": "gate-up-m1-run1.json",
+        "core_ids": [
+          0,
+          1
+        ],
+        "vendor_us": 259.405,
+        "counter_span_us": 259.405,
+        "read_bytes": 5932032,
+        "write_bytes": 9984,
+        "constant_bytes": 5911040,
+        "read_GBs": 22.867839864304855,
+        "mac_util_pct": 0.22799906409753948,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 9889260,
+            "end": 10200546,
+            "us": 259.405,
+            "aiff_busy_us": 247.88583333333332,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.05468925682491342,
+            "read_bytes": 3096448
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 1,
+            "start": 9890354,
+            "end": 10192148,
+            "us": 251.495,
+            "aiff_busy_us": 236.205,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.056409338820519954,
+            "read_bytes": 2835584
+          }
+        ]
+      },
+      {
+        "file": "gate-up-m1-run2.json",
+        "core_ids": [
+          0,
+          1
+        ],
+        "vendor_us": 259.90416666666664,
+        "counter_span_us": 259.90416666666664,
+        "read_bytes": 5932032,
+        "write_bytes": 9984,
+        "constant_bytes": 5911040,
+        "read_GBs": 22.82392035525915,
+        "mac_util_pct": 0.22756117372322066,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 13509114,
+            "end": 13820999,
+            "us": 259.90416666666664,
+            "aiff_busy_us": 247.5825,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.05458422174840085,
+            "read_bytes": 3096384
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 1,
+            "start": 13510391,
+            "end": 13809468,
+            "us": 249.23083333333332,
+            "aiff_busy_us": 236.195,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.056921796059208836,
+            "read_bytes": 2835648
+          }
+        ]
+      },
+      {
+        "file": "gate-up-m1-run3.json",
+        "core_ids": [
+          0,
+          1
+        ],
+        "vendor_us": 259.3333333333333,
+        "counter_span_us": 259.3333333333333,
+        "read_bytes": 5932032,
+        "write_bytes": 9984,
+        "constant_bytes": 5911040,
+        "read_GBs": 22.87415938303342,
+        "mac_util_pct": 0.22806207155098543,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 16341293,
+            "end": 16652493,
+            "us": 259.3333333333333,
+            "aiff_busy_us": 247.44416666666666,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.054704370179948586,
+            "read_bytes": 3096384
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 1,
+            "start": 16342847,
+            "end": 16645046,
+            "us": 251.8325,
+            "aiff_busy_us": 236.2975,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.056333740349901885,
+            "read_bytes": 2835648
+          }
+        ]
+      },
+      {
+        "file": "gate-up-m1-run4.json",
+        "core_ids": [
+          0,
+          1
+        ],
+        "vendor_us": 259.45916666666665,
+        "counter_span_us": 259.45916666666665,
+        "read_bytes": 5932032,
+        "write_bytes": 9984,
+        "constant_bytes": 5911040,
+        "read_GBs": 22.863065800334667,
+        "mac_util_pct": 0.22795146528087804,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 19119362,
+            "end": 19430713,
+            "us": 259.45916666666665,
+            "aiff_busy_us": 247.84833333333333,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.0546778394802008,
+            "read_bytes": 3096384
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 1,
+            "start": 19120406,
+            "end": 19420684,
+            "us": 250.23166666666665,
+            "aiff_busy_us": 235.64583333333334,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.05669413010610168,
+            "read_bytes": 2835648
+          }
+        ]
+      }
+    ],
+    "medians": {
+      "vendor_us": 259.405,
+      "counter_span_us": 259.405,
+      "read_bytes": 5932032,
+      "write_bytes": 9984,
+      "constant_bytes": 5911040,
+      "read_GBs": 22.867839864304855,
+      "mac_util_pct": 0.22799906409753948,
+      "mtp_working_util_pct": 6.2534877232142865,
+      "ops_M": 17.442304
+    },
+    "core_ids": [
+      0,
+      1
+    ]
+  },
+  "m1-g3": {
+    "runs": [
+      {
+        "file": "m1-g3-run0.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 138.62333333333333,
+        "counter_span_us": 138.62333333333333,
+        "read_bytes": 2967744,
+        "write_bytes": 1024,
+        "constant_bytes": 2958432,
+        "read_GBs": 21.408690215692406,
+        "mac_util_pct": 0.2132295699377209,
+        "mtp_working_util_pct": 6.250642475328948,
+        "ops_M": 8.717184,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 40096093,
+            "end": 40262441,
+            "us": 138.62333333333333,
+            "aiff_busy_us": 127.36333333333333,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.10233967345564719,
+            "read_bytes": 2967744
+          }
+        ]
+      },
+      {
+        "file": "m1-g3-run1.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 138.8825,
+        "counter_span_us": 138.8825,
+        "read_bytes": 2967744,
+        "write_bytes": 1024,
+        "constant_bytes": 2958432,
+        "read_GBs": 21.368739762029055,
+        "mac_util_pct": 0.2128316652566018,
+        "mtp_working_util_pct": 6.250642475328948,
+        "ops_M": 8.717184,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 42793495,
+            "end": 42960154,
+            "us": 138.8825,
+            "aiff_busy_us": 127.77166666666666,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.10214869884014664,
+            "read_bytes": 2967744
+          }
+        ]
+      },
+      {
+        "file": "m1-g3-run2.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 139.4175,
+        "counter_span_us": 139.4175,
+        "read_bytes": 2967744,
+        "write_bytes": 1024,
+        "constant_bytes": 2958432,
+        "read_GBs": 21.286739469578784,
+        "mac_util_pct": 0.212014946115086,
+        "mtp_working_util_pct": 6.250642475328948,
+        "ops_M": 8.717184,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 44974402,
+            "end": 45141703,
+            "us": 139.4175,
+            "aiff_busy_us": 128.19916666666666,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.10175671394671879,
+            "read_bytes": 2967744
+          }
+        ]
+      },
+      {
+        "file": "m1-g3-run3.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 138.0975,
+        "counter_span_us": 138.0975,
+        "read_bytes": 2967744,
+        "write_bytes": 1024,
+        "constant_bytes": 2958432,
+        "read_GBs": 21.490208005213706,
+        "mac_util_pct": 0.2140414833722551,
+        "mtp_working_util_pct": 6.250642475328948,
+        "ops_M": 8.717184,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 46700460,
+            "end": 46866177,
+            "us": 138.0975,
+            "aiff_busy_us": 126.9825,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.1027293518468232,
+            "read_bytes": 2967744
+          }
+        ]
+      },
+      {
+        "file": "m1-g3-run4.json",
+        "core_ids": [
+          0
+        ],
+        "vendor_us": 137.42833333333334,
+        "counter_span_us": 137.42833333333334,
+        "read_bytes": 2967744,
+        "write_bytes": 1024,
+        "constant_bytes": 2958432,
+        "read_GBs": 21.59484822392277,
+        "mac_util_pct": 0.21508369513807196,
+        "mtp_working_util_pct": 6.250642475328948,
+        "ops_M": 8.717184,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 48398719,
+            "end": 48563633,
+            "us": 137.42833333333334,
+            "aiff_busy_us": 126.46166666666667,
+            "mtp0_busy_us": 14.186666666666667,
+            "mtp0_busy_fraction": 0.10322956207477837,
+            "read_bytes": 2967744
+          }
+        ]
+      }
+    ],
+    "medians": {
+      "vendor_us": 138.62333333333333,
+      "counter_span_us": 138.62333333333333,
+      "read_bytes": 2967744,
+      "write_bytes": 1024,
+      "constant_bytes": 2958432,
+      "read_GBs": 21.408690215692406,
+      "mac_util_pct": 0.2132295699377209,
+      "mtp_working_util_pct": 6.250642475328948,
+      "ops_M": 8.717184
+    },
+    "core_ids": [
+      0
+    ]
+  },
+  "m64-g2": {
+    "runs": [
+      {
+        "file": "m64-g2-run0.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 993.68,
+        "counter_span_us": 993.68,
+        "read_bytes": 17929792,
+        "write_bytes": 624864,
+        "constant_bytes": 17616736,
+        "read_GBs": 18.04382899927542,
+        "mac_util_pct": 3.8092969791303255,
+        "mtp_working_util_pct": 57.17474489795919,
+        "ops_M": 1116.307456,
+        "nodes": [
+          {
+            "name": "reshape_0/layout/NCHWC32",
+            "core": 0,
+            "start": 100660397,
+            "end": 100689398,
+            "us": 24.1675,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25280
+          },
+          {
+            "name": "reshape_1/layout/NCHWC32",
+            "core": 0,
+            "start": 100689398,
+            "end": 100696925,
+            "us": 6.2725,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_3/layout/NCHWC32",
+            "core": 1,
+            "start": 100661843,
+            "end": 100691957,
+            "us": 25.095,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25344
+          },
+          {
+            "name": "reshape/layout/NCHWC32",
+            "core": 1,
+            "start": 100691957,
+            "end": 100699002,
+            "us": 5.870833333333334,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_4/layout/NCHWC32",
+            "core": 2,
+            "start": 100662837,
+            "end": 100693479,
+            "us": 25.535,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 27072
+          },
+          {
+            "name": "reshape_2/layout/NCHWC32",
+            "core": 2,
+            "start": 100693479,
+            "end": 100700934,
+            "us": 6.2125,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/1",
+            "core": 0,
+            "start": 100747214,
+            "end": 100834771,
+            "us": 72.96416666666667,
+            "aiff_busy_us": 61.22416666666667,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.06140000228422628,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/0",
+            "core": 0,
+            "start": 100834771,
+            "end": 101213471,
+            "us": 315.5833333333333,
+            "aiff_busy_us": 310.37083333333334,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.07571164510166359,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42_concat",
+            "core": 0,
+            "start": 101213471,
+            "end": 101256416,
+            "us": 35.7875,
+            "aiff_busy_us": 32.48916666666667,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/1",
+            "core": 1,
+            "start": 100749301,
+            "end": 100813354,
+            "us": 53.3775,
+            "aiff_busy_us": 40.3775,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.08393049505877945,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/0",
+            "core": 1,
+            "start": 100813354,
+            "end": 101071081,
+            "us": 214.7725,
+            "aiff_busy_us": 204.9375,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.11124950044038848,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0_concat",
+            "core": 1,
+            "start": 101071081,
+            "end": 101124569,
+            "us": 44.57333333333333,
+            "aiff_busy_us": 33.05916666666667,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/1",
+            "core": 2,
+            "start": 100750535,
+            "end": 100834713,
+            "us": 70.14833333333333,
+            "aiff_busy_us": 54.825,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.09579700159186486,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/0",
+            "core": 2,
+            "start": 100834713,
+            "end": 101180534,
+            "us": 288.18416666666667,
+            "aiff_busy_us": 283.13666666666666,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.12436491711029694,
+            "read_bytes": 2381312
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22_concat",
+            "core": 2,
+            "start": 101180534,
+            "end": 101218895,
+            "us": 31.9675,
+            "aiff_busy_us": 26.986666666666668,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1728
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/1",
+            "core": 2,
+            "start": 101218895,
+            "end": 101253234,
+            "us": 28.615833333333335,
+            "aiff_busy_us": 25.423333333333332,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.15655668481901044,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/0",
+            "core": 2,
+            "start": 101253234,
+            "end": 101407376,
+            "us": 128.45166666666665,
+            "aiff_busy_us": 125.00916666666667,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.18601030218889075,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/1",
+            "core": 2,
+            "start": 101407376,
+            "end": 101440568,
+            "us": 27.66,
+            "aiff_busy_us": 24.65,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.16196673897324657,
+            "read_bytes": 488768
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/0",
+            "core": 2,
+            "start": 101440568,
+            "end": 101594470,
+            "us": 128.25166666666667,
+            "aiff_busy_us": 124.9975,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.18630037296461385,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/1",
+            "core": 2,
+            "start": 101594470,
+            "end": 101625273,
+            "us": 25.669166666666666,
+            "aiff_busy_us": 22.706666666666667,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.2617926825309223,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/0",
+            "core": 2,
+            "start": 101625273,
+            "end": 101769974,
+            "us": 120.58416666666666,
+            "aiff_busy_us": 117.52,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.297219784244753,
+            "read_bytes": 2600544
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42_concat",
+            "core": 0,
+            "start": 101789259,
+            "end": 101849094,
+            "us": 49.8625,
+            "aiff_busy_us": 40.12916666666667,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4352
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22_concat",
+            "core": 1,
+            "start": 101790160,
+            "end": 101839016,
+            "us": 40.71333333333333,
+            "aiff_busy_us": 30.49416666666667,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4416
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0_concat",
+            "core": 2,
+            "start": 101791141,
+            "end": 101852813,
+            "us": 51.39333333333333,
+            "aiff_busy_us": 40.625,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4448
+          }
+        ]
+      },
+      {
+        "file": "m64-g2-run1.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 1005.4883333333333,
+        "counter_span_us": 1005.4883333333333,
+        "read_bytes": 17929760,
+        "write_bytes": 624864,
+        "constant_bytes": 17616736,
+        "read_GBs": 17.83189262928627,
+        "mac_util_pct": 3.7645610562916083,
+        "mtp_working_util_pct": 57.17474489795919,
+        "ops_M": 1116.307456,
+        "nodes": [
+          {
+            "name": "reshape_0/layout/NCHWC32",
+            "core": 0,
+            "start": 115112699,
+            "end": 115140937,
+            "us": 23.531666666666666,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25408
+          },
+          {
+            "name": "reshape_1/layout/NCHWC32",
+            "core": 0,
+            "start": 115140937,
+            "end": 115148150,
+            "us": 6.010833333333333,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_3/layout/NCHWC32",
+            "core": 1,
+            "start": 115113738,
+            "end": 115142619,
+            "us": 24.0675,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25216
+          },
+          {
+            "name": "reshape/layout/NCHWC32",
+            "core": 1,
+            "start": 115142619,
+            "end": 115150641,
+            "us": 6.685,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_4/layout/NCHWC32",
+            "core": 2,
+            "start": 115115167,
+            "end": 115147340,
+            "us": 26.810833333333335,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 27072
+          },
+          {
+            "name": "reshape_2/layout/NCHWC32",
+            "core": 2,
+            "start": 115147340,
+            "end": 115154546,
+            "us": 6.005,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/1",
+            "core": 0,
+            "start": 115195040,
+            "end": 115278475,
+            "us": 69.52916666666667,
+            "aiff_busy_us": 56.0475,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.06443339126265955,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/0",
+            "core": 0,
+            "start": 115278475,
+            "end": 115659577,
+            "us": 317.585,
+            "aiff_busy_us": 310.1375,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.07523445166910696,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42_concat",
+            "core": 0,
+            "start": 115659577,
+            "end": 115702450,
+            "us": 35.7275,
+            "aiff_busy_us": 32.675,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/1",
+            "core": 1,
+            "start": 115196248,
+            "end": 115257853,
+            "us": 51.3375,
+            "aiff_busy_us": 40.13,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.08726564402240078,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/0",
+            "core": 1,
+            "start": 115257853,
+            "end": 115519427,
+            "us": 217.97833333333332,
+            "aiff_busy_us": 210.36166666666668,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.10961334077545934,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0_concat",
+            "core": 1,
+            "start": 115519427,
+            "end": 115569614,
+            "us": 41.8225,
+            "aiff_busy_us": 33.049166666666665,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/1",
+            "core": 2,
+            "start": 115197212,
+            "end": 115286407,
+            "us": 74.32916666666667,
+            "aiff_busy_us": 58.295,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.09040865519367677,
+            "read_bytes": 449920
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/0",
+            "core": 2,
+            "start": 115286407,
+            "end": 115642626,
+            "us": 296.8491666666667,
+            "aiff_busy_us": 282.85583333333335,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.12073471656480984,
+            "read_bytes": 2381312
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22_concat",
+            "core": 2,
+            "start": 115642626,
+            "end": 115682871,
+            "us": 33.5375,
+            "aiff_busy_us": 27.14,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1728
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/1",
+            "core": 2,
+            "start": 115682871,
+            "end": 115717182,
+            "us": 28.5925,
+            "aiff_busy_us": 25.685833333333335,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.15668444522164904,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/0",
+            "core": 2,
+            "start": 115717182,
+            "end": 115871769,
+            "us": 128.8225,
+            "aiff_busy_us": 125.3425,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.18547484587966648,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/1",
+            "core": 2,
+            "start": 115871769,
+            "end": 115904588,
+            "us": 27.349166666666665,
+            "aiff_busy_us": 24.34,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.16380755050428106,
+            "read_bytes": 488768
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/0",
+            "core": 2,
+            "start": 115904588,
+            "end": 116059865,
+            "us": 129.3975,
+            "aiff_busy_us": 126.07666666666667,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.1846506565685839,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/1",
+            "core": 2,
+            "start": 116059865,
+            "end": 116091025,
+            "us": 25.966666666666665,
+            "aiff_busy_us": 23.049166666666668,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.258793324775353,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/0",
+            "core": 2,
+            "start": 116091025,
+            "end": 116235446,
+            "us": 120.35083333333333,
+            "aiff_busy_us": 117.35083333333333,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.2977960268935958,
+            "read_bytes": 2600544
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42_concat",
+            "core": 0,
+            "start": 116255128,
+            "end": 116315526,
+            "us": 50.33166666666666,
+            "aiff_busy_us": 40.089166666666664,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4352
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22_concat",
+            "core": 1,
+            "start": 116256335,
+            "end": 116305563,
+            "us": 41.02333333333333,
+            "aiff_busy_us": 30.498333333333335,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4416
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0_concat",
+            "core": 2,
+            "start": 116257647,
+            "end": 116319285,
+            "us": 51.365,
+            "aiff_busy_us": 40.64666666666667,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4480
+          }
+        ]
+      },
+      {
+        "file": "m64-g2-run2.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 996.4916666666667,
+        "counter_span_us": 996.4916666666667,
+        "read_bytes": 17929696,
+        "write_bytes": 624864,
+        "constant_bytes": 17616736,
+        "read_GBs": 17.992820813019005,
+        "mac_util_pct": 3.7985487975870904,
+        "mtp_working_util_pct": 57.17474489795919,
+        "ops_M": 1116.307456,
+        "nodes": [
+          {
+            "name": "reshape_0/layout/NCHWC32",
+            "core": 0,
+            "start": 128394179,
+            "end": 128423497,
+            "us": 24.43166666666667,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25344
+          },
+          {
+            "name": "reshape_1/layout/NCHWC32",
+            "core": 0,
+            "start": 128423497,
+            "end": 128430499,
+            "us": 5.835,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_3/layout/NCHWC32",
+            "core": 1,
+            "start": 128395320,
+            "end": 128425447,
+            "us": 25.105833333333333,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25344
+          },
+          {
+            "name": "reshape/layout/NCHWC32",
+            "core": 1,
+            "start": 128425447,
+            "end": 128432717,
+            "us": 6.058333333333334,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_4/layout/NCHWC32",
+            "core": 2,
+            "start": 128396817,
+            "end": 128428319,
+            "us": 26.251666666666665,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 27072
+          },
+          {
+            "name": "reshape_2/layout/NCHWC32",
+            "core": 2,
+            "start": 128428319,
+            "end": 128435424,
+            "us": 5.920833333333333,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/1",
+            "core": 0,
+            "start": 128476083,
+            "end": 128565228,
+            "us": 74.2875,
+            "aiff_busy_us": 62.4725,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.060306242638398115,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/0",
+            "core": 0,
+            "start": 128565228,
+            "end": 128942009,
+            "us": 313.9841666666667,
+            "aiff_busy_us": 307.9916666666667,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.07609725543485472,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42_concat",
+            "core": 0,
+            "start": 128942009,
+            "end": 128985093,
+            "us": 35.903333333333336,
+            "aiff_busy_us": 32.57666666666667,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/1",
+            "core": 1,
+            "start": 128477050,
+            "end": 128538618,
+            "us": 51.306666666666665,
+            "aiff_busy_us": 40.39083333333333,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.08731808731808732,
+            "read_bytes": 449920
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/0",
+            "core": 1,
+            "start": 128538618,
+            "end": 128797947,
+            "us": 216.1075,
+            "aiff_busy_us": 204.7275,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.1105622587523956,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0_concat",
+            "core": 1,
+            "start": 128797947,
+            "end": 128848608,
+            "us": 42.2175,
+            "aiff_busy_us": 33.0675,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/1",
+            "core": 2,
+            "start": 128478584,
+            "end": 128564752,
+            "us": 71.80666666666667,
+            "aiff_busy_us": 55.6725,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.0935846253829728,
+            "read_bytes": 449920
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/0",
+            "core": 2,
+            "start": 128564752,
+            "end": 128913931,
+            "us": 290.9825,
+            "aiff_busy_us": 285.1508333333333,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.1231689190930726,
+            "read_bytes": 2381312
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22_concat",
+            "core": 2,
+            "start": 128913931,
+            "end": 128953950,
+            "us": 33.34916666666667,
+            "aiff_busy_us": 26.995,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1728
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/1",
+            "core": 2,
+            "start": 128953950,
+            "end": 128989001,
+            "us": 29.20916666666667,
+            "aiff_busy_us": 25.905,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.15337650851616216,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/0",
+            "core": 2,
+            "start": 128989001,
+            "end": 129142577,
+            "us": 127.98,
+            "aiff_busy_us": 124.60333333333334,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.1866958378913372,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/1",
+            "core": 2,
+            "start": 129142577,
+            "end": 129175294,
+            "us": 27.264166666666668,
+            "aiff_busy_us": 24.320833333333333,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.16431824433780604,
+            "read_bytes": 488768
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/0",
+            "core": 2,
+            "start": 129175294,
+            "end": 129330198,
+            "us": 129.08666666666667,
+            "aiff_busy_us": 125.70416666666667,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.1850952848215669,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/1",
+            "core": 2,
+            "start": 129330198,
+            "end": 129361745,
+            "us": 26.289166666666667,
+            "aiff_busy_us": 23.315833333333334,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.2556186008178274,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/0",
+            "core": 2,
+            "start": 129361745,
+            "end": 129506358,
+            "us": 120.51083333333334,
+            "aiff_busy_us": 117.08,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.29740064862771676,
+            "read_bytes": 2600544
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42_concat",
+            "core": 0,
+            "start": 129526390,
+            "end": 129586825,
+            "us": 50.3625,
+            "aiff_busy_us": 40.18,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4352
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22_concat",
+            "core": 1,
+            "start": 129527055,
+            "end": 129576315,
+            "us": 41.05,
+            "aiff_busy_us": 30.51,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4416
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0_concat",
+            "core": 2,
+            "start": 129528268,
+            "end": 129589969,
+            "us": 51.4175,
+            "aiff_busy_us": 40.6725,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4416
+          }
+        ]
+      },
+      {
+        "file": "m64-g2-run3.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 1005.495,
+        "counter_span_us": 1005.495,
+        "read_bytes": 17929888,
+        "write_bytes": 624864,
+        "constant_bytes": 17616736,
+        "read_GBs": 17.831901700157633,
+        "mac_util_pct": 3.7645360963726544,
+        "mtp_working_util_pct": 57.17474489795919,
+        "ops_M": 1116.307456,
+        "nodes": [
+          {
+            "name": "reshape_0/layout/NCHWC32",
+            "core": 0,
+            "start": 140177288,
+            "end": 140207782,
+            "us": 25.411666666666665,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25344
+          },
+          {
+            "name": "reshape_1/layout/NCHWC32",
+            "core": 0,
+            "start": 140207782,
+            "end": 140215627,
+            "us": 6.5375,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_3/layout/NCHWC32",
+            "core": 1,
+            "start": 140178154,
+            "end": 140208317,
+            "us": 25.135833333333334,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25408
+          },
+          {
+            "name": "reshape/layout/NCHWC32",
+            "core": 1,
+            "start": 140208317,
+            "end": 140215822,
+            "us": 6.254166666666666,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_4/layout/NCHWC32",
+            "core": 2,
+            "start": 140179385,
+            "end": 140209935,
+            "us": 25.458333333333332,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 27072
+          },
+          {
+            "name": "reshape_2/layout/NCHWC32",
+            "core": 2,
+            "start": 140209935,
+            "end": 140218088,
+            "us": 6.7941666666666665,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/1",
+            "core": 0,
+            "start": 140264155,
+            "end": 140352552,
+            "us": 73.66416666666667,
+            "aiff_busy_us": 61.9375,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.06081654354785796,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/0",
+            "core": 0,
+            "start": 140352552,
+            "end": 140733089,
+            "us": 317.1141666666667,
+            "aiff_busy_us": 311.46,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.0753461555643735,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42_concat",
+            "core": 0,
+            "start": 140733089,
+            "end": 140776362,
+            "us": 36.060833333333335,
+            "aiff_busy_us": 32.62916666666667,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/1",
+            "core": 1,
+            "start": 140266475,
+            "end": 140329397,
+            "us": 52.435,
+            "aiff_busy_us": 40.255833333333335,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.08543911509487938,
+            "read_bytes": 449920
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/0",
+            "core": 1,
+            "start": 140329397,
+            "end": 140587372,
+            "us": 214.97916666666666,
+            "aiff_busy_us": 205.02,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.11114255257292373,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0_concat",
+            "core": 1,
+            "start": 140587372,
+            "end": 140639219,
+            "us": 43.20583333333333,
+            "aiff_busy_us": 33.0475,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/1",
+            "core": 2,
+            "start": 140267724,
+            "end": 140353079,
+            "us": 71.12916666666666,
+            "aiff_busy_us": 55.2475,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.0944760119500908,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/0",
+            "core": 2,
+            "start": 140353079,
+            "end": 140708626,
+            "us": 296.2891666666667,
+            "aiff_busy_us": 289.5625,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.120962910670038,
+            "read_bytes": 2381312
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22_concat",
+            "core": 2,
+            "start": 140708626,
+            "end": 140748295,
+            "us": 33.0575,
+            "aiff_busy_us": 27.015833333333333,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1728
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/1",
+            "core": 2,
+            "start": 140748295,
+            "end": 140783169,
+            "us": 29.061666666666667,
+            "aiff_busy_us": 25.983333333333334,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.15415495784825373,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/0",
+            "core": 2,
+            "start": 140783169,
+            "end": 140937822,
+            "us": 128.8775,
+            "aiff_busy_us": 125.60916666666667,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.18539569229177577,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/1",
+            "core": 2,
+            "start": 140937822,
+            "end": 140970376,
+            "us": 27.128333333333334,
+            "aiff_busy_us": 24.216666666666665,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.1651409964981262,
+            "read_bytes": 488768
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/0",
+            "core": 2,
+            "start": 140970376,
+            "end": 141125593,
+            "us": 129.3475,
+            "aiff_busy_us": 126.08583333333333,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.18472203431325177,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/1",
+            "core": 2,
+            "start": 141125593,
+            "end": 141156610,
+            "us": 25.8475,
+            "aiff_busy_us": 22.8675,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.25998645903859174,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/0",
+            "core": 2,
+            "start": 141156610,
+            "end": 141300385,
+            "us": 119.8125,
+            "aiff_busy_us": 116.80583333333334,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.2991340636411059,
+            "read_bytes": 2600544
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42_concat",
+            "core": 0,
+            "start": 141320033,
+            "end": 141380222,
+            "us": 50.1575,
+            "aiff_busy_us": 40.12583333333333,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4352
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22_concat",
+            "core": 1,
+            "start": 141321322,
+            "end": 141370501,
+            "us": 40.9825,
+            "aiff_busy_us": 30.513333333333332,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4416
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0_concat",
+            "core": 2,
+            "start": 141322553,
+            "end": 141383882,
+            "us": 51.1075,
+            "aiff_busy_us": 40.62416666666667,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4480
+          }
+        ]
+      },
+      {
+        "file": "m64-g2-run4.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 992.5575,
+        "counter_span_us": 992.5575,
+        "read_bytes": 17929888,
+        "write_bytes": 624864,
+        "constant_bytes": 17616736,
+        "read_GBs": 18.06433178934218,
+        "mac_util_pct": 3.8136049772655207,
+        "mtp_working_util_pct": 57.17474489795919,
+        "ops_M": 1116.307456,
+        "nodes": [
+          {
+            "name": "reshape_0/layout/NCHWC32",
+            "core": 0,
+            "start": 151978856,
+            "end": 152006797,
+            "us": 23.284166666666668,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25472
+          },
+          {
+            "name": "reshape_1/layout/NCHWC32",
+            "core": 0,
+            "start": 152006797,
+            "end": 152014262,
+            "us": 6.220833333333333,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_3/layout/NCHWC32",
+            "core": 1,
+            "start": 151980232,
+            "end": 152010471,
+            "us": 25.199166666666667,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 25216
+          },
+          {
+            "name": "reshape/layout/NCHWC32",
+            "core": 1,
+            "start": 152010471,
+            "end": 152017597,
+            "us": 5.9383333333333335,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "reshape_4/layout/NCHWC32",
+            "core": 2,
+            "start": 151981364,
+            "end": 152011697,
+            "us": 25.2775,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 27136
+          },
+          {
+            "name": "reshape_2/layout/NCHWC32",
+            "core": 2,
+            "start": 152011697,
+            "end": 152019458,
+            "us": 6.4675,
+            "aiff_busy_us": 0.0,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 19904
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/1",
+            "core": 0,
+            "start": 152059686,
+            "end": 152149209,
+            "us": 74.6025,
+            "aiff_busy_us": 62.84583333333333,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.0600516068496364,
+            "read_bytes": 449984
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42/0",
+            "core": 0,
+            "start": 152149209,
+            "end": 152526252,
+            "us": 314.2025,
+            "aiff_busy_us": 308.76166666666666,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.07604437690130834,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_42_concat",
+            "core": 0,
+            "start": 152526252,
+            "end": 152569082,
+            "us": 35.69166666666667,
+            "aiff_busy_us": 32.49333333333333,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/1",
+            "core": 1,
+            "start": 152060699,
+            "end": 152123861,
+            "us": 52.635,
+            "aiff_busy_us": 40.4625,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.08511446755960862,
+            "read_bytes": 449920
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0/0",
+            "core": 1,
+            "start": 152123861,
+            "end": 152382347,
+            "us": 215.405,
+            "aiff_busy_us": 204.44,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.11092283527928011,
+            "read_bytes": 2384320
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_0_concat",
+            "core": 1,
+            "start": 152382347,
+            "end": 152434480,
+            "us": 43.44416666666667,
+            "aiff_busy_us": 33.035833333333336,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1664
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/1",
+            "core": 2,
+            "start": 152062201,
+            "end": 152147759,
+            "us": 71.29833333333333,
+            "aiff_busy_us": 54.285833333333336,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.09425185254447276,
+            "read_bytes": 449920
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22/0",
+            "core": 2,
+            "start": 152147759,
+            "end": 152492186,
+            "us": 287.0225,
+            "aiff_busy_us": 281.0858333333333,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.12486825945701122,
+            "read_bytes": 2381312
+          },
+          {
+            "name": "subgraph_graph_1_matmul_0_fc_subnode_22_concat",
+            "core": 2,
+            "start": 152492186,
+            "end": 152532423,
+            "us": 33.530833333333334,
+            "aiff_busy_us": 27.006666666666668,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 1728
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/1",
+            "core": 2,
+            "start": 152532423,
+            "end": 152566861,
+            "us": 28.698333333333334,
+            "aiff_busy_us": 25.403333333333332,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.1561066264010686,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42/0",
+            "core": 2,
+            "start": 152566861,
+            "end": 152721116,
+            "us": 128.54583333333332,
+            "aiff_busy_us": 125.225,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.18587403973939257,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/1",
+            "core": 2,
+            "start": 152721116,
+            "end": 152754156,
+            "us": 27.533333333333335,
+            "aiff_busy_us": 24.4475,
+            "mtp0_busy_us": 4.48,
+            "mtp0_busy_fraction": 0.16271186440677965,
+            "read_bytes": 488768
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0/0",
+            "core": 2,
+            "start": 152754156,
+            "end": 152909339,
+            "us": 129.31916666666666,
+            "aiff_busy_us": 125.90416666666667,
+            "mtp0_busy_us": 23.893333333333334,
+            "mtp0_busy_fraction": 0.18476250620235463,
+            "read_bytes": 2603616
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/1",
+            "core": 2,
+            "start": 152909339,
+            "end": 152940162,
+            "us": 25.685833333333335,
+            "aiff_busy_us": 22.64,
+            "mtp0_busy_us": 6.72,
+            "mtp0_busy_fraction": 0.2616228141323038,
+            "read_bytes": 488832
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22/0",
+            "core": 2,
+            "start": 152940162,
+            "end": 153085428,
+            "us": 121.055,
+            "aiff_busy_us": 118.0575,
+            "mtp0_busy_us": 35.84,
+            "mtp0_busy_fraction": 0.2960637726653174,
+            "read_bytes": 2600544
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_42_concat",
+            "core": 0,
+            "start": 153105262,
+            "end": 153165392,
+            "us": 50.108333333333334,
+            "aiff_busy_us": 40.1125,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4352
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_22_concat",
+            "core": 1,
+            "start": 153106567,
+            "end": 153155563,
+            "us": 40.83,
+            "aiff_busy_us": 30.498333333333335,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4480
+          },
+          {
+            "name": "subgraph_graph_1_matmul_fc_subnode_0_concat",
+            "core": 2,
+            "start": 153107972,
+            "end": 153169925,
+            "us": 51.6275,
+            "aiff_busy_us": 40.6375,
+            "mtp0_busy_us": 0.0,
+            "mtp0_busy_fraction": 0.0,
+            "read_bytes": 4480
+          }
+        ]
+      }
+    ],
+    "medians": {
+      "vendor_us": 996.4916666666667,
+      "counter_span_us": 996.4916666666667,
+      "read_bytes": 17929792,
+      "write_bytes": 624864,
+      "constant_bytes": 17616736,
+      "read_GBs": 17.992820813019005,
+      "mac_util_pct": 3.7985487975870904,
+      "mtp_working_util_pct": 57.17474489795919,
+      "ops_M": 1116.307456
+    },
+    "core_ids": [
+      0,
+      1,
+      2
+    ]
+  },
+  "split-no-concat-profile": {
+    "runs": [
+      {
+        "file": "split-no-concat-profile-run0.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 267.49583333333334,
+        "counter_span_us": 267.49583333333334,
+        "read_bytes": 5935040,
+        "write_bytes": 10496,
+        "constant_bytes": 5911296,
+        "read_GBs": 22.187411018863223,
+        "mac_util_pct": 0.22110287283810237,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_4_fc",
+            "core": 0,
+            "start": 53031808,
+            "end": 53216527,
+            "us": 153.9325,
+            "aiff_busy_us": 140.5525,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.030316318299687634,
+            "read_bytes": 935296
+          },
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 53216527,
+            "end": 53348395,
+            "us": 109.89,
+            "aiff_busy_us": 99.51416666666667,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.044165377498710835,
+            "read_bytes": 1058496
+          },
+          {
+            "name": "subgraph_matmul_3_fc",
+            "core": 1,
+            "start": 53033055,
+            "end": 53140027,
+            "us": 89.14333333333333,
+            "aiff_busy_us": 77.72916666666667,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.05235014770220245,
+            "read_bytes": 934240
+          },
+          {
+            "name": "subgraph_matmul_2_fc",
+            "core": 1,
+            "start": 53140027,
+            "end": 53250054,
+            "us": 91.68916666666667,
+            "aiff_busy_us": 79.92583333333333,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.05293246203204668,
+            "read_bytes": 968832
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 53034411,
+            "end": 53229715,
+            "us": 162.75333333333333,
+            "aiff_busy_us": 144.13,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.028673247859746856,
+            "read_bytes": 1020192
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 2,
+            "start": 53229715,
+            "end": 53352803,
+            "us": 102.57333333333334,
+            "aiff_busy_us": 85.34916666666666,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.04549590536851683,
+            "read_bytes": 1017984
+          }
+        ]
+      },
+      {
+        "file": "split-no-concat-profile-run1.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 267.2025,
+        "counter_span_us": 267.2025,
+        "read_bytes": 5935104,
+        "write_bytes": 10496,
+        "constant_bytes": 5911296,
+        "read_GBs": 22.212007746933505,
+        "mac_util_pct": 0.22134559827180594,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_4_fc",
+            "core": 0,
+            "start": 57311109,
+            "end": 57492656,
+            "us": 151.28916666666666,
+            "aiff_busy_us": 137.67,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.030846006819170792,
+            "read_bytes": 935360
+          },
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 57492656,
+            "end": 57623307,
+            "us": 108.87583333333333,
+            "aiff_busy_us": 97.55666666666667,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.04457677323556651,
+            "read_bytes": 1058496
+          },
+          {
+            "name": "subgraph_matmul_3_fc",
+            "core": 1,
+            "start": 57312356,
+            "end": 57420743,
+            "us": 90.3225,
+            "aiff_busy_us": 77.58166666666666,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.05166671279766023,
+            "read_bytes": 934240
+          },
+          {
+            "name": "subgraph_matmul_2_fc",
+            "core": 1,
+            "start": 57420743,
+            "end": 57532622,
+            "us": 93.2325,
+            "aiff_busy_us": 80.77583333333334,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.052056239329990435,
+            "read_bytes": 968832
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 57313297,
+            "end": 57509416,
+            "us": 163.4325,
+            "aiff_busy_us": 144.68333333333334,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.02855409215833244,
+            "read_bytes": 1020192
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 2,
+            "start": 57509416,
+            "end": 57631752,
+            "us": 101.94666666666667,
+            "aiff_busy_us": 85.85416666666667,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.04577556892492807,
+            "read_bytes": 1017984
+          }
+        ]
+      },
+      {
+        "file": "split-no-concat-profile-run2.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 266.39,
+        "counter_span_us": 266.39,
+        "read_bytes": 5935104,
+        "write_bytes": 10496,
+        "constant_bytes": 5911296,
+        "read_GBs": 22.279755246067793,
+        "mac_util_pct": 0.22202071107106955,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_4_fc",
+            "core": 0,
+            "start": 61342383,
+            "end": 61516572,
+            "us": 145.1575,
+            "aiff_busy_us": 131.29,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.03214898759393532,
+            "read_bytes": 935360
+          },
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 61516572,
+            "end": 61652280,
+            "us": 113.09,
+            "aiff_busy_us": 98.45083333333334,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.04291567188375041,
+            "read_bytes": 1058496
+          },
+          {
+            "name": "subgraph_matmul_3_fc",
+            "core": 1,
+            "start": 61344199,
+            "end": 61453687,
+            "us": 91.24,
+            "aiff_busy_us": 77.6875,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.05114715767938039,
+            "read_bytes": 934240
+          },
+          {
+            "name": "subgraph_matmul_2_fc",
+            "core": 1,
+            "start": 61453687,
+            "end": 61566326,
+            "us": 93.86583333333333,
+            "aiff_busy_us": 81.95083333333334,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.051705004483349463,
+            "read_bytes": 968832
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 61345206,
+            "end": 61539253,
+            "us": 161.70583333333335,
+            "aiff_busy_us": 144.34166666666667,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.028858987771003933,
+            "read_bytes": 1020192
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 2,
+            "start": 61539253,
+            "end": 61662051,
+            "us": 102.33166666666666,
+            "aiff_busy_us": 87.87,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.04560334858873923,
+            "read_bytes": 1017984
+          }
+        ]
+      },
+      {
+        "file": "split-no-concat-profile-run3.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 266.00916666666666,
+        "counter_span_us": 266.00916666666666,
+        "read_bytes": 5935104,
+        "write_bytes": 10496,
+        "constant_bytes": 5911296,
+        "read_GBs": 22.311652167375183,
+        "mac_util_pct": 0.22233856811534272,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_4_fc",
+            "core": 0,
+            "start": 69384962,
+            "end": 69574380,
+            "us": 157.84833333333333,
+            "aiff_busy_us": 143.85833333333332,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.029564244158422116,
+            "read_bytes": 935360
+          },
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 69574380,
+            "end": 69698405,
+            "us": 103.35416666666667,
+            "aiff_busy_us": 95.11666666666666,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.0469582745414231,
+            "read_bytes": 1058496
+          },
+          {
+            "name": "subgraph_matmul_3_fc",
+            "core": 1,
+            "start": 69385598,
+            "end": 69492545,
+            "us": 89.1225,
+            "aiff_busy_us": 77.4925,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.05236238510664161,
+            "read_bytes": 934240
+          },
+          {
+            "name": "subgraph_matmul_2_fc",
+            "core": 1,
+            "start": 69492545,
+            "end": 69600678,
+            "us": 90.11083333333333,
+            "aiff_busy_us": 77.82666666666667,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.05385959882737,
+            "read_bytes": 968832
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 69387113,
+            "end": 69582764,
+            "us": 163.0425,
+            "aiff_busy_us": 145.16583333333332,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.028622393956585963,
+            "read_bytes": 1020192
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 2,
+            "start": 69582764,
+            "end": 69704173,
+            "us": 101.17416666666666,
+            "aiff_busy_us": 86.84583333333333,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.046125081336638965,
+            "read_bytes": 1017984
+          }
+        ]
+      },
+      {
+        "file": "split-no-concat-profile-run4.json",
+        "core_ids": [
+          0,
+          1,
+          2
+        ],
+        "vendor_us": 264.6141666666667,
+        "counter_span_us": 264.6141666666667,
+        "read_bytes": 5935104,
+        "write_bytes": 10496,
+        "constant_bytes": 5911296,
+        "read_GBs": 22.42927532854439,
+        "mac_util_pct": 0.22351069849077954,
+        "mtp_working_util_pct": 6.2534877232142865,
+        "ops_M": 17.442304,
+        "nodes": [
+          {
+            "name": "subgraph_matmul_4_fc",
+            "core": 0,
+            "start": 72991906,
+            "end": 73168688,
+            "us": 147.31833333333333,
+            "aiff_busy_us": 133.30083333333334,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.03167743322283943,
+            "read_bytes": 935360
+          },
+          {
+            "name": "subgraph_matmul_fc",
+            "core": 0,
+            "start": 73168688,
+            "end": 73300443,
+            "us": 109.79583333333333,
+            "aiff_busy_us": 96.06166666666667,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.044203256043413915,
+            "read_bytes": 1058496
+          },
+          {
+            "name": "subgraph_matmul_3_fc",
+            "core": 1,
+            "start": 72993082,
+            "end": 73101086,
+            "us": 90.00333333333333,
+            "aiff_busy_us": 77.66666666666667,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.05184993148401911,
+            "read_bytes": 934240
+          },
+          {
+            "name": "subgraph_matmul_2_fc",
+            "core": 1,
+            "start": 73101086,
+            "end": 73213230,
+            "us": 93.45333333333333,
+            "aiff_busy_us": 81.235,
+            "mtp0_busy_us": 4.8533333333333335,
+            "mtp0_busy_fraction": 0.05193322870594949,
+            "read_bytes": 968832
+          },
+          {
+            "name": "subgraph_matmul_0_fc",
+            "core": 2,
+            "start": 72994225,
+            "end": 73190142,
+            "us": 163.26416666666665,
+            "aiff_busy_us": 145.11416666666668,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.028583532822572824,
+            "read_bytes": 1020192
+          },
+          {
+            "name": "subgraph_matmul_1_fc",
+            "core": 2,
+            "start": 73190142,
+            "end": 73309443,
+            "us": 99.4175,
+            "aiff_busy_us": 83.48166666666667,
+            "mtp0_busy_us": 4.666666666666667,
+            "mtp0_busy_fraction": 0.0469400927066831,
+            "read_bytes": 1017984
+          }
+        ]
+      }
+    ],
+    "medians": {
+      "vendor_us": 266.39,
+      "counter_span_us": 266.39,
+      "read_bytes": 5935104,
+      "write_bytes": 10496,
+      "constant_bytes": 5911296,
+      "read_GBs": 22.279755246067793,
+      "mac_util_pct": 0.22202071107106955,
+      "mtp_working_util_pct": 6.2534877232142865,
+      "ops_M": 17.442304
+    },
+    "core_ids": [
+      0,
+      1,
+      2
+    ]
+  }
+}

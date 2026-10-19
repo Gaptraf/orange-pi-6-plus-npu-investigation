@@ -1,0 +1,40 @@
+{
+  "accessed": "2026-10-19",
+  "sources": [
+    {
+      "name": "orangepi-product",
+      "url": "http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-6-Plus.html",
+      "resolved_url": "http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-6-Plus.html",
+      "sha256": "a8f76dfe9dade13c4104058d090ce6f367a829c0831c811d0e7a68626723401a",
+      "bytes": 71936
+    },
+    {
+      "name": "cix-ernie-demo",
+      "url": "https://www.cixtech.com/list_6/151.html",
+      "resolved_url": "https://www.cixtech.com/list_6/151.html",
+      "sha256": "4d76586526b0d86ca50a6bdc84179d30501293f82f5bc7fd5c1564e91e96cd95",
+      "bytes": 31465
+    },
+    {
+      "name": "github-pages",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "resolved_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "sha256": "8310a6789456c876ab03f6c758af718ae318a39a5ac8d57fdbd273080a082df6",
+      "bytes": 151260
+    },
+    {
+      "name": "github-pages-source",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "resolved_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "sha256": "1a51cad55ddc6e07c200365b211378d331a77496275356e15e6910643654e296",
+      "bytes": 154137
+    },
+    {
+      "name": "github-repo",
+      "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository",
+      "resolved_url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository",
+      "sha256": "96d68eb715074ee4db7ddfc946bdd9c9db161f477998beedb5fc15959a0fed79",
+      "bytes": 226314
+    }
+  ]
+}

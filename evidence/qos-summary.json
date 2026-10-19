@@ -1,0 +1,1137 @@
+{
+  "hardware_runs": 20,
+  "npu_frequency_hz": 1200000000,
+  "graph_sha256": "710a188acbb29ea45e29b0aaef5f6876f5d5dd3288ee7dbd3845a3fcbd575800",
+  "all_outputs_bit_exact": true,
+  "qos_propagation_verified_at_ioctl_boundary": true,
+  "groups": {
+    "0": {
+      "runs": 10,
+      "npu_us": {
+        "median": 595.3241666666667,
+        "mean": 595.38525,
+        "min": 593.8475,
+        "max": 596.7583333333333,
+        "stdev": 0.9060493754089831
+      },
+      "npu_read_bytes": {
+        "median": 12370624.0,
+        "mean": 12370617.6,
+        "min": 12370592,
+        "max": 12370624,
+        "stdev": 13.492384683385085
+      },
+      "constant_read_bytes": {
+        "median": 12333568.0,
+        "mean": 12333568,
+        "min": 12333568,
+        "max": 12333568,
+        "stdev": 0.0
+      },
+      "whole_graph_counter_GBs": {
+        "median": 20.7796436278779,
+        "mean": 20.77754428856601,
+        "min": 20.729651031266144,
+        "max": 20.831314436787224,
+        "stdev": 0.03164000278495144
+      },
+      "host_infer_us": {
+        "median": 732.751,
+        "mean": 749.6927000000001,
+        "min": 689.967,
+        "max": 825.244,
+        "stdev": 57.99347605655506
+      },
+      "nodes": {
+        "0": {
+          "span_us_median": 595.3241666666667,
+          "aiff_busy_cycles_median": 0.0
+        },
+        "1": {
+          "span_us_median": 329.33625,
+          "aiff_busy_cycles_median": 0.0
+        },
+        "2": {
+          "span_us_median": 253.96166666666667,
+          "aiff_busy_cycles_median": 0.0
+        }
+      }
+    },
+    "1": {
+      "runs": 10,
+      "npu_us": {
+        "median": 595.355,
+        "mean": 595.09925,
+        "min": 594.0091666666667,
+        "max": 596.2008333333333,
+        "stdev": 0.7407393755774422
+      },
+      "npu_read_bytes": {
+        "median": 12370624.0,
+        "mean": 12370624,
+        "min": 12370624,
+        "max": 12370624,
+        "stdev": 0.0
+      },
+      "constant_read_bytes": {
+        "median": 12333568.0,
+        "mean": 12333568,
+        "min": 12333568,
+        "max": 12333568,
+        "stdev": 0.0
+      },
+      "whole_graph_counter_GBs": {
+        "median": 20.77856745369399,
+        "mean": 20.787526208081047,
+        "min": 20.749088743865673,
+        "max": 20.825644946556658,
+        "stdev": 0.02588373858253883
+      },
+      "host_infer_us": {
+        "median": 712.5315,
+        "mean": 739.3351,
+        "min": 687.928,
+        "max": 831.713,
+        "stdev": 51.19421458296499
+      },
+      "nodes": {
+        "0": {
+          "span_us_median": 595.355,
+          "aiff_busy_cycles_median": 0.0
+        },
+        "1": {
+          "span_us_median": 329.61749999999995,
+          "aiff_busy_cycles_median": 0.0
+        },
+        "2": {
+          "span_us_median": 254.21458333333334,
+          "aiff_busy_cycles_median": 0.0
+        }
+      }
+    }
+  },
+  "blocks": [
+    {
+      "block": 0,
+      "q0_mean_us": 595.7104166666667,
+      "q1_mean_us": 594.6683333333333,
+      "high_priority_time_reduction_percent": 0.17493119209908148
+    },
+    {
+      "block": 1,
+      "q0_mean_us": 595.5058333333334,
+      "q1_mean_us": 595.5166666666667,
+      "high_priority_time_reduction_percent": -0.0018191817320545312
+    },
+    {
+      "block": 2,
+      "q0_mean_us": 596.0274999999999,
+      "q1_mean_us": 595.6145833333334,
+      "high_priority_time_reduction_percent": 0.06927812335278949
+    },
+    {
+      "block": 3,
+      "q0_mean_us": 594.03125,
+      "q1_mean_us": 595.4625000000001,
+      "high_priority_time_reduction_percent": -0.2409385028144806
+    },
+    {
+      "block": 4,
+      "q0_mean_us": 595.65125,
+      "q1_mean_us": 594.2341666666666,
+      "high_priority_time_reduction_percent": 0.23790487022957718
+    }
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "block": 0,
+      "qos": 0,
+      "case": 0,
+      "folder": "run00-q0",
+      "npu_us": 594.9783333333334,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.79172182740548,
+      "host_infer_us": 703.587,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 594.9783333333334,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 328.2625,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 253.62666666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "f12589a7c7e93c15f52b92d9fe608a72900b59bccfe55ba0b4fb485f280153d6"
+    },
+    {
+      "index": 1,
+      "block": 0,
+      "qos": 1,
+      "case": 0,
+      "folder": "run01-q1",
+      "npu_us": 595.3275,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.779527235009304,
+      "host_infer_us": 796.854,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.3275,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.3775,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.17,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "c0742765b7a3ed21252c437149a4e5b90891f4abe4e6e6580c9cdf410be650b5"
+    },
+    {
+      "index": 2,
+      "block": 0,
+      "qos": 1,
+      "case": 0,
+      "folder": "run02-q1",
+      "npu_us": 594.0091666666667,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.825644946556658,
+      "host_infer_us": 696.008,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 594.0091666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.2808333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.26916666666668,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "36a0231ba826de8fa715eef20c19cf83e34db307a252a6a99fc405fdd5b8c461"
+    },
+    {
+      "index": 3,
+      "block": 0,
+      "qos": 0,
+      "case": 0,
+      "folder": "run03-q0",
+      "npu_us": 596.4425,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.740681624800377,
+      "host_infer_us": 779.645,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 596.4425,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 328.995,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.575,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "d99cf87068a6442a46ec11b9e11a25f84341d841b049fede82be56fc80124961"
+    },
+    {
+      "index": 4,
+      "block": 1,
+      "qos": 0,
+      "case": 1,
+      "folder": "run04-q0",
+      "npu_us": 595.2533333333333,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.78211629782278,
+      "host_infer_us": 696.728,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.2533333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.67333333333335,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 253.40416666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "d388c8f89d69c5e4deee4e5299e9bda4e29d69980615c2e821e850b4b7e0c9c6"
+    },
+    {
+      "index": 5,
+      "block": 1,
+      "qos": 1,
+      "case": 1,
+      "folder": "run05-q1",
+      "npu_us": 596.2008333333333,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.749088743865673,
+      "host_infer_us": 773.415,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 596.2008333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.5258333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.69166666666666,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "3b008469317eb0ba7b238e8fba5923d9c9dd63085da5b0d683c647f45adf8696"
+    },
+    {
+      "index": 6,
+      "block": 1,
+      "qos": 1,
+      "case": 1,
+      "folder": "run06-q1",
+      "npu_us": 594.8325,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.796819272652385,
+      "host_infer_us": 831.713,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 594.8325,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 328.1716666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.0425,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "eb3eec3eace0577f1d3f800de52c103f196cafd05ef52d342c1d66797174e06a"
+    },
+    {
+      "index": 7,
+      "block": 1,
+      "qos": 0,
+      "case": 1,
+      "folder": "run07-q0",
+      "npu_us": 595.7583333333333,
+      "npu_read_bytes": 12370592,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.764446433816843,
+      "host_infer_us": 820.883,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.7583333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 330.02666666666664,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3095968
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 253.6175,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "aa9b993a22ae176ea92021cf7d0c87bacf9b8dd3ce0b3ed6f09b254233698e1e"
+    },
+    {
+      "index": 8,
+      "block": 2,
+      "qos": 0,
+      "case": 2,
+      "folder": "run08-q0",
+      "npu_us": 596.7583333333333,
+      "npu_read_bytes": 12370592,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.729651031266144,
+      "host_infer_us": 823.523,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 596.7583333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.3666666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 253.7275,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835232
+        }
+      ],
+      "decoded_sha256": "3fca963b003759c7273dab4d02903d97dbd7ecac5ee6fc1841056e242ca94563"
+    },
+    {
+      "index": 9,
+      "block": 2,
+      "qos": 1,
+      "case": 2,
+      "folder": "run09-q1",
+      "npu_us": 595.475,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.774380116713544,
+      "host_infer_us": 708.707,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.475,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.7175,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.39166666666668,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "3359ab406c748fff829730b0bf4e1faa441414b27a1de279a9e0dc1dcdd76ad5"
+    },
+    {
+      "index": 10,
+      "block": 2,
+      "qos": 1,
+      "case": 2,
+      "folder": "run10-q1",
+      "npu_us": 595.7541666666667,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.764645372462073,
+      "host_infer_us": 693.978,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.7541666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.8225,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.31666666666666,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "02f61b0c2aec273b3229ce61f77243935b1e22fe6019b32eab74b9982577ad67"
+    },
+    {
+      "index": 11,
+      "block": 2,
+      "qos": 0,
+      "case": 2,
+      "folder": "run11-q0",
+      "npu_us": 595.2966666666666,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.780603508614753,
+      "host_infer_us": 825.244,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.2966666666666,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 328.1875,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.095,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "67b6e45cb874fe357f92866202cf9dba701e6eb0b9685174c661c716eab20134"
+    },
+    {
+      "index": 12,
+      "block": 3,
+      "qos": 0,
+      "case": 3,
+      "folder": "run12-q0",
+      "npu_us": 593.8475,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.831314436787224,
+      "host_infer_us": 691.848,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 593.8475,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 327.7391666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.365,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "12a47768d0b16310b878382ba06ee9b838b9d08e611e26ecf2b4d57110d8269a"
+    },
+    {
+      "index": 13,
+      "block": 3,
+      "qos": 1,
+      "case": 3,
+      "folder": "run13-q1",
+      "npu_us": 595.3825,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.77760767237868,
+      "host_infer_us": 687.928,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.3825,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.7825,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.21833333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "180ee91c016a5fe386bbc9952704472be3826882403b3c543f2190c62ac9aef7"
+    },
+    {
+      "index": 14,
+      "block": 3,
+      "qos": 1,
+      "case": 3,
+      "folder": "run14-q1",
+      "npu_us": 595.5425,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.77202550615615,
+      "host_infer_us": 711.147,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.5425,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.70916666666665,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.21083333333334,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "3a9f692d1cf6844d10b74cb296c533afd3f69e41c884bc9bdc09fd0bcdf0b09e"
+    },
+    {
+      "index": 15,
+      "block": 3,
+      "qos": 0,
+      "case": 3,
+      "folder": "run15-q0",
+      "npu_us": 594.215,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.818431039270298,
+      "host_infer_us": 689.967,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 594.215,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.30583333333334,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 255.10416666666666,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "cfc9bae1973b626ac53a1dc6315e9c338a6a718523f4e2113cc1f97f1467d392"
+    },
+    {
+      "index": 16,
+      "block": 4,
+      "qos": 0,
+      "case": 4,
+      "folder": "run16-q0",
+      "npu_us": 595.9508333333333,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.757792938735157,
+      "host_infer_us": 751.815,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.9508333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.85583333333335,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.1225,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "98f008d7eff0ae162f81a3509149c62177557227fefb9bb8f07c8324f16b355d"
+    },
+    {
+      "index": 17,
+      "block": 4,
+      "qos": 1,
+      "case": 4,
+      "folder": "run17-q1",
+      "npu_us": 594.4208333333333,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.81122212798172,
+      "host_infer_us": 779.685,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 594.4208333333333,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.90166666666664,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 254.17083333333332,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "458bcea35efbc66937648b36b3097e05e1242da297274b6ba74a70be43786b7f"
+    },
+    {
+      "index": 18,
+      "block": 4,
+      "qos": 1,
+      "case": 4,
+      "folder": "run18-q1",
+      "npu_us": 594.0475,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.824301087034286,
+      "host_infer_us": 713.916,
+      "submission": {
+        "qos_requested": 1,
+        "noe_misc": 256,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 20,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 594.0475,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 329.5025,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 253.48416666666665,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "b5f9c268691958e6de53db817c72fa321484f8b6acdf22ffe5aa306eb7babcee"
+    },
+    {
+      "index": 19,
+      "block": 4,
+      "qos": 0,
+      "case": 4,
+      "folder": "run19-q0",
+      "npu_us": 595.3516666666667,
+      "npu_read_bytes": 12370624,
+      "constant_read_bytes": 12333568,
+      "whole_graph_counter_GBs": 20.778683747141045,
+      "host_infer_us": 713.687,
+      "submission": {
+        "qos_requested": 0,
+        "noe_misc": 0,
+        "schedule_calls": 1,
+        "schedule_returncode": 0,
+        "exec_flag": 18,
+        "job_id": 4294967297,
+        "head_tcb_pa": 32212287488,
+        "aipu_version": 5,
+        "ioctl_request": 1082671366,
+        "descriptor_bytes": 136,
+        "exec_flag_offset": 88
+      },
+      "nodes": [
+        {
+          "name": "subgraph_dma",
+          "core": 0,
+          "span_us": 595.3516666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 6439360
+        },
+        {
+          "name": "subgraph_matmul_fc",
+          "core": 1,
+          "span_us": 330.00166666666667,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 3096000
+        },
+        {
+          "name": "subgraph_matmul_0_fc",
+          "core": 2,
+          "span_us": 253.82833333333335,
+          "aiff_busy_cycles": 0,
+          "read_bytes": 2835264
+        }
+      ],
+      "decoded_sha256": "fd53720d3c62367b6a8217b52cd735f0915714980d06c31b50bef835d86ede1a"
+    }
+  ],
+  "high_priority_median_time_reduction_percent": -0.005179251080300595,
+  "high_priority_median_speedup": 0.9999482101715222,
+  "state_preserved": true,
+  "limitations": [
+    "Single NPU job and one existing mixed DMA+AIFF graph; not a multi-job scheduling test.",
+    "Whole-graph NPU counter bandwidth includes the DMA-only tail; it is not peak DDR or active-overlap bandwidth.",
+    "ioctl interception observes submitted flags and success; hardware TSM registers were not separately read.",
+    "No MMHUB/NoC QoS, clock, firmware or SMMU configuration was changed.",
+    "Profiler and observer were enabled identically in both groups; host wall time is secondary."
+  ]
+}

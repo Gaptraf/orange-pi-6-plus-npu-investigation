@@ -1,0 +1,17 @@
+{
+  "processes": {
+    "rc": 0,
+    "stdout": "    101 D    bbox_main       [bbox_main]\n1394123 D    kworker/10:1+ev [kworker/10:1+events]\n1394850 D    kworker/u24:2+e [kworker/u24:2+events_freezable_power_]\n1397722 D    cat             cat /sys/kernel/debug/clk/clk_summary",
+    "stderr": ""
+  },
+  "module_note_hex": "040000001400000003000000474e5500fe9d1845f77ba5d4880d83f73d7a04fd5ae9ae3f",
+  "npu_freq": "1200000000",
+  "npu_power": "suspended",
+  "stuck_diagnostic": {
+    "pid": 1397722,
+    "stack": "[<0>] clk_prepare_lock+0x44/0xa0\n[<0>] clk_unprepare+0x24/0x44\n[<0>] sky1_audss_clk_runtime_suspend+0x64/0x84 [clk_sky1_audss]\n[<0>] pm_generic_runtime_suspend+0x2c/0x44\n[<0>] acpi_subsys_runtime_suspend+0x18/0x48\n[<0>] __rpm_callback+0x48/0x1dc\n[<0>] rpm_callback+0x6c/0x78\n[<0>] rpm_suspend+0x10c/0x658\n[<0>] rpm_idle+0xf0/0x340\n[<0>] __pm_runtime_idle+0x50/0xf0\n[<0>] clk_pm_runtime_put_all+0x3c/0x68\n[<0>] clk_summary_show+0xe4/0xfc\n[<0>] seq_read_iter+0x164/0x450\n[<0>] seq_read+0x90/0xc8\n[<0>] full_proxy_read+0x60/0xb4\n[<0>] vfs_read+0xc0/0x2b8\n[<0>] ksys_read+0x70/0x104\n[<0>] __arm64_sys_read+0x1c/0x28\n[<0>] invoke_syscall+0x48/0x118\n[<0>] el0_svc_common.constprop.0+0x58/0x144\n[<0>] do_el0_svc+0x1c/0x28\n[<0>] el0_svc+0x2c/0xa4\n[<0>] el0t_64_sync_handler+0x100/0x12c\n[<0>] el0t_64_sync+0x174/0x178\n",
+    "wchan": "clk_prepare_lock",
+    "sigkill_sent": true
+  },
+  "note": "No clock-summary reread, service restart, driver change or reboot performed. SIGKILL is only for our exact diagnostic cat process."
+}

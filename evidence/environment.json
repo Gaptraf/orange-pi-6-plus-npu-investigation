@@ -1,0 +1,36 @@
+{
+  "board": "Orange Pi 6 Plus",
+  "soc": "CIX P1 CD8180",
+  "installed_ram_GB": 16,
+  "kernel": "6.6.89-cix",
+  "bios_version": "1.4",
+  "bios_date": "2026-01-30",
+  "firmware_components": {
+    "SE    Firmware": "beta2.0-6d1f22fac075",
+    "PM    Firmware": "00.10.002-8b80e7d12d8d",
+    "PBL   Firmware": "00.10.002-8b80e7d12d8d",
+    "ATF   Firmware": "v2.7-6f1cdf4f3a61",
+    "TEE   Firmware": "Beta_2.1.3_release-3.17-7c1538ba6c38",
+    "EC   Firmware": "V1.13-7e90ed4de22c",
+    "STMM  Firmware": "Beta2-W28M250709N-59816c6b3a81",
+    "UEFI  Firmware": "BiosV1.4-W20260130-97268c4c"
+  },
+  "ort": "onnxruntime-zhouyi 1.20.0",
+  "python": "3.11.17",
+  "numpy": "1.26.4",
+  "onnx": "1.17.0",
+  "host_compiler": "CixBuilder 6.1.3407.2",
+  "aipuocc": "1.9.31",
+  "llama_cpp_commit": "81bc6b8",
+  "npu_clock_hz": 1200000000,
+  "npu_memclk_snapshot_hz": 750000000,
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "limitations": [
+    "One board and one vendor image; not a survey of all releases.",
+    "Temporary patched AIPU module loaded for the measured NPU runs; stock disk module unchanged.",
+    "Later experiments share an existing kernel clock/runtime-PM deadlock; no fresh-boot replication.",
+    "No complete NPU LLM generation or matched end-to-end NPU text-quality result.",
+    "No BIOS, TF-A, security-policy, memory-clock or SMMU-mode modification."
+  ]
+}

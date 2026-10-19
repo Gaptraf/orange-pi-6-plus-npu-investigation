@@ -1,0 +1,89 @@
+{
+  "custom_to_baseline_outputs": [
+    1,
+    0
+  ],
+  "errors": [
+    [
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      },
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      }
+    ],
+    [
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      },
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      }
+    ],
+    [
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      },
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      }
+    ],
+    [
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      },
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      }
+    ],
+    [
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      },
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      }
+    ],
+    [
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      },
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      }
+    ],
+    [
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      },
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      }
+    ],
+    [
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      },
+      {
+        "max_abs_lsb": 0,
+        "different": 0
+      }
+    ]
+  ],
+  "same_inputs": true
+}

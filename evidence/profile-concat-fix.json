@@ -1,0 +1,14 @@
+[
+  {
+    "layer": "concat_0",
+    "previous_output_scale": "[1.0]",
+    "correct_scale": 12.94507027,
+    "operation": "identity requantization for byte concatenation"
+  },
+  {
+    "layer": "concat",
+    "previous_output_scale": "[1.0]",
+    "correct_scale": 25.59990692,
+    "operation": "identity requantization for byte concatenation"
+  }
+]

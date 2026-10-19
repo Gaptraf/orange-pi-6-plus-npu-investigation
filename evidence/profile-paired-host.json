@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "round": 0,
+      "name": "original",
+      "persistent_io_p50_us": 343.689,
+      "persistent_io_p95_us": 542.68545,
+      "checks": 522
+    },
+    {
+      "round": 0,
+      "name": "split",
+      "persistent_io_p50_us": 356.298,
+      "persistent_io_p95_us": 482.9085,
+      "checks": 522
+    },
+    {
+      "round": 1,
+      "name": "split",
+      "persistent_io_p50_us": 361.228,
+      "persistent_io_p95_us": 375.79795,
+      "checks": 522
+    },
+    {
+      "round": 1,
+      "name": "original",
+      "persistent_io_p50_us": 339.219,
+      "persistent_io_p95_us": 371.42,
+      "checks": 522
+    },
+    {
+      "round": 2,
+      "name": "original",
+      "persistent_io_p50_us": 345.263,
+      "persistent_io_p95_us": 564.87595,
+      "checks": 522
+    },
+    {
+      "round": 2,
+      "name": "split",
+      "persistent_io_p50_us": 356.4085,
+      "persistent_io_p95_us": 498.74445,
+      "checks": 522
+    }
+  ],
+  "summary": {
+    "original": {
+      "p50_median_us": 343.689,
+      "round_p50_us": [
+        343.689,
+        339.219,
+        345.263
+      ]
+    },
+    "split": {
+      "p50_median_us": 356.4085,
+      "round_p50_us": [
+        356.298,
+        361.228,
+        356.4085
+      ]
+    }
+  },
+  "split_timing_excludes_final_concat": false,
+  "host_compiler": true
+}

@@ -1,0 +1,2025 @@
+{
+  "date": "2026-10-18",
+  "hardware_runs": 12,
+  "scope": "One mixed-engine experiment with DMA-only control and two diagnostic captures.",
+  "groups": {
+    "dma": {
+      "runs": [
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\dma-run0.json",
+          "sha256": "f2934868022bb5c23fed019b1b4a34ccfc90255e4e791152936de07f96ae6fcd",
+          "span_us": 353.4583333333333,
+          "npu_read_bytes": 6388896,
+          "constant_read_bytes": 6422528,
+          "counter_GBs": 18.075386537781448,
+          "constant_GBs": 18.170537781445244,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 6433392,
+              "end": 6857542,
+              "span_us": 353.4583333333333
+            }
+          ]
+        },
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\dma-run1.json",
+          "sha256": "27314a0e0eebda9d0194d4dc76b7273e9cd3ec37228f7157212783ad9b30de6f",
+          "span_us": 355.7058333333333,
+          "npu_read_bytes": 6390368,
+          "constant_read_bytes": 6422528,
+          "counter_GBs": 17.965316846551577,
+          "constant_GBs": 18.055728633444772,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 9240192,
+              "end": 9667039,
+              "span_us": 355.7058333333333
+            }
+          ]
+        },
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\dma-run2.json",
+          "sha256": "064cdd4e8099e5a6d96223af0bcb0e4da15ec7669ef5fcaddcc174ed71ada12f",
+          "span_us": 356.06,
+          "npu_read_bytes": 6381760,
+          "constant_read_bytes": 6422528,
+          "counter_GBs": 17.92327135875976,
+          "constant_GBs": 18.037768915351347,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 11579260,
+              "end": 12006532,
+              "span_us": 356.06
+            }
+          ]
+        },
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\dma-run3.json",
+          "sha256": "0aef16594ec4e7a3c4c8d9d0ac01ab072f6722484e2f205c5534a97456154f19",
+          "span_us": 355.9841666666667,
+          "npu_read_bytes": 6388832,
+          "constant_read_bytes": 6422528,
+          "counter_GBs": 17.946955505979897,
+          "constant_GBs": 18.04161140125614,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 13694709,
+              "end": 14121890,
+              "span_us": 355.9841666666667
+            }
+          ]
+        },
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\dma-run4.json",
+          "sha256": "4e93e50887c9f4e0b5be75a6e09179efcc13797dd852631604d50c48f9d9be4e",
+          "span_us": 355.065,
+          "npu_read_bytes": 6390016,
+          "constant_read_bytes": 6422528,
+          "counter_GBs": 17.996749890865054,
+          "constant_GBs": 18.08831622379001,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 15799413,
+              "end": 16225491,
+              "span_us": 355.065
+            }
+          ]
+        }
+      ],
+      "medians": {
+        "span_us": 355.7058333333333,
+        "npu_read_bytes": 6388896,
+        "constant_read_bytes": 6422528,
+        "counter_GBs": 17.965316846551577,
+        "constant_GBs": 18.055728633444772
+      }
+    },
+    "mixed": {
+      "runs": [
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\mixed-run0.json",
+          "sha256": "26034cc06fa854a96e0812fee63f01ea533235e0a9b39ea25240507d3f2d6291",
+          "span_us": 594.765,
+          "npu_read_bytes": 12370624,
+          "constant_read_bytes": 12333568,
+          "counter_GBs": 20.799179507872857,
+          "constant_GBs": 20.73687590897245,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 10486523,
+              "end": 11200241,
+              "span_us": 594.765
+            },
+            {
+              "name": "subgraph_matmul_fc",
+              "core": 1,
+              "start": 10487896,
+              "end": 10883220,
+              "span_us": 329.43666666666667
+            },
+            {
+              "name": "subgraph_matmul_0_fc",
+              "core": 2,
+              "start": 10489014,
+              "end": 10794233,
+              "span_us": 254.34916666666666
+            }
+          ]
+        },
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\mixed-run1.json",
+          "sha256": "bc38c370924d38f598ee820a11c6455b7b867513c6f90dbcc9ec77688468aa5b",
+          "span_us": 595.4608333333333,
+          "npu_read_bytes": 12370624,
+          "constant_read_bytes": 12333568,
+          "counter_GBs": 20.774874362013737,
+          "constant_GBs": 20.712643568776567,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 15500827,
+              "end": 16215380,
+              "span_us": 595.4608333333333
+            },
+            {
+              "name": "subgraph_matmul_fc",
+              "core": 1,
+              "start": 15501892,
+              "end": 15895367,
+              "span_us": 327.8958333333333
+            },
+            {
+              "name": "subgraph_matmul_0_fc",
+              "core": 2,
+              "start": 15503094,
+              "end": 15807394,
+              "span_us": 253.58333333333334
+            }
+          ]
+        },
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\mixed-run2.json",
+          "sha256": "6d4d6c233e988ab2e180de366081c098e9570fbd685c80d99e898fe535d908f2",
+          "span_us": 594.82,
+          "npu_read_bytes": 12370624,
+          "constant_read_bytes": 12333568,
+          "counter_GBs": 20.797256312834133,
+          "constant_GBs": 20.734958474832723,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 19314211,
+              "end": 20027995,
+              "span_us": 594.82
+            },
+            {
+              "name": "subgraph_matmul_fc",
+              "core": 1,
+              "start": 19315215,
+              "end": 19710384,
+              "span_us": 329.3075
+            },
+            {
+              "name": "subgraph_matmul_0_fc",
+              "core": 2,
+              "start": 19316436,
+              "end": 19620046,
+              "span_us": 253.00833333333333
+            }
+          ]
+        },
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\mixed-run3.json",
+          "sha256": "7ba23c28addae04d0d03040baf4f21fe4bd4b2f5442ed1713ac9464d36859dac",
+          "span_us": 595.7858333333334,
+          "npu_read_bytes": 12370624,
+          "constant_read_bytes": 12333568,
+          "counter_GBs": 20.76354170891945,
+          "constant_GBs": 20.701344862457564,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 22872858,
+              "end": 23587801,
+              "span_us": 595.7858333333334
+            },
+            {
+              "name": "subgraph_matmul_fc",
+              "core": 1,
+              "start": 22874093,
+              "end": 23269756,
+              "span_us": 329.7191666666667
+            },
+            {
+              "name": "subgraph_matmul_0_fc",
+              "core": 2,
+              "start": 22874791,
+              "end": 23180503,
+              "span_us": 254.76
+            }
+          ]
+        },
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\mixed-run4.json",
+          "sha256": "8e332fa4398437d321240ffb89ce7b4e72d92620f1856fb9305e16a5f41ccad8",
+          "span_us": 595.6741666666667,
+          "npu_read_bytes": 12370624,
+          "constant_read_bytes": 12333568,
+          "counter_GBs": 20.767434097779965,
+          "constant_GBs": 20.705225591731498,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 26505571,
+              "end": 27220380,
+              "span_us": 595.6741666666667
+            },
+            {
+              "name": "subgraph_matmul_fc",
+              "core": 1,
+              "start": 26507146,
+              "end": 26901882,
+              "span_us": 328.94666666666666
+            },
+            {
+              "name": "subgraph_matmul_0_fc",
+              "core": 2,
+              "start": 26508212,
+              "end": 26814044,
+              "span_us": 254.86
+            }
+          ]
+        }
+      ],
+      "medians": {
+        "span_us": 595.4608333333333,
+        "npu_read_bytes": 12370624,
+        "constant_read_bytes": 12333568,
+        "counter_GBs": 20.774874362013737,
+        "constant_GBs": 20.712643568776567
+      }
+    },
+    "mixed-detailed": {
+      "runs": [
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\mixed-detailed-run0.json",
+          "sha256": "7c3bc3a2abadd754e9d4d161bbdc3ee0d0036b216701cfc1a1625a63f27302c1",
+          "span_us": 595.21,
+          "npu_read_bytes": 12371648,
+          "constant_read_bytes": 12333568,
+          "counter_GBs": 20.785349708506242,
+          "constant_GBs": 20.721372288772027,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 11260986,
+              "end": 11975238,
+              "span_us": 595.21
+            },
+            {
+              "name": "subgraph_matmul_fc",
+              "core": 1,
+              "start": 11262618,
+              "end": 11660007,
+              "span_us": 331.1575
+            },
+            {
+              "name": "subgraph_matmul_0_fc",
+              "core": 2,
+              "start": 11263363,
+              "end": 11569281,
+              "span_us": 254.93166666666667
+            }
+          ]
+        }
+      ],
+      "medians": {
+        "span_us": 595.21,
+        "npu_read_bytes": 12371648,
+        "constant_read_bytes": 12333568,
+        "counter_GBs": 20.785349708506242,
+        "constant_GBs": 20.721372288772027
+      }
+    },
+    "mixed-ticks": {
+      "runs": [
+        {
+          "file": "artifacts\\mixed-bandwidth-decoded\\mixed-ticks-run0.json",
+          "sha256": "26dfc8e8b347bb563b15538ce0e4cdbeb22ee544ea89504eddab4ab52a08e4d1",
+          "span_us": 596.0633333333334,
+          "npu_read_bytes": 12372640,
+          "constant_read_bytes": 12333568,
+          "counter_GBs": 20.757257338426005,
+          "constant_GBs": 20.691707257058813,
+          "nodes": [
+            {
+              "name": "subgraph_dma",
+              "core": 0,
+              "start": 14326366,
+              "end": 15041642,
+              "span_us": 596.0633333333334
+            },
+            {
+              "name": "subgraph_matmul_fc",
+              "core": 1,
+              "start": 14327606,
+              "end": 14725012,
+              "span_us": 331.1716666666667
+            },
+            {
+              "name": "subgraph_matmul_0_fc",
+              "core": 2,
+              "start": 14328850,
+              "end": 14636502,
+              "span_us": 256.37666666666667
+            }
+          ]
+        }
+      ],
+      "medians": {
+        "span_us": 596.0633333333334,
+        "npu_read_bytes": 12372640,
+        "constant_read_bytes": 12333568,
+        "counter_GBs": 20.757257338426005,
+        "constant_GBs": 20.691707257058813
+      }
+    }
+  },
+  "dma_slowdown_ratio": 1.674026056174695,
+  "instrumented_overlap": {
+    "time_origin_cycle": 14326366,
+    "aiff_events": [
+      {
+        "start": 14342147,
+        "duration": 380432,
+        "mtp0_busy_cycle": 17024,
+        "mtp1_busy_cycle": 17024,
+        "ptp_busy_cycle": 0,
+        "rdma_weight_read_count": 283320,
+        "rdma_act_read_count": 363,
+        "udma_param_read_count": 5953,
+        "udma_act_write_count": 0,
+        "wdma_act_write_count": 0,
+        "bif_read_count": 96462,
+        "bif_write_count": 152,
+        "itp_busy_cycle": 304,
+        "wrb_busy_cycle": 0,
+        "core": 1
+      },
+      {
+        "start": 14345847,
+        "duration": 283945,
+        "mtp0_busy_cycle": 17024,
+        "mtp1_busy_cycle": 17024,
+        "ptp_busy_cycle": 0,
+        "rdma_weight_read_count": 194233,
+        "rdma_act_read_count": 2043,
+        "udma_param_read_count": 5943,
+        "udma_act_write_count": 0,
+        "wdma_act_write_count": 0,
+        "bif_read_count": 88312,
+        "bif_write_count": 152,
+        "itp_busy_cycle": 304,
+        "wrb_busy_cycle": 0,
+        "core": 2
+      }
+    ],
+    "dma_chunk_events": [
+      {
+        "chunk": 0,
+        "tec": 0,
+        "start": 14334210,
+        "end": 14345902,
+        "duration_us": 9.743333333333334
+      },
+      {
+        "chunk": 4,
+        "tec": 0,
+        "start": 14337224,
+        "end": 14379762,
+        "duration_us": 35.44833333333333
+      },
+      {
+        "chunk": 8,
+        "tec": 0,
+        "start": 14346246,
+        "end": 14414203,
+        "duration_us": 56.630833333333335
+      },
+      {
+        "chunk": 12,
+        "tec": 0,
+        "start": 14380920,
+        "end": 14448835,
+        "duration_us": 56.59583333333333
+      },
+      {
+        "chunk": 16,
+        "tec": 0,
+        "start": 14415481,
+        "end": 14483002,
+        "duration_us": 56.2675
+      },
+      {
+        "chunk": 20,
+        "tec": 0,
+        "start": 14450116,
+        "end": 14517987,
+        "duration_us": 56.55916666666667
+      },
+      {
+        "chunk": 24,
+        "tec": 0,
+        "start": 14485593,
+        "end": 14553317,
+        "duration_us": 56.43666666666667
+      },
+      {
+        "chunk": 28,
+        "tec": 0,
+        "start": 14519060,
+        "end": 14587478,
+        "duration_us": 57.015
+      },
+      {
+        "chunk": 32,
+        "tec": 0,
+        "start": 14554434,
+        "end": 14622419,
+        "duration_us": 56.65416666666667
+      },
+      {
+        "chunk": 36,
+        "tec": 0,
+        "start": 14588335,
+        "end": 14645086,
+        "duration_us": 47.2925
+      },
+      {
+        "chunk": 40,
+        "tec": 0,
+        "start": 14623487,
+        "end": 14664672,
+        "duration_us": 34.32083333333333
+      },
+      {
+        "chunk": 44,
+        "tec": 0,
+        "start": 14645479,
+        "end": 14683960,
+        "duration_us": 32.0675
+      },
+      {
+        "chunk": 48,
+        "tec": 0,
+        "start": 14665076,
+        "end": 14703398,
+        "duration_us": 31.935
+      },
+      {
+        "chunk": 52,
+        "tec": 0,
+        "start": 14684294,
+        "end": 14721976,
+        "duration_us": 31.401666666666667
+      },
+      {
+        "chunk": 56,
+        "tec": 0,
+        "start": 14704004,
+        "end": 14730242,
+        "duration_us": 21.865
+      },
+      {
+        "chunk": 60,
+        "tec": 0,
+        "start": 14722302,
+        "end": 14737837,
+        "duration_us": 12.945833333333333
+      },
+      {
+        "chunk": 64,
+        "tec": 0,
+        "start": 14730590,
+        "end": 14745256,
+        "duration_us": 12.221666666666666
+      },
+      {
+        "chunk": 68,
+        "tec": 0,
+        "start": 14738209,
+        "end": 14752853,
+        "duration_us": 12.203333333333333
+      },
+      {
+        "chunk": 72,
+        "tec": 0,
+        "start": 14745622,
+        "end": 14760368,
+        "duration_us": 12.288333333333334
+      },
+      {
+        "chunk": 76,
+        "tec": 0,
+        "start": 14753194,
+        "end": 14768344,
+        "duration_us": 12.625
+      },
+      {
+        "chunk": 80,
+        "tec": 0,
+        "start": 14760715,
+        "end": 14776114,
+        "duration_us": 12.8325
+      },
+      {
+        "chunk": 84,
+        "tec": 0,
+        "start": 14768718,
+        "end": 14783579,
+        "duration_us": 12.384166666666667
+      },
+      {
+        "chunk": 88,
+        "tec": 0,
+        "start": 14776788,
+        "end": 14791069,
+        "duration_us": 11.900833333333333
+      },
+      {
+        "chunk": 92,
+        "tec": 0,
+        "start": 14783948,
+        "end": 14798661,
+        "duration_us": 12.260833333333334
+      },
+      {
+        "chunk": 96,
+        "tec": 0,
+        "start": 14791415,
+        "end": 14806349,
+        "duration_us": 12.445
+      },
+      {
+        "chunk": 100,
+        "tec": 0,
+        "start": 14799006,
+        "end": 14813755,
+        "duration_us": 12.290833333333333
+      },
+      {
+        "chunk": 104,
+        "tec": 0,
+        "start": 14806695,
+        "end": 14821150,
+        "duration_us": 12.045833333333333
+      },
+      {
+        "chunk": 108,
+        "tec": 0,
+        "start": 14814130,
+        "end": 14828781,
+        "duration_us": 12.209166666666667
+      },
+      {
+        "chunk": 112,
+        "tec": 0,
+        "start": 14821519,
+        "end": 14836568,
+        "duration_us": 12.540833333333333
+      },
+      {
+        "chunk": 116,
+        "tec": 0,
+        "start": 14829121,
+        "end": 14843966,
+        "duration_us": 12.370833333333334
+      },
+      {
+        "chunk": 120,
+        "tec": 0,
+        "start": 14837196,
+        "end": 14851416,
+        "duration_us": 11.85
+      },
+      {
+        "chunk": 124,
+        "tec": 0,
+        "start": 14844318,
+        "end": 14858997,
+        "duration_us": 12.2325
+      },
+      {
+        "chunk": 128,
+        "tec": 0,
+        "start": 14851758,
+        "end": 14866509,
+        "duration_us": 12.2925
+      },
+      {
+        "chunk": 132,
+        "tec": 0,
+        "start": 14859366,
+        "end": 14873930,
+        "duration_us": 12.136666666666667
+      },
+      {
+        "chunk": 136,
+        "tec": 0,
+        "start": 14866857,
+        "end": 14881515,
+        "duration_us": 12.215
+      },
+      {
+        "chunk": 140,
+        "tec": 0,
+        "start": 14874294,
+        "end": 14889069,
+        "duration_us": 12.3125
+      },
+      {
+        "chunk": 144,
+        "tec": 0,
+        "start": 14881889,
+        "end": 14896960,
+        "duration_us": 12.559166666666666
+      },
+      {
+        "chunk": 148,
+        "tec": 0,
+        "start": 14889489,
+        "end": 14904462,
+        "duration_us": 12.4775
+      },
+      {
+        "chunk": 152,
+        "tec": 0,
+        "start": 14897662,
+        "end": 14912186,
+        "duration_us": 12.103333333333333
+      },
+      {
+        "chunk": 156,
+        "tec": 0,
+        "start": 14905030,
+        "end": 14919768,
+        "duration_us": 12.281666666666666
+      },
+      {
+        "chunk": 160,
+        "tec": 0,
+        "start": 14912535,
+        "end": 14927181,
+        "duration_us": 12.205
+      },
+      {
+        "chunk": 164,
+        "tec": 0,
+        "start": 14920217,
+        "end": 14934611,
+        "duration_us": 11.995
+      },
+      {
+        "chunk": 168,
+        "tec": 0,
+        "start": 14927551,
+        "end": 14942299,
+        "duration_us": 12.29
+      },
+      {
+        "chunk": 172,
+        "tec": 0,
+        "start": 14934967,
+        "end": 14950010,
+        "duration_us": 12.535833333333333
+      },
+      {
+        "chunk": 176,
+        "tec": 0,
+        "start": 14942643,
+        "end": 14957672,
+        "duration_us": 12.524166666666666
+      },
+      {
+        "chunk": 180,
+        "tec": 0,
+        "start": 14950471,
+        "end": 14965133,
+        "duration_us": 12.218333333333334
+      },
+      {
+        "chunk": 184,
+        "tec": 0,
+        "start": 14958278,
+        "end": 14972630,
+        "duration_us": 11.96
+      },
+      {
+        "chunk": 188,
+        "tec": 0,
+        "start": 14965503,
+        "end": 14980206,
+        "duration_us": 12.2525
+      },
+      {
+        "chunk": 192,
+        "tec": 0,
+        "start": 14972985,
+        "end": 14987601,
+        "duration_us": 12.18
+      },
+      {
+        "chunk": 196,
+        "tec": 0,
+        "start": 14980611,
+        "end": 14995237,
+        "duration_us": 12.188333333333333
+      },
+      {
+        "chunk": 200,
+        "tec": 0,
+        "start": 14988191,
+        "end": 15003134,
+        "duration_us": 12.4525
+      },
+      {
+        "chunk": 204,
+        "tec": 0,
+        "start": 14995633,
+        "end": 15010590,
+        "duration_us": 12.464166666666667
+      },
+      {
+        "chunk": 208,
+        "tec": 0,
+        "start": 15003559,
+        "end": 15018042,
+        "duration_us": 12.069166666666666
+      },
+      {
+        "chunk": 212,
+        "tec": 0,
+        "start": 15011169,
+        "end": 15025461,
+        "duration_us": 11.91
+      },
+      {
+        "chunk": 216,
+        "tec": 0,
+        "start": 15018737,
+        "end": 15033126,
+        "duration_us": 11.990833333333333
+      },
+      {
+        "chunk": 220,
+        "tec": 0,
+        "start": 15025876,
+        "end": 15040824,
+        "duration_us": 12.456666666666667
+      },
+      {
+        "chunk": 1,
+        "tec": 1,
+        "start": 14334207,
+        "end": 14354323,
+        "duration_us": 16.763333333333332
+      },
+      {
+        "chunk": 5,
+        "tec": 1,
+        "start": 14337225,
+        "end": 14388547,
+        "duration_us": 42.76833333333333
+      },
+      {
+        "chunk": 9,
+        "tec": 1,
+        "start": 14355803,
+        "end": 14423194,
+        "duration_us": 56.159166666666664
+      },
+      {
+        "chunk": 13,
+        "tec": 1,
+        "start": 14391255,
+        "end": 14457667,
+        "duration_us": 55.343333333333334
+      },
+      {
+        "chunk": 17,
+        "tec": 1,
+        "start": 14424803,
+        "end": 14491642,
+        "duration_us": 55.69916666666666
+      },
+      {
+        "chunk": 21,
+        "tec": 1,
+        "start": 14458463,
+        "end": 14526874,
+        "duration_us": 57.009166666666665
+      },
+      {
+        "chunk": 25,
+        "tec": 1,
+        "start": 14492551,
+        "end": 14561486,
+        "duration_us": 57.44583333333333
+      },
+      {
+        "chunk": 29,
+        "tec": 1,
+        "start": 14528324,
+        "end": 14596165,
+        "duration_us": 56.534166666666664
+      },
+      {
+        "chunk": 33,
+        "tec": 1,
+        "start": 14562651,
+        "end": 14630127,
+        "duration_us": 56.23
+      },
+      {
+        "chunk": 37,
+        "tec": 1,
+        "start": 14597478,
+        "end": 14649864,
+        "duration_us": 43.655
+      },
+      {
+        "chunk": 41,
+        "tec": 1,
+        "start": 14630476,
+        "end": 14669381,
+        "duration_us": 32.420833333333334
+      },
+      {
+        "chunk": 45,
+        "tec": 1,
+        "start": 14650497,
+        "end": 14689010,
+        "duration_us": 32.094166666666666
+      },
+      {
+        "chunk": 49,
+        "tec": 1,
+        "start": 14669743,
+        "end": 14708224,
+        "duration_us": 32.0675
+      },
+      {
+        "chunk": 53,
+        "tec": 1,
+        "start": 14689342,
+        "end": 14724384,
+        "duration_us": 29.201666666666668
+      },
+      {
+        "chunk": 57,
+        "tec": 1,
+        "start": 14708575,
+        "end": 14732067,
+        "duration_us": 19.576666666666668
+      },
+      {
+        "chunk": 61,
+        "tec": 1,
+        "start": 14724726,
+        "end": 14739714,
+        "duration_us": 12.49
+      },
+      {
+        "chunk": 65,
+        "tec": 1,
+        "start": 14732416,
+        "end": 14747105,
+        "duration_us": 12.240833333333333
+      },
+      {
+        "chunk": 69,
+        "tec": 1,
+        "start": 14740068,
+        "end": 14754747,
+        "duration_us": 12.2325
+      },
+      {
+        "chunk": 73,
+        "tec": 1,
+        "start": 14747556,
+        "end": 14762240,
+        "duration_us": 12.236666666666666
+      },
+      {
+        "chunk": 77,
+        "tec": 1,
+        "start": 14755383,
+        "end": 14770258,
+        "duration_us": 12.395833333333334
+      },
+      {
+        "chunk": 81,
+        "tec": 1,
+        "start": 14762606,
+        "end": 14777963,
+        "duration_us": 12.7975
+      },
+      {
+        "chunk": 85,
+        "tec": 1,
+        "start": 14770630,
+        "end": 14785469,
+        "duration_us": 12.365833333333333
+      },
+      {
+        "chunk": 89,
+        "tec": 1,
+        "start": 14778371,
+        "end": 14792925,
+        "duration_us": 12.128333333333334
+      },
+      {
+        "chunk": 93,
+        "tec": 1,
+        "start": 14785836,
+        "end": 14800597,
+        "duration_us": 12.300833333333333
+      },
+      {
+        "chunk": 97,
+        "tec": 1,
+        "start": 14793297,
+        "end": 14808234,
+        "duration_us": 12.4475
+      },
+      {
+        "chunk": 101,
+        "tec": 1,
+        "start": 14800943,
+        "end": 14815614,
+        "duration_us": 12.225833333333334
+      },
+      {
+        "chunk": 105,
+        "tec": 1,
+        "start": 14808601,
+        "end": 14823021,
+        "duration_us": 12.016666666666667
+      },
+      {
+        "chunk": 109,
+        "tec": 1,
+        "start": 14816338,
+        "end": 14830808,
+        "duration_us": 12.058333333333334
+      },
+      {
+        "chunk": 113,
+        "tec": 1,
+        "start": 14823390,
+        "end": 14838405,
+        "duration_us": 12.5125
+      },
+      {
+        "chunk": 117,
+        "tec": 1,
+        "start": 14831151,
+        "end": 14845862,
+        "duration_us": 12.259166666666667
+      },
+      {
+        "chunk": 121,
+        "tec": 1,
+        "start": 14838854,
+        "end": 14853312,
+        "duration_us": 12.048333333333334
+      },
+      {
+        "chunk": 125,
+        "tec": 1,
+        "start": 14846289,
+        "end": 14860875,
+        "duration_us": 12.155
+      },
+      {
+        "chunk": 129,
+        "tec": 1,
+        "start": 14853664,
+        "end": 14868472,
+        "duration_us": 12.34
+      },
+      {
+        "chunk": 133,
+        "tec": 1,
+        "start": 14861214,
+        "end": 14875832,
+        "duration_us": 12.181666666666667
+      },
+      {
+        "chunk": 137,
+        "tec": 1,
+        "start": 14869068,
+        "end": 14883424,
+        "duration_us": 11.963333333333333
+      },
+      {
+        "chunk": 141,
+        "tec": 1,
+        "start": 14876524,
+        "end": 14891074,
+        "duration_us": 12.125
+      },
+      {
+        "chunk": 145,
+        "tec": 1,
+        "start": 14883865,
+        "end": 14898883,
+        "duration_us": 12.515
+      },
+      {
+        "chunk": 149,
+        "tec": 1,
+        "start": 14891476,
+        "end": 14906314,
+        "duration_us": 12.365
+      },
+      {
+        "chunk": 153,
+        "tec": 1,
+        "start": 14899539,
+        "end": 14914011,
+        "duration_us": 12.06
+      },
+      {
+        "chunk": 157,
+        "tec": 1,
+        "start": 14906706,
+        "end": 14921654,
+        "duration_us": 12.456666666666667
+      },
+      {
+        "chunk": 161,
+        "tec": 1,
+        "start": 14914567,
+        "end": 14928994,
+        "duration_us": 12.0225
+      },
+      {
+        "chunk": 165,
+        "tec": 1,
+        "start": 14922054,
+        "end": 14936502,
+        "duration_us": 12.04
+      },
+      {
+        "chunk": 169,
+        "tec": 1,
+        "start": 14929649,
+        "end": 14944150,
+        "duration_us": 12.084166666666667
+      },
+      {
+        "chunk": 173,
+        "tec": 1,
+        "start": 14937177,
+        "end": 14951866,
+        "duration_us": 12.240833333333333
+      },
+      {
+        "chunk": 177,
+        "tec": 1,
+        "start": 14944572,
+        "end": 14959541,
+        "duration_us": 12.474166666666667
+      },
+      {
+        "chunk": 181,
+        "tec": 1,
+        "start": 14952343,
+        "end": 14967034,
+        "duration_us": 12.2425
+      },
+      {
+        "chunk": 185,
+        "tec": 1,
+        "start": 14960132,
+        "end": 14974453,
+        "duration_us": 11.934166666666666
+      },
+      {
+        "chunk": 189,
+        "tec": 1,
+        "start": 14967465,
+        "end": 14982037,
+        "duration_us": 12.143333333333333
+      },
+      {
+        "chunk": 193,
+        "tec": 1,
+        "start": 14974932,
+        "end": 14989584,
+        "duration_us": 12.21
+      },
+      {
+        "chunk": 197,
+        "tec": 1,
+        "start": 14982460,
+        "end": 14997065,
+        "duration_us": 12.170833333333333
+      },
+      {
+        "chunk": 201,
+        "tec": 1,
+        "start": 14989948,
+        "end": 15005003,
+        "duration_us": 12.545833333333333
+      },
+      {
+        "chunk": 205,
+        "tec": 1,
+        "start": 14997737,
+        "end": 15012445,
+        "duration_us": 12.256666666666666
+      },
+      {
+        "chunk": 209,
+        "tec": 1,
+        "start": 15005373,
+        "end": 15019867,
+        "duration_us": 12.078333333333333
+      },
+      {
+        "chunk": 213,
+        "tec": 1,
+        "start": 15012814,
+        "end": 15027410,
+        "duration_us": 12.163333333333334
+      },
+      {
+        "chunk": 217,
+        "tec": 1,
+        "start": 15020207,
+        "end": 15035016,
+        "duration_us": 12.340833333333334
+      },
+      {
+        "chunk": 221,
+        "tec": 1,
+        "start": 15027777,
+        "end": 15042861,
+        "duration_us": 12.57
+      },
+      {
+        "chunk": 2,
+        "tec": 2,
+        "start": 14334208,
+        "end": 14340017,
+        "duration_us": 4.840833333333333
+      },
+      {
+        "chunk": 6,
+        "tec": 2,
+        "start": 14337222,
+        "end": 14362651,
+        "duration_us": 21.190833333333334
+      },
+      {
+        "chunk": 10,
+        "tec": 2,
+        "start": 14344556,
+        "end": 14397078,
+        "duration_us": 43.76833333333333
+      },
+      {
+        "chunk": 14,
+        "tec": 2,
+        "start": 14363828,
+        "end": 14431651,
+        "duration_us": 56.51916666666666
+      },
+      {
+        "chunk": 18,
+        "tec": 2,
+        "start": 14398443,
+        "end": 14465694,
+        "duration_us": 56.0425
+      },
+      {
+        "chunk": 22,
+        "tec": 2,
+        "start": 14432951,
+        "end": 14500592,
+        "duration_us": 56.3675
+      },
+      {
+        "chunk": 26,
+        "tec": 2,
+        "start": 14466617,
+        "end": 14535480,
+        "duration_us": 57.38583333333333
+      },
+      {
+        "chunk": 30,
+        "tec": 2,
+        "start": 14502369,
+        "end": 14570309,
+        "duration_us": 56.61666666666667
+      },
+      {
+        "chunk": 34,
+        "tec": 2,
+        "start": 14537372,
+        "end": 14604923,
+        "duration_us": 56.2925
+      },
+      {
+        "chunk": 38,
+        "tec": 2,
+        "start": 14571833,
+        "end": 14635157,
+        "duration_us": 52.77
+      },
+      {
+        "chunk": 42,
+        "tec": 2,
+        "start": 14606207,
+        "end": 14654768,
+        "duration_us": 40.4675
+      },
+      {
+        "chunk": 46,
+        "tec": 2,
+        "start": 14635490,
+        "end": 14674336,
+        "duration_us": 32.37166666666667
+      },
+      {
+        "chunk": 50,
+        "tec": 2,
+        "start": 14655118,
+        "end": 14693851,
+        "duration_us": 32.2775
+      },
+      {
+        "chunk": 54,
+        "tec": 2,
+        "start": 14674683,
+        "end": 14713326,
+        "duration_us": 32.2025
+      },
+      {
+        "chunk": 58,
+        "tec": 2,
+        "start": 14694183,
+        "end": 14726422,
+        "duration_us": 26.865833333333335
+      },
+      {
+        "chunk": 62,
+        "tec": 2,
+        "start": 14713671,
+        "end": 14733952,
+        "duration_us": 16.900833333333335
+      },
+      {
+        "chunk": 66,
+        "tec": 2,
+        "start": 14727130,
+        "end": 14741554,
+        "duration_us": 12.02
+      },
+      {
+        "chunk": 70,
+        "tec": 2,
+        "start": 14734343,
+        "end": 14748984,
+        "duration_us": 12.200833333333334
+      },
+      {
+        "chunk": 74,
+        "tec": 2,
+        "start": 14741943,
+        "end": 14756593,
+        "duration_us": 12.208333333333334
+      },
+      {
+        "chunk": 78,
+        "tec": 2,
+        "start": 14749329,
+        "end": 14764384,
+        "duration_us": 12.545833333333333
+      },
+      {
+        "chunk": 82,
+        "tec": 2,
+        "start": 14757023,
+        "end": 14772227,
+        "duration_us": 12.67
+      },
+      {
+        "chunk": 86,
+        "tec": 2,
+        "start": 14765079,
+        "end": 14779833,
+        "duration_us": 12.295
+      },
+      {
+        "chunk": 90,
+        "tec": 2,
+        "start": 14772570,
+        "end": 14787314,
+        "duration_us": 12.286666666666667
+      },
+      {
+        "chunk": 94,
+        "tec": 2,
+        "start": 14780218,
+        "end": 14794874,
+        "duration_us": 12.213333333333333
+      },
+      {
+        "chunk": 98,
+        "tec": 2,
+        "start": 14787895,
+        "end": 14802490,
+        "duration_us": 12.1625
+      },
+      {
+        "chunk": 102,
+        "tec": 2,
+        "start": 14795527,
+        "end": 14810096,
+        "duration_us": 12.140833333333333
+      },
+      {
+        "chunk": 106,
+        "tec": 2,
+        "start": 14802924,
+        "end": 14817446,
+        "duration_us": 12.101666666666667
+      },
+      {
+        "chunk": 110,
+        "tec": 2,
+        "start": 14810550,
+        "end": 14824931,
+        "duration_us": 11.984166666666667
+      },
+      {
+        "chunk": 114,
+        "tec": 2,
+        "start": 14817804,
+        "end": 14832698,
+        "duration_us": 12.411666666666667
+      },
+      {
+        "chunk": 118,
+        "tec": 2,
+        "start": 14825596,
+        "end": 14840251,
+        "duration_us": 12.2125
+      },
+      {
+        "chunk": 122,
+        "tec": 2,
+        "start": 14833100,
+        "end": 14847710,
+        "duration_us": 12.175
+      },
+      {
+        "chunk": 126,
+        "tec": 2,
+        "start": 14840684,
+        "end": 14855163,
+        "duration_us": 12.065833333333334
+      },
+      {
+        "chunk": 130,
+        "tec": 2,
+        "start": 14848435,
+        "end": 14862672,
+        "duration_us": 11.864166666666666
+      },
+      {
+        "chunk": 134,
+        "tec": 2,
+        "start": 14855850,
+        "end": 14870298,
+        "duration_us": 12.04
+      },
+      {
+        "chunk": 138,
+        "tec": 2,
+        "start": 14863046,
+        "end": 14877717,
+        "duration_us": 12.225833333333334
+      },
+      {
+        "chunk": 142,
+        "tec": 2,
+        "start": 14870649,
+        "end": 14885320,
+        "duration_us": 12.225833333333334
+      },
+      {
+        "chunk": 146,
+        "tec": 2,
+        "start": 14878058,
+        "end": 14892893,
+        "duration_us": 12.3625
+      },
+      {
+        "chunk": 150,
+        "tec": 2,
+        "start": 14885689,
+        "end": 14900734,
+        "duration_us": 12.5375
+      },
+      {
+        "chunk": 154,
+        "tec": 2,
+        "start": 14893241,
+        "end": 14908336,
+        "duration_us": 12.579166666666667
+      },
+      {
+        "chunk": 158,
+        "tec": 2,
+        "start": 14901105,
+        "end": 14915909,
+        "duration_us": 12.336666666666666
+      },
+      {
+        "chunk": 162,
+        "tec": 2,
+        "start": 14908972,
+        "end": 14923475,
+        "duration_us": 12.085833333333333
+      },
+      {
+        "chunk": 166,
+        "tec": 2,
+        "start": 14916249,
+        "end": 14930810,
+        "duration_us": 12.134166666666667
+      },
+      {
+        "chunk": 170,
+        "tec": 2,
+        "start": 14923820,
+        "end": 14938472,
+        "duration_us": 12.21
+      },
+      {
+        "chunk": 174,
+        "tec": 2,
+        "start": 14931167,
+        "end": 14946032,
+        "duration_us": 12.3875
+      },
+      {
+        "chunk": 178,
+        "tec": 2,
+        "start": 14938839,
+        "end": 14953826,
+        "duration_us": 12.489166666666666
+      },
+      {
+        "chunk": 182,
+        "tec": 2,
+        "start": 14946388,
+        "end": 14961392,
+        "duration_us": 12.503333333333334
+      },
+      {
+        "chunk": 186,
+        "tec": 2,
+        "start": 14954193,
+        "end": 14968918,
+        "duration_us": 12.270833333333334
+      },
+      {
+        "chunk": 190,
+        "tec": 2,
+        "start": 14961737,
+        "end": 14976317,
+        "duration_us": 12.15
+      },
+      {
+        "chunk": 194,
+        "tec": 2,
+        "start": 14969593,
+        "end": 14983856,
+        "duration_us": 11.885833333333334
+      },
+      {
+        "chunk": 198,
+        "tec": 2,
+        "start": 14976686,
+        "end": 14991453,
+        "duration_us": 12.305833333333334
+      },
+      {
+        "chunk": 202,
+        "tec": 2,
+        "start": 14984207,
+        "end": 14998982,
+        "duration_us": 12.3125
+      },
+      {
+        "chunk": 206,
+        "tec": 2,
+        "start": 14992134,
+        "end": 15006939,
+        "duration_us": 12.3375
+      },
+      {
+        "chunk": 210,
+        "tec": 2,
+        "start": 14999346,
+        "end": 15014285,
+        "duration_us": 12.449166666666667
+      },
+      {
+        "chunk": 214,
+        "tec": 2,
+        "start": 15007295,
+        "end": 15021714,
+        "duration_us": 12.015833333333333
+      },
+      {
+        "chunk": 218,
+        "tec": 2,
+        "start": 15014657,
+        "end": 15029360,
+        "duration_us": 12.2525
+      },
+      {
+        "chunk": 222,
+        "tec": 2,
+        "start": 15022063,
+        "end": 15036891,
+        "duration_us": 12.356666666666667
+      },
+      {
+        "chunk": 3,
+        "tec": 3,
+        "start": 14334209,
+        "end": 14341830,
+        "duration_us": 6.350833333333333
+      },
+      {
+        "chunk": 7,
+        "tec": 3,
+        "start": 14337223,
+        "end": 14371378,
+        "duration_us": 28.4625
+      },
+      {
+        "chunk": 11,
+        "tec": 3,
+        "start": 14344563,
+        "end": 14406011,
+        "duration_us": 51.20666666666666
+      },
+      {
+        "chunk": 15,
+        "tec": 3,
+        "start": 14372607,
+        "end": 14440550,
+        "duration_us": 56.619166666666665
+      },
+      {
+        "chunk": 19,
+        "tec": 3,
+        "start": 14407132,
+        "end": 14474792,
+        "duration_us": 56.38333333333333
+      },
+      {
+        "chunk": 23,
+        "tec": 3,
+        "start": 14442110,
+        "end": 14509006,
+        "duration_us": 55.74666666666667
+      },
+      {
+        "chunk": 27,
+        "tec": 3,
+        "start": 14475817,
+        "end": 14544202,
+        "duration_us": 56.9875
+      },
+      {
+        "chunk": 31,
+        "tec": 3,
+        "start": 14510412,
+        "end": 14578779,
+        "duration_us": 56.9725
+      },
+      {
+        "chunk": 35,
+        "tec": 3,
+        "start": 14545383,
+        "end": 14613403,
+        "duration_us": 56.68333333333333
+      },
+      {
+        "chunk": 39,
+        "tec": 3,
+        "start": 14580060,
+        "end": 14640189,
+        "duration_us": 50.1075
+      },
+      {
+        "chunk": 43,
+        "tec": 3,
+        "start": 14614544,
+        "end": 14659680,
+        "duration_us": 37.61333333333334
+      },
+      {
+        "chunk": 47,
+        "tec": 3,
+        "start": 14640546,
+        "end": 14679330,
+        "duration_us": 32.32
+      },
+      {
+        "chunk": 51,
+        "tec": 3,
+        "start": 14660163,
+        "end": 14698594,
+        "duration_us": 32.02583333333333
+      },
+      {
+        "chunk": 55,
+        "tec": 3,
+        "start": 14679953,
+        "end": 14717878,
+        "duration_us": 31.604166666666668
+      },
+      {
+        "chunk": 59,
+        "tec": 3,
+        "start": 14698943,
+        "end": 14728424,
+        "duration_us": 24.5675
+      },
+      {
+        "chunk": 63,
+        "tec": 3,
+        "start": 14718303,
+        "end": 14735958,
+        "duration_us": 14.7125
+      },
+      {
+        "chunk": 67,
+        "tec": 3,
+        "start": 14729082,
+        "end": 14743406,
+        "duration_us": 11.936666666666667
+      },
+      {
+        "chunk": 71,
+        "tec": 3,
+        "start": 14736311,
+        "end": 14750894,
+        "duration_us": 12.1525
+      },
+      {
+        "chunk": 75,
+        "tec": 3,
+        "start": 14743755,
+        "end": 14758530,
+        "duration_us": 12.3125
+      },
+      {
+        "chunk": 79,
+        "tec": 3,
+        "start": 14751265,
+        "end": 14766386,
+        "duration_us": 12.600833333333334
+      },
+      {
+        "chunk": 83,
+        "tec": 3,
+        "start": 14758870,
+        "end": 14774243,
+        "duration_us": 12.810833333333333
+      },
+      {
+        "chunk": 87,
+        "tec": 3,
+        "start": 14767038,
+        "end": 14781718,
+        "duration_us": 12.233333333333333
+      },
+      {
+        "chunk": 91,
+        "tec": 3,
+        "start": 14774612,
+        "end": 14789242,
+        "duration_us": 12.191666666666666
+      },
+      {
+        "chunk": 95,
+        "tec": 3,
+        "start": 14782070,
+        "end": 14796795,
+        "duration_us": 12.270833333333334
+      },
+      {
+        "chunk": 99,
+        "tec": 3,
+        "start": 14789582,
+        "end": 14804481,
+        "duration_us": 12.415833333333333
+      },
+      {
+        "chunk": 103,
+        "tec": 3,
+        "start": 14797164,
+        "end": 14811930,
+        "duration_us": 12.305
+      },
+      {
+        "chunk": 107,
+        "tec": 3,
+        "start": 14804849,
+        "end": 14819274,
+        "duration_us": 12.020833333333334
+      },
+      {
+        "chunk": 111,
+        "tec": 3,
+        "start": 14812274,
+        "end": 14826896,
+        "duration_us": 12.185
+      },
+      {
+        "chunk": 115,
+        "tec": 3,
+        "start": 14819622,
+        "end": 14834712,
+        "duration_us": 12.575
+      },
+      {
+        "chunk": 119,
+        "tec": 3,
+        "start": 14827628,
+        "end": 14842088,
+        "duration_us": 12.05
+      },
+      {
+        "chunk": 123,
+        "tec": 3,
+        "start": 14835084,
+        "end": 14849547,
+        "duration_us": 12.0525
+      },
+      {
+        "chunk": 127,
+        "tec": 3,
+        "start": 14842438,
+        "end": 14857072,
+        "duration_us": 12.195
+      },
+      {
+        "chunk": 131,
+        "tec": 3,
+        "start": 14849919,
+        "end": 14864627,
+        "duration_us": 12.256666666666666
+      },
+      {
+        "chunk": 135,
+        "tec": 3,
+        "start": 14857423,
+        "end": 14872110,
+        "duration_us": 12.239166666666666
+      },
+      {
+        "chunk": 139,
+        "tec": 3,
+        "start": 14864996,
+        "end": 14879552,
+        "duration_us": 12.13
+      },
+      {
+        "chunk": 143,
+        "tec": 3,
+        "start": 14872458,
+        "end": 14887205,
+        "duration_us": 12.289166666666667
+      },
+      {
+        "chunk": 147,
+        "tec": 3,
+        "start": 14879897,
+        "end": 14895006,
+        "duration_us": 12.590833333333334
+      },
+      {
+        "chunk": 151,
+        "tec": 3,
+        "start": 14887891,
+        "end": 14902597,
+        "duration_us": 12.255
+      },
+      {
+        "chunk": 155,
+        "tec": 3,
+        "start": 14895358,
+        "end": 14910312,
+        "duration_us": 12.461666666666666
+      },
+      {
+        "chunk": 159,
+        "tec": 3,
+        "start": 14902970,
+        "end": 14917949,
+        "duration_us": 12.4825
+      },
+      {
+        "chunk": 163,
+        "tec": 3,
+        "start": 14910678,
+        "end": 14925344,
+        "duration_us": 12.221666666666666
+      },
+      {
+        "chunk": 167,
+        "tec": 3,
+        "start": 14918298,
+        "end": 14932798,
+        "duration_us": 12.083333333333334
+      },
+      {
+        "chunk": 171,
+        "tec": 3,
+        "start": 14925686,
+        "end": 14940408,
+        "duration_us": 12.268333333333333
+      },
+      {
+        "chunk": 175,
+        "tec": 3,
+        "start": 14933166,
+        "end": 14948013,
+        "duration_us": 12.3725
+      },
+      {
+        "chunk": 179,
+        "tec": 3,
+        "start": 14940759,
+        "end": 14955771,
+        "duration_us": 12.51
+      },
+      {
+        "chunk": 183,
+        "tec": 3,
+        "start": 14948700,
+        "end": 14963259,
+        "duration_us": 12.1325
+      },
+      {
+        "chunk": 187,
+        "tec": 3,
+        "start": 14956135,
+        "end": 14970778,
+        "duration_us": 12.2025
+      },
+      {
+        "chunk": 191,
+        "tec": 3,
+        "start": 14963602,
+        "end": 14978165,
+        "duration_us": 12.135833333333334
+      },
+      {
+        "chunk": 195,
+        "tec": 3,
+        "start": 14971127,
+        "end": 14985718,
+        "duration_us": 12.159166666666666
+      },
+      {
+        "chunk": 199,
+        "tec": 3,
+        "start": 14978778,
+        "end": 14993302,
+        "duration_us": 12.103333333333333
+      },
+      {
+        "chunk": 203,
+        "tec": 3,
+        "start": 14986075,
+        "end": 15000992,
+        "duration_us": 12.430833333333334
+      },
+      {
+        "chunk": 207,
+        "tec": 3,
+        "start": 14993745,
+        "end": 15008771,
+        "duration_us": 12.521666666666667
+      },
+      {
+        "chunk": 211,
+        "tec": 3,
+        "start": 15001361,
+        "end": 15016197,
+        "duration_us": 12.363333333333333
+      },
+      {
+        "chunk": 215,
+        "tec": 3,
+        "start": 15009425,
+        "end": 15023587,
+        "duration_us": 11.801666666666666
+      },
+      {
+        "chunk": 219,
+        "tec": 3,
+        "start": 15016569,
+        "end": 15031237,
+        "duration_us": 12.223333333333333
+      },
+      {
+        "chunk": 223,
+        "tec": 3,
+        "start": 15023983,
+        "end": 15038829,
+        "duration_us": 12.371666666666666
+      }
+    ],
+    "chunk_bytes": 28672,
+    "all_224_chunks_recorded": true,
+    "aiff_envelope_us": 317.02666666666664,
+    "aiff_envelope_relative_us": [
+      13.150833333333333,
+      330.1775
+    ],
+    "aiff_both_active_us": 236.62083333333334,
+    "dma_fully_inside_aiff_envelope": 47,
+    "dma_intersecting_aiff_envelope": 61,
+    "dma_fully_inside_both_aiff": 25,
+    "dma_started_after_all_aiff": 161,
+    "dma_request_to_wait_us_inside_both_median": 56.55916666666667,
+    "dma_request_to_wait_us_after_aiff_median": 12.239166666666666,
+    "bif_read_counts": 184774,
+    "conditional_aiff_bytes_if_32bytes_per_count": 5912768,
+    "conditional_combined_GBs_bounds_in_aiff_envelope": [
+      22.901392101610803,
+      24.167556882701774
+    ],
+    "bounds_caveat": "Requires 32-byte BIF unit and every DMA transfer falling between issue/wait markers. Bounds cover AIFF BIF plus DMA payload, not all instruction/profiling traffic, and do not establish physical DDR traffic.",
+    "timeline": [
+      {
+        "name": "subgraph_dma",
+        "core": 0,
+        "start_us": 0.0,
+        "end_us": 596.0633333333334
+      },
+      {
+        "name": "subgraph_matmul_fc",
+        "core": 1,
+        "start_us": 1.0333333333333334,
+        "end_us": 332.205
+      },
+      {
+        "name": "subgraph_matmul_0_fc",
+        "core": 2,
+        "start_us": 2.07,
+        "end_us": 258.44666666666666
+      }
+    ]
+  },
+  "limitations": [
+    "No documented common-port busy, pending-request, backpressure or DDR-controller counters exposed by the running system.",
+    "GM disabled by --gm_size 0. A system-level cache cannot independently be ruled out by these NPU counters.",
+    "DMA-only AIPU Read Bytes is 0.50..0.64% below the known 6422528-byte payload; why the accounting differs is unresolved.",
+    "The new reader includes two sample stores per chunk and achieves about 18 GB/s alone; it is not an assertion of maximum standalone DMA throughput.",
+    "AIFF finishes before the DMA reader. Whole-graph average includes a long DMA-only tail.",
+    "Custom markers measure issue-to-wait completion, including queueing, not cycles of physical AXI data activity.",
+    "This experiment establishes contention, not the precise physical width/frequency/QoS limit."
+  ]
+}

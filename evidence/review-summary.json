@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "provider": "cpu",
+      "threads": 1,
+      "tokens": 1,
+      "tiling": "fps",
+      "sum_ort_medians_us": 1301.342,
+      "max_error_lsb": 0
+    },
+    {
+      "provider": "cpu",
+      "threads": 8,
+      "tokens": 1,
+      "tiling": "fps",
+      "sum_ort_medians_us": 1358.5194999999999,
+      "max_error_lsb": 0
+    },
+    {
+      "provider": "npu",
+      "threads": 1,
+      "tokens": 1,
+      "tiling": "fps",
+      "sum_ort_medians_us": 1524.1805,
+      "max_error_lsb": 1,
+      "sum_native_medians_us": 739.686,
+      "native_bit_exact_all": true,
+      "native_validation_checks": 2088
+    },
+    {
+      "provider": "npu",
+      "threads": 1,
+      "tokens": 1,
+      "tiling": "none",
+      "sum_ort_medians_us": 1524.8855,
+      "max_error_lsb": 1,
+      "sum_native_medians_us": 713.447,
+      "native_bit_exact_all": true,
+      "native_validation_checks": 2088
+    },
+    {
+      "provider": "cpu",
+      "threads": 8,
+      "tokens": 64,
+      "tiling": "fps",
+      "sum_ort_medians_us": 7996.4435,
+      "max_error_lsb": 0
+    },
+    {
+      "provider": "npu",
+      "threads": 1,
+      "tokens": 64,
+      "tiling": "fps",
+      "sum_ort_medians_us": 3974.12,
+      "max_error_lsb": 1,
+      "sum_native_medians_us": 2720.0105,
+      "native_bit_exact_all": true,
+      "native_validation_checks": 2088
+    }
+  ],
+  "warning": "Sums of separately measured medians, not whole-block latency or LLM tokens/s. CPU ORT is not llama.cpp.",
+  "module_build_id_hex": "040000001400000003000000474e5500fe9d1845f77ba5d4880d83f73d7a04fd5ae9ae3f",
+  "hashes": {
+    "/lib/modules/6.6.89-cix/extra/aipu.ko": "1d7a4a955e5024cb0e17d56f19c21c322f82ac845c33afe6e63b51dbd799d5d6",
+    "/usr/src/aipu-5.11.0/armchina-npu/aipu_job_manager.c": "1841a5f691abeb6f89d16a264e4044701c33027b2a50e690d5809f8617a2a751",
+    "/usr/share/cix/lib/libnoe.so": "9021ff309a052c435a2d6905a2dd7c1f7603a29305e1b692949dc0b011f51aeb",
+    "/usr/share/cix/lib/onnxruntime/libaipu_buildingtool.so": "1792f19f1d848cd68c507732229f82c27f6d5767b5d458887f84435806ac0dc6"
+  },
+  "temperatures": {
+    "/sys/class/thermal/thermal_zone2/temp": "41000",
+    "/sys/class/thermal/thermal_zone0/temp": "40000",
+    "/sys/class/thermal/thermal_zone9/temp": "41000",
+    "/sys/class/thermal/thermal_zone12/temp": "40000",
+    "/sys/class/thermal/thermal_zone7/temp": "43000",
+    "/sys/class/thermal/thermal_zone10/temp": "41000",
+    "/sys/class/thermal/thermal_zone5/temp": "41000",
+    "/sys/class/thermal/thermal_zone3/temp": "43000",
+    "/sys/class/thermal/thermal_zone1/temp": "40000",
+    "/sys/class/thermal/thermal_zone8/temp": "41000",
+    "/sys/class/thermal/thermal_zone11/temp": "42000",
+    "/sys/class/thermal/thermal_zone6/temp": "41000",
+    "/sys/class/thermal/thermal_zone4/temp": "43000"
+  }
+}

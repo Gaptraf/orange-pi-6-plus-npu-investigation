@@ -1,0 +1,14 @@
+{
+  "float32": {
+    "exact_match": false,
+    "max_abs_error": 0.0003808736801147461
+  },
+  "round_output_to_fp16": {
+    "exact_match": false,
+    "max_abs_error": 0.00048828125
+  },
+  "fp16_inputs_and_output": {
+    "exact_match": true,
+    "max_abs_error": 0.0
+  }
+}
