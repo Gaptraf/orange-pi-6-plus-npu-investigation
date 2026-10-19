@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-19",
+  "pmu_node_type": "0x200006",
+  "pmcfgr": "0x0",
+  "expected_pmcfgr": "0x417f08",
+  "pmu_configuration_access_available": false,
+  "configuration_write_test_executed": false,
+  "new_npu_jobs": 0,
+  "mmio_writes": 0,
+  "security_writes": 0,
+  "module_loads": 1,
+  "module_unloaded": true,
+  "state_preserved": true,
+  "bandwidth_limit_proven": false,
+  "conclusion": "PMU identification is readable; fixed PMCFGR is inaccessible through the current Linux MMIO path. Security filtering is consistent, but its precise configuration is not determined."
+}
