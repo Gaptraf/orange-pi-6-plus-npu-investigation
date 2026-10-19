@@ -1,0 +1,57 @@
+{"event": "create_session", "case": "qmatmul_dynamic_int8", "runs_requested": 1000, "provider_requested": "ZhouyiExecutionProvider", "ort_version": "1.20.0", "available_providers": ["ZhouyiExecutionProvider", "CPUExecutionProvider"], "input_shape": [4, 32], "weight_shape": [32, 16], "dtype": "int8", "runs_completed": 0, "numerical_failures": 0, "max_abs_error": 0.0, "edge_inputs": true, "pause_ms": 0, "start_pattern": 0}
+{"event": "session_ready", "seconds": 0.19066808302886784}
+{"event": "inference", "iteration": 1, "ms": 1.0277769761160016, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 2, "ms": 0.38469803985208273, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 3, "ms": 0.3862569574266672, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 100, "ms": 0.32971997279673815, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 200, "ms": 0.3211490111425519, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 300, "ms": 0.30463107395917177, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 400, "ms": 0.3624190576374531, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 500, "ms": 0.30344107653945684, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 600, "ms": 0.3171999705955386, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 700, "ms": 0.30324002727866173, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 800, "ms": 0.30442001298069954, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 900, "ms": 0.3186300164088607, "error": 0.0, "pass": true}
+{"event": "inference", "iteration": 1000, "ms": 0.32470899168401957, "error": 0.0, "pass": true}
+{
+  "case": "qmatmul_dynamic_int8",
+  "runs_requested": 1000,
+  "provider_requested": "ZhouyiExecutionProvider",
+  "ort_version": "1.20.0",
+  "available_providers": [
+    "ZhouyiExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "input_shape": [
+    4,
+    32
+  ],
+  "weight_shape": [
+    32,
+    16
+  ],
+  "dtype": "int8",
+  "runs_completed": 1000,
+  "numerical_failures": 0,
+  "max_abs_error": 0.0,
+  "edge_inputs": true,
+  "pause_ms": 0,
+  "start_pattern": 0,
+  "session_create_s": 0.19066808302886784,
+  "session_providers": [
+    "ZhouyiExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "tolerance": "absolute <= 1 INT8 output unit",
+  "profile_provider_events": {
+    "ZhouyiExecutionProvider": 1000
+  },
+  "npu_execution_proven": true,
+  "first_run_ms": 1.0277769761160016,
+  "warm_ms": {
+    "p50": 0.31378993298858404,
+    "p95": 0.3836360643617809,
+    "mean": 0.325157593873267
+  },
+  "success": true
+}
