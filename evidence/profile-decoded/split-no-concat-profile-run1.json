@@ -1,0 +1,921 @@
+{
+  "graph_name": "graph_1",
+  "frequency": 1200,
+  "graph": {
+    "nodes": {
+      "input": {
+        "layer node name": "input",
+        "op_type": "Input",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_subgraph_subgraph_matmul_1_fc_sg_input_0": {
+        "layer node name": "subgraph_subgraph_subgraph_matmul_1_fc_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_matmul_0_fc": {
+        "layer node name": "subgraph_matmul_0_fc",
+        "op_type": "SubGraph",
+        "plugin": "HwaFc",
+        "ops_count": 2868800,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "matmul_0_fc_out"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "matmul_0_fc",
+            "op_type": "FullyConnected",
+            "plugin": "",
+            "ops_count": 2868800,
+            "constant_size": 1440000,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "matmul_0_fc_out"
+            ],
+            "params": {
+              "num_output": "1600",
+              "scale_type": "uint16",
+              "scale_value": "4772",
+              "shift_type": "int8",
+              "shift_value": "19",
+              "with_activation": "NONE"
+            },
+            "constants": {
+              "biases": {
+                "dtype": "int32",
+                "shape": "[1600]"
+              },
+              "weights": {
+                "dtype": "int8",
+                "shape": "[1600,896]"
+              }
+            }
+          }
+        ]
+      },
+      "reshape_0": {
+        "layer node name": "reshape_0",
+        "op_type": "Reshape",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": [
+          "matmul_0_fc_out"
+        ],
+        "outputs": [
+          "matmul_0"
+        ],
+        "params": {
+          "shape": "[1,1600]"
+        }
+      },
+      "subgraph_matmul_1_fc": {
+        "layer node name": "subgraph_matmul_1_fc",
+        "op_type": "SubGraph",
+        "plugin": "HwaFc",
+        "ops_count": 2868800,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "matmul_1_fc_out"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "matmul_1_fc",
+            "op_type": "FullyConnected",
+            "plugin": "",
+            "ops_count": 2868800,
+            "constant_size": 1440000,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "matmul_1_fc_out"
+            ],
+            "params": {
+              "num_output": "1600",
+              "scale_type": "uint16",
+              "scale_value": "4772",
+              "shift_type": "int8",
+              "shift_value": "19",
+              "with_activation": "NONE"
+            },
+            "constants": {
+              "biases": {
+                "dtype": "int32",
+                "shape": "[1600]"
+              },
+              "weights": {
+                "dtype": "int8",
+                "shape": "[1600,896]"
+              }
+            }
+          }
+        ]
+      },
+      "reshape_2": {
+        "layer node name": "reshape_2",
+        "op_type": "Reshape",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": [
+          "matmul_1_fc_out"
+        ],
+        "outputs": [
+          "matmul_1"
+        ],
+        "params": {
+          "shape": "[1,1600]"
+        }
+      },
+      "subgraph_subgraph_subgraph_matmul_2_fc_sg_input_0": {
+        "layer node name": "subgraph_subgraph_subgraph_matmul_2_fc_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_matmul_3_fc": {
+        "layer node name": "subgraph_matmul_3_fc",
+        "op_type": "SubGraph",
+        "plugin": "HwaFc",
+        "ops_count": 2868800,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "matmul_3_fc_out"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "matmul_3_fc",
+            "op_type": "FullyConnected",
+            "plugin": "",
+            "ops_count": 2868800,
+            "constant_size": 1440000,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "matmul_3_fc_out"
+            ],
+            "params": {
+              "num_output": "1600",
+              "scale_type": "uint16",
+              "scale_value": "4252",
+              "shift_type": "int8",
+              "shift_value": "19",
+              "with_activation": "NONE"
+            },
+            "constants": {
+              "biases": {
+                "dtype": "int32",
+                "shape": "[1600]"
+              },
+              "weights": {
+                "dtype": "int8",
+                "shape": "[1600,896]"
+              }
+            }
+          }
+        ]
+      },
+      "reshape_6": {
+        "layer node name": "reshape_6",
+        "op_type": "Reshape",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": [
+          "matmul_3_fc_out"
+        ],
+        "outputs": [
+          "matmul_3"
+        ],
+        "params": {
+          "shape": "[1,1600]"
+        }
+      },
+      "subgraph_matmul_2_fc": {
+        "layer node name": "subgraph_matmul_2_fc",
+        "op_type": "SubGraph",
+        "plugin": "HwaFc",
+        "ops_count": 2983552,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "matmul_2_fc_out"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "matmul_2_fc",
+            "op_type": "FullyConnected",
+            "plugin": "",
+            "ops_count": 2983552,
+            "constant_size": 1497600,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "matmul_2_fc_out"
+            ],
+            "params": {
+              "num_output": "1664",
+              "scale_type": "uint16",
+              "scale_value": "4252",
+              "shift_type": "int8",
+              "shift_value": "19",
+              "with_activation": "NONE"
+            },
+            "constants": {
+              "biases": {
+                "dtype": "int32",
+                "shape": "[1664]"
+              },
+              "weights": {
+                "dtype": "int8",
+                "shape": "[1664,896]"
+              }
+            }
+          }
+        ]
+      },
+      "reshape_4": {
+        "layer node name": "reshape_4",
+        "op_type": "Reshape",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": [
+          "matmul_2_fc_out"
+        ],
+        "outputs": [
+          "matmul_2"
+        ],
+        "params": {
+          "shape": "[1,1664]"
+        }
+      },
+      "subgraph_subgraph_subgraph_matmul_fc_sg_input_0": {
+        "layer node name": "subgraph_subgraph_subgraph_matmul_fc_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "input"
+        ],
+        "params": null
+      },
+      "subgraph_matmul_4_fc": {
+        "layer node name": "subgraph_matmul_4_fc",
+        "op_type": "SubGraph",
+        "plugin": "HwaFc",
+        "ops_count": 2868800,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "matmul_4_fc_out"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "matmul_4_fc",
+            "op_type": "FullyConnected",
+            "plugin": "",
+            "ops_count": 2868800,
+            "constant_size": 1440000,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "matmul_4_fc_out"
+            ],
+            "params": {
+              "num_output": "1600",
+              "scale_type": "uint16",
+              "scale_value": "4252",
+              "shift_type": "int8",
+              "shift_value": "19",
+              "with_activation": "NONE"
+            },
+            "constants": {
+              "biases": {
+                "dtype": "int32",
+                "shape": "[1600]"
+              },
+              "weights": {
+                "dtype": "int8",
+                "shape": "[1600,896]"
+              }
+            }
+          }
+        ]
+      },
+      "reshape_8": {
+        "layer node name": "reshape_8",
+        "op_type": "Reshape",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": [
+          "matmul_4_fc_out"
+        ],
+        "outputs": [
+          "matmul_4"
+        ],
+        "params": {
+          "shape": "[1,1600]"
+        }
+      },
+      "subgraph_matmul_fc": {
+        "layer node name": "subgraph_matmul_fc",
+        "op_type": "SubGraph",
+        "plugin": "HwaFc",
+        "ops_count": 2983552,
+        "inputs": [
+          "input"
+        ],
+        "outputs": [
+          "matmul_fc_out"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "matmul_fc",
+            "op_type": "FullyConnected",
+            "plugin": "",
+            "ops_count": 2983552,
+            "constant_size": 1497600,
+            "inputs": [
+              "input"
+            ],
+            "outputs": [
+              "matmul_fc_out"
+            ],
+            "params": {
+              "num_output": "1664",
+              "scale_type": "uint16",
+              "scale_value": "4772",
+              "shift_type": "int8",
+              "shift_value": "19",
+              "with_activation": "NONE"
+            },
+            "constants": {
+              "biases": {
+                "dtype": "int32",
+                "shape": "[1664]"
+              },
+              "weights": {
+                "dtype": "int8",
+                "shape": "[1664,896]"
+              }
+            }
+          }
+        ]
+      },
+      "reshape_10": {
+        "layer node name": "reshape_10",
+        "op_type": "Reshape",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": [
+          "matmul_fc_out"
+        ],
+        "outputs": [
+          "matmul"
+        ],
+        "params": {
+          "shape": "[1,1664]"
+        }
+      }
+    },
+    "tensors": {
+      "input": {
+        "dtype": "int8",
+        "shape": "[1,896]"
+      },
+      "matmul_0_fc_out": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "matmul_0": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "matmul_1_fc_out": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "matmul_1": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "matmul_3_fc_out": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "matmul_3": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "matmul_2_fc_out": {
+        "dtype": "int8",
+        "shape": "[1,1664]"
+      },
+      "matmul_2": {
+        "dtype": "int8",
+        "shape": "[1,1664]"
+      },
+      "matmul_4_fc_out": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "matmul_4": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "matmul_fc_out": {
+        "dtype": "int8",
+        "shape": "[1,1664]"
+      },
+      "matmul": {
+        "dtype": "int8",
+        "shape": "[1,1664]"
+      }
+    }
+  },
+  "profile_data": {
+    "subgraphs": [
+      {
+        "Core ID": 0,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 57311109,
+            "end": 57492656,
+            "Cycles": 181547,
+            "AIFF Busy Cycles": 165204,
+            "AIFF Utilization": 0.9099792340275521,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [
+                {
+                  "start": 57322271,
+                  "duration": 165204,
+                  "mtp0_busy_cycle": 5600,
+                  "mtp1_busy_cycle": 5600,
+                  "ptp_busy_cycle": 0,
+                  "rdma_weight_read_count": 135742,
+                  "rdma_act_read_count": 341,
+                  "udma_param_read_count": 2016,
+                  "udma_act_write_count": 0,
+                  "wdma_act_write_count": 0,
+                  "bif_read_count": 29092,
+                  "bif_write_count": 50,
+                  "itp_busy_cycle": 100,
+                  "wrb_busy_cycle": 0
+                }
+              ],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 0,
+            "Layer Name": "subgraph_matmul_4_fc",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1600]",
+            "Plugin Name": "HwaFc",
+            "AIPU Read Bytes": 935360,
+            "AIPU Write Bytes": 1728,
+            "Constant Read Bytes": 930080,
+            "MTP0 Busy Cycles": 5600,
+            "MTP0 Utilization": 0.030846006819170792,
+            "MTP1 Busy Cycles": 5600,
+            "MTP1 Utilization": 0.030846006819170792,
+            "ITP Busy Cycles": 100,
+            "ITP Utilization": 0.0005508215503423356,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 2.8688,
+            "Cycles Ratio": 0.5661966735590672,
+            "MAC Utilization": 0.001928951249538687,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 6.194019179606383,
+            "BW_R(GB/s)": 6.182597343938484,
+            "BW_W(GB/s)": 0.01142183566789867
+          },
+          {
+            "start": 57492656,
+            "end": 57623307,
+            "Cycles": 130651,
+            "AIFF Busy Cycles": 117068,
+            "AIFF Utilization": 0.8960360043168442,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [
+                {
+                  "start": 57505518,
+                  "duration": 117068,
+                  "mtp0_busy_cycle": 5824,
+                  "mtp1_busy_cycle": 5824,
+                  "ptp_busy_cycle": 0,
+                  "rdma_weight_read_count": 83431,
+                  "rdma_act_read_count": 1056,
+                  "udma_param_read_count": 1995,
+                  "udma_act_write_count": 0,
+                  "wdma_act_write_count": 0,
+                  "bif_read_count": 33022,
+                  "bif_write_count": 52,
+                  "itp_busy_cycle": 104,
+                  "wrb_busy_cycle": 0
+                }
+              ],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 0,
+            "Layer Name": "subgraph_matmul_fc",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1664]",
+            "Plugin Name": "HwaFc",
+            "AIPU Read Bytes": 1058496,
+            "AIPU Write Bytes": 1792,
+            "Constant Read Bytes": 1055840,
+            "MTP0 Busy Cycles": 5824,
+            "MTP0 Utilization": 0.04457677323556651,
+            "MTP1 Busy Cycles": 5824,
+            "MTP1 Utilization": 0.04457677323556651,
+            "ITP Busy Cycles": 104,
+            "ITP Utilization": 0.0007960138077779733,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 2.983552,
+            "Cycles Ratio": 0.4074656237622527,
+            "MAC Utilization": 0.002787603041691223,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 9.738506402553368,
+            "BW_R(GB/s)": 9.722047286281773,
+            "BW_W(GB/s)": 0.01645911627159379
+          }
+        ]
+      },
+      {
+        "Core ID": 1,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 57312356,
+            "end": 57420743,
+            "Cycles": 108387,
+            "AIFF Busy Cycles": 93098,
+            "AIFF Utilization": 0.8589406478636736,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [
+                {
+                  "start": 57325541,
+                  "duration": 93098,
+                  "mtp0_busy_cycle": 5600,
+                  "mtp1_busy_cycle": 5600,
+                  "ptp_busy_cycle": 0,
+                  "rdma_weight_read_count": 63689,
+                  "rdma_act_read_count": 1559,
+                  "udma_param_read_count": 1926,
+                  "udma_act_write_count": 0,
+                  "wdma_act_write_count": 0,
+                  "bif_read_count": 29055,
+                  "bif_write_count": 50,
+                  "itp_busy_cycle": 100,
+                  "wrb_busy_cycle": 0
+                }
+              ],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 1,
+            "Layer Name": "subgraph_matmul_3_fc",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1600]",
+            "Plugin Name": "HwaFc",
+            "AIPU Read Bytes": 934240,
+            "AIPU Write Bytes": 1728,
+            "Constant Read Bytes": 928896,
+            "MTP0 Busy Cycles": 5600,
+            "MTP0 Utilization": 0.05166671279766023,
+            "MTP1 Busy Cycles": 5600,
+            "MTP1 Utilization": 0.05166671279766023,
+            "ITP Busy Cycles": 100,
+            "ITP Utilization": 0.0009226198713867899,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 2.8688,
+            "Cycles Ratio": 0.33803014567603223,
+            "MAC Utilization": 0.0032309715417900673,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 10.362512109385811,
+            "BW_R(GB/s)": 10.343380663732736,
+            "BW_W(GB/s)": 0.019131445653076475
+          },
+          {
+            "start": 57420743,
+            "end": 57532622,
+            "Cycles": 111879,
+            "AIFF Busy Cycles": 96931,
+            "AIFF Utilization": 0.8663913692471331,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [
+                {
+                  "start": 57434977,
+                  "duration": 96931,
+                  "mtp0_busy_cycle": 5824,
+                  "mtp1_busy_cycle": 5824,
+                  "ptp_busy_cycle": 0,
+                  "rdma_weight_read_count": 66211,
+                  "rdma_act_read_count": 2500,
+                  "udma_param_read_count": 2106,
+                  "udma_act_write_count": 0,
+                  "wdma_act_write_count": 0,
+                  "bif_read_count": 30222,
+                  "bif_write_count": 52,
+                  "itp_busy_cycle": 104,
+                  "wrb_busy_cycle": 0
+                }
+              ],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 1,
+            "Layer Name": "subgraph_matmul_2_fc",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1664]",
+            "Plugin Name": "HwaFc",
+            "AIPU Read Bytes": 968832,
+            "AIPU Write Bytes": 1792,
+            "Constant Read Bytes": 966240,
+            "MTP0 Busy Cycles": 5824,
+            "MTP0 Utilization": 0.052056239329990435,
+            "MTP1 Busy Cycles": 5824,
+            "MTP1 Utilization": 0.052056239329990435,
+            "ITP Busy Cycles": 104,
+            "ITP Utilization": 0.0009295757023212578,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 2.983552,
+            "Cycles Ratio": 0.3489207623431667,
+            "MAC Utilization": 0.0032553305356679985,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 10.410790228729253,
+            "BW_R(GB/s)": 10.391569463438179,
+            "BW_W(GB/s)": 0.019220765291073392
+          }
+        ]
+      },
+      {
+        "Core ID": 2,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 57313297,
+            "end": 57509416,
+            "Cycles": 196119,
+            "AIFF Busy Cycles": 173620,
+            "AIFF Utilization": 0.8852788358088711,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [
+                {
+                  "start": 57330065,
+                  "duration": 173620,
+                  "mtp0_busy_cycle": 5600,
+                  "mtp1_busy_cycle": 5600,
+                  "ptp_busy_cycle": 0,
+                  "rdma_weight_read_count": 141417,
+                  "rdma_act_read_count": 1503,
+                  "udma_param_read_count": 1924,
+                  "udma_act_write_count": 0,
+                  "wdma_act_write_count": 0,
+                  "bif_read_count": 31741,
+                  "bif_write_count": 50,
+                  "itp_busy_cycle": 100,
+                  "wrb_busy_cycle": 0
+                }
+              ],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 2,
+            "Layer Name": "subgraph_matmul_0_fc",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1600]",
+            "Plugin Name": "HwaFc",
+            "AIPU Read Bytes": 1020192,
+            "AIPU Write Bytes": 1728,
+            "Constant Read Bytes": 1014848,
+            "MTP0 Busy Cycles": 5600,
+            "MTP0 Utilization": 0.02855409215833244,
+            "MTP1 Busy Cycles": 5600,
+            "MTP1 Utilization": 0.02855409215833244,
+            "ITP Busy Cycles": 100,
+            "ITP Utilization": 0.000509894502827365,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 2.8688,
+            "Cycles Ratio": 0.6116428551379571,
+            "MAC Utilization": 0.0017856266475966122,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 6.25285668395209,
+            "BW_R(GB/s)": 6.242283511541462,
+            "BW_W(GB/s)": 0.01057317241062824
+          },
+          {
+            "start": 57509416,
+            "end": 57631752,
+            "Cycles": 122336,
+            "AIFF Busy Cycles": 103025,
+            "AIFF Utilization": 0.8421478550876276,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [
+                {
+                  "start": 57528020,
+                  "duration": 103025,
+                  "mtp0_busy_cycle": 5600,
+                  "mtp1_busy_cycle": 5600,
+                  "ptp_busy_cycle": 0,
+                  "rdma_weight_read_count": 70732,
+                  "rdma_act_read_count": 1154,
+                  "udma_param_read_count": 1985,
+                  "udma_act_write_count": 0,
+                  "wdma_act_write_count": 0,
+                  "bif_read_count": 31758,
+                  "bif_write_count": 50,
+                  "itp_busy_cycle": 100,
+                  "wrb_busy_cycle": 0
+                }
+              ],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 2,
+            "Layer Name": "subgraph_matmul_1_fc",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1600]",
+            "Plugin Name": "HwaFc",
+            "AIPU Read Bytes": 1017984,
+            "AIPU Write Bytes": 1728,
+            "Constant Read Bytes": 1015392,
+            "MTP0 Busy Cycles": 5600,
+            "MTP0 Utilization": 0.04577556892492807,
+            "MTP1 Busy Cycles": 5600,
+            "MTP1 Utilization": 0.04577556892492807,
+            "ITP Busy Cycles": 100,
+            "ITP Utilization": 0.0008174208736594298,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 2.8688,
+            "Cycles Ratio": 0.38153335641195973,
+            "MAC Utilization": 0.00286256958295187,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 10.002406487052053,
+            "BW_R(GB/s)": 9.985456447815851,
+            "BW_W(GB/s)": 0.016950039236201937
+          }
+        ]
+      }
+    ],
+    "Total Cycles": 320643,
+    "Total Time(ms@1200MHz)": 0.2672025,
+    "FPS@1200MHz": 3742.4799543417444,
+    "Total AIFF Busy Cycles": 748946,
+    "AIPU Read Bytes": 5935104,
+    "AIPU Write Bytes": 10496,
+    "Constant Read Bytes": 5911296,
+    "Subgraphs Num": 3,
+    "Layers Num": 6,
+    "Total Ops(Mops)": 17.442304,
+    "Ops Data Type": "i8: 100.00%",
+    "BW_RW(GB/s)": 22.251288816534274,
+    "BW_R(GB/s)": 22.212007746933505,
+    "BW_W(GB/s)": 0.03928106960077095,
+    "Average MAC Utilization": 0.0022134559827180593,
+    "Average MTP Utilization(when working)": 0.06253487723214286,
+    "tec_num": 4,
+    "core_num": 3,
+    "Target": "X2_1204MP3"
+  }
+}

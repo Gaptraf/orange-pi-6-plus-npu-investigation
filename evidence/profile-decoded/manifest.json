@@ -1,0 +1,152 @@
+[
+  {
+    "case": "gate-up-m1",
+    "run": "run0",
+    "report": "artifacts/profile-decoded/gate-up-m1-run0.json"
+  },
+  {
+    "case": "gate-up-m1",
+    "run": "run1",
+    "report": "artifacts/profile-decoded/gate-up-m1-run1.json"
+  },
+  {
+    "case": "gate-up-m1",
+    "run": "run2",
+    "report": "artifacts/profile-decoded/gate-up-m1-run2.json"
+  },
+  {
+    "case": "gate-up-m1",
+    "run": "run3",
+    "report": "artifacts/profile-decoded/gate-up-m1-run3.json"
+  },
+  {
+    "case": "gate-up-m1",
+    "run": "run4",
+    "report": "artifacts/profile-decoded/gate-up-m1-run4.json"
+  },
+  {
+    "case": "m64-g2",
+    "run": "run0",
+    "report": "artifacts/profile-decoded/m64-g2-run0.json"
+  },
+  {
+    "case": "m64-g2",
+    "run": "run1",
+    "report": "artifacts/profile-decoded/m64-g2-run1.json"
+  },
+  {
+    "case": "m64-g2",
+    "run": "run2",
+    "report": "artifacts/profile-decoded/m64-g2-run2.json"
+  },
+  {
+    "case": "m64-g2",
+    "run": "run3",
+    "report": "artifacts/profile-decoded/m64-g2-run3.json"
+  },
+  {
+    "case": "m64-g2",
+    "run": "run4",
+    "report": "artifacts/profile-decoded/m64-g2-run4.json"
+  },
+  {
+    "case": "m1-g0",
+    "run": "run0",
+    "report": "artifacts/profile-decoded/m1-g0-run0.json"
+  },
+  {
+    "case": "m1-g0",
+    "run": "run1",
+    "report": "artifacts/profile-decoded/m1-g0-run1.json"
+  },
+  {
+    "case": "m1-g0",
+    "run": "run2",
+    "report": "artifacts/profile-decoded/m1-g0-run2.json"
+  },
+  {
+    "case": "m1-g0",
+    "run": "run3",
+    "report": "artifacts/profile-decoded/m1-g0-run3.json"
+  },
+  {
+    "case": "m1-g0",
+    "run": "run4",
+    "report": "artifacts/profile-decoded/m1-g0-run4.json"
+  },
+  {
+    "case": "m1-g1",
+    "run": "run0",
+    "report": "artifacts/profile-decoded/m1-g1-run0.json"
+  },
+  {
+    "case": "m1-g1",
+    "run": "run1",
+    "report": "artifacts/profile-decoded/m1-g1-run1.json"
+  },
+  {
+    "case": "m1-g1",
+    "run": "run2",
+    "report": "artifacts/profile-decoded/m1-g1-run2.json"
+  },
+  {
+    "case": "m1-g1",
+    "run": "run3",
+    "report": "artifacts/profile-decoded/m1-g1-run3.json"
+  },
+  {
+    "case": "m1-g1",
+    "run": "run4",
+    "report": "artifacts/profile-decoded/m1-g1-run4.json"
+  },
+  {
+    "case": "m1-g3",
+    "run": "run0",
+    "report": "artifacts/profile-decoded/m1-g3-run0.json"
+  },
+  {
+    "case": "m1-g3",
+    "run": "run1",
+    "report": "artifacts/profile-decoded/m1-g3-run1.json"
+  },
+  {
+    "case": "m1-g3",
+    "run": "run2",
+    "report": "artifacts/profile-decoded/m1-g3-run2.json"
+  },
+  {
+    "case": "m1-g3",
+    "run": "run3",
+    "report": "artifacts/profile-decoded/m1-g3-run3.json"
+  },
+  {
+    "case": "m1-g3",
+    "run": "run4",
+    "report": "artifacts/profile-decoded/m1-g3-run4.json"
+  },
+  {
+    "case": "split-no-concat-profile",
+    "run": "run0",
+    "report": "artifacts/profile-decoded/split-no-concat-profile-run0.json"
+  },
+  {
+    "case": "split-no-concat-profile",
+    "run": "run1",
+    "report": "artifacts/profile-decoded/split-no-concat-profile-run1.json"
+  },
+  {
+    "case": "split-no-concat-profile",
+    "run": "run2",
+    "report": "artifacts/profile-decoded/split-no-concat-profile-run2.json"
+  },
+  {
+    "case": "split-no-concat-profile",
+    "run": "run3",
+    "report": "artifacts/profile-decoded/split-no-concat-profile-run3.json"
+  },
+  {
+    "case": "split-no-concat-profile",
+    "run": "run4",
+    "report": "artifacts/profile-decoded/split-no-concat-profile-run4.json"
+  }
+]
