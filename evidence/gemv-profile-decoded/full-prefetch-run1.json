@@ -1,0 +1,166 @@
+{
+  "graph_name": "gemv",
+  "frequency": 1200,
+  "graph": {
+    "nodes": {
+      "input": {
+        "layer node name": "input",
+        "op_type": "Input",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "x"
+        ],
+        "params": null
+      },
+      "subgraph_gemv_sg_input_0": {
+        "layer node name": "subgraph_gemv_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "x"
+        ],
+        "params": null
+      },
+      "subgraph_gemv": {
+        "layer node name": "subgraph_gemv",
+        "op_type": "SubGraph",
+        "plugin": "PackedGemv",
+        "ops_count": 0,
+        "inputs": [
+          "x"
+        ],
+        "outputs": [
+          "yg",
+          "yu"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "gemv",
+            "op_type": "Opi6PackedGemv",
+            "plugin": "",
+            "ops_count": 0,
+            "constant_size": 8716288,
+            "inputs": [
+              "x"
+            ],
+            "outputs": [
+              "yg",
+              "yu"
+            ],
+            "params": {
+              "k4": "224",
+              "n32": "152"
+            },
+            "constants": {
+              "wg": {
+                "dtype": "int8",
+                "shape": "[4358144]"
+              },
+              "wu": {
+                "dtype": "int8",
+                "shape": "[4358144]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "tensors": {
+      "x": {
+        "dtype": "int8",
+        "shape": "[1,896]"
+      },
+      "yg": {
+        "dtype": "int8",
+        "shape": "[1,4864]"
+      },
+      "yu": {
+        "dtype": "int8",
+        "shape": "[1,4864]"
+      }
+    }
+  },
+  "profile_data": {
+    "subgraphs": [
+      {
+        "Core ID": 0,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 9236567,
+            "end": 9927052,
+            "Cycles": 690485,
+            "AIFF Busy Cycles": 0,
+            "AIFF Utilization": 0.0,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 0,
+            "Layer Name": "subgraph_gemv",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,4864][1,4864]",
+            "Plugin Name": "PackedGemv",
+            "AIPU Read Bytes": 8730176,
+            "AIPU Write Bytes": 0,
+            "Constant Read Bytes": 8716288,
+            "MTP0 Busy Cycles": 0,
+            "MTP0 Utilization": 0.0,
+            "MTP1 Busy Cycles": 0,
+            "MTP1 Utilization": 0.0,
+            "ITP Busy Cycles": 0,
+            "ITP Utilization": 0.0,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 0.0,
+            "Cycles Ratio": 1.0,
+            "MAC Utilization": 0,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 15.17225022991086,
+            "BW_R(GB/s)": 15.17225022991086,
+            "BW_W(GB/s)": 0.0
+          }
+        ]
+      }
+    ],
+    "Total Cycles": 690485,
+    "Total Time(ms@1200MHz)": 0.5754041666666667,
+    "FPS@1200MHz": 1737.9088611628058,
+    "AIPU Read Bytes": 8730176,
+    "AIPU Write Bytes": 0,
+    "Constant Read Bytes": 8716288,
+    "Subgraphs Num": 1,
+    "Layers Num": 1,
+    "Total Ops(Mops)": 0.0,
+    "Ops Data Type": "",
+    "BW_RW(GB/s)": 15.172250229910857,
+    "BW_R(GB/s)": 15.172250229910857,
+    "BW_W(GB/s)": 0.0,
+    "Average MAC Utilization": 0.0,
+    "tec_num": 4,
+    "core_num": 3,
+    "Target": "X2_1204MP3"
+  }
+}

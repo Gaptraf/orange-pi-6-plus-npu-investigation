@@ -1,0 +1,406 @@
+{
+  "graph_name": "gemv",
+  "frequency": 1200,
+  "graph": {
+    "nodes": {
+      "input": {
+        "layer node name": "input",
+        "op_type": "Input",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "x"
+        ],
+        "params": null
+      },
+      "subgraph_gemv0_sg_input_0": {
+        "layer node name": "subgraph_gemv0_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "x"
+        ],
+        "params": null
+      },
+      "subgraph_gemv0": {
+        "layer node name": "subgraph_gemv0",
+        "op_type": "SubGraph",
+        "plugin": "PackedGemv",
+        "ops_count": 0,
+        "inputs": [
+          "x"
+        ],
+        "outputs": [
+          "yg0",
+          "yu0"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "gemv0",
+            "op_type": "Opi6PackedGemv",
+            "plugin": "",
+            "ops_count": 0,
+            "constant_size": 2867200,
+            "inputs": [
+              "x"
+            ],
+            "outputs": [
+              "yg0",
+              "yu0"
+            ],
+            "params": {
+              "k4": "224",
+              "n32": "50"
+            },
+            "constants": {
+              "wg": {
+                "dtype": "int8",
+                "shape": "[1433600]"
+              },
+              "wu": {
+                "dtype": "int8",
+                "shape": "[1433600]"
+              }
+            }
+          }
+        ]
+      },
+      "subgraph_gemv1_sg_input_0": {
+        "layer node name": "subgraph_gemv1_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "x"
+        ],
+        "params": null
+      },
+      "subgraph_gemv1": {
+        "layer node name": "subgraph_gemv1",
+        "op_type": "SubGraph",
+        "plugin": "PackedGemv",
+        "ops_count": 0,
+        "inputs": [
+          "x"
+        ],
+        "outputs": [
+          "yg1",
+          "yu1"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "gemv1",
+            "op_type": "Opi6PackedGemv",
+            "plugin": "",
+            "ops_count": 0,
+            "constant_size": 2867200,
+            "inputs": [
+              "x"
+            ],
+            "outputs": [
+              "yg1",
+              "yu1"
+            ],
+            "params": {
+              "k4": "224",
+              "n32": "50"
+            },
+            "constants": {
+              "wg": {
+                "dtype": "int8",
+                "shape": "[1433600]"
+              },
+              "wu": {
+                "dtype": "int8",
+                "shape": "[1433600]"
+              }
+            }
+          }
+        ]
+      },
+      "subgraph_gemv2_sg_input_0": {
+        "layer node name": "subgraph_gemv2_sg_input_0",
+        "op_type": "SubGraphInput",
+        "plugin": "",
+        "ops_count": 0,
+        "inputs": null,
+        "outputs": [
+          "x"
+        ],
+        "params": null
+      },
+      "subgraph_gemv2": {
+        "layer node name": "subgraph_gemv2",
+        "op_type": "SubGraph",
+        "plugin": "PackedGemv",
+        "ops_count": 0,
+        "inputs": [
+          "x"
+        ],
+        "outputs": [
+          "yg2",
+          "yu2"
+        ],
+        "internal_nodes": [
+          {
+            "layer node name": "gemv2",
+            "op_type": "Opi6PackedGemv",
+            "plugin": "",
+            "ops_count": 0,
+            "constant_size": 2981888,
+            "inputs": [
+              "x"
+            ],
+            "outputs": [
+              "yg2",
+              "yu2"
+            ],
+            "params": {
+              "k4": "224",
+              "n32": "52"
+            },
+            "constants": {
+              "wg": {
+                "dtype": "int8",
+                "shape": "[1490944]"
+              },
+              "wu": {
+                "dtype": "int8",
+                "shape": "[1490944]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "tensors": {
+      "x": {
+        "dtype": "int8",
+        "shape": "[1,896]"
+      },
+      "yg0": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "yu0": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "yg1": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "yu1": {
+        "dtype": "int8",
+        "shape": "[1,1600]"
+      },
+      "yg2": {
+        "dtype": "int8",
+        "shape": "[1,1664]"
+      },
+      "yu2": {
+        "dtype": "int8",
+        "shape": "[1,1664]"
+      }
+    }
+  },
+  "profile_data": {
+    "subgraphs": [
+      {
+        "Core ID": 0,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 7149147,
+            "end": 7634560,
+            "Cycles": 485413,
+            "AIFF Busy Cycles": 0,
+            "AIFF Utilization": 0.0,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 0,
+            "Layer Name": "subgraph_gemv2",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1664][1,1664]",
+            "Plugin Name": "PackedGemv",
+            "AIPU Read Bytes": 2989248,
+            "AIPU Write Bytes": 0,
+            "Constant Read Bytes": 2981888,
+            "MTP0 Busy Cycles": 0,
+            "MTP0 Utilization": 0.0,
+            "MTP1 Busy Cycles": 0,
+            "MTP1 Utilization": 0.0,
+            "ITP Busy Cycles": 0,
+            "ITP Utilization": 0.0,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 0.0,
+            "Cycles Ratio": 1.0,
+            "MAC Utilization": 0,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 7.389784781206931,
+            "BW_R(GB/s)": 7.389784781206931,
+            "BW_W(GB/s)": 0.0
+          }
+        ]
+      },
+      {
+        "Core ID": 1,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 7150170,
+            "end": 7624455,
+            "Cycles": 474285,
+            "AIFF Busy Cycles": 0,
+            "AIFF Utilization": 0.0,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 1,
+            "Layer Name": "subgraph_gemv1",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1600][1,1600]",
+            "Plugin Name": "PackedGemv",
+            "AIPU Read Bytes": 2874496,
+            "AIPU Write Bytes": 0,
+            "Constant Read Bytes": 2867200,
+            "MTP0 Busy Cycles": 0,
+            "MTP0 Utilization": 0.0,
+            "MTP1 Busy Cycles": 0,
+            "MTP1 Utilization": 0.0,
+            "ITP Busy Cycles": 0,
+            "ITP Utilization": 0.0,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 0.0,
+            "Cycles Ratio": 0.9770751916409326,
+            "MAC Utilization": 0,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 7.272832157879756,
+            "BW_R(GB/s)": 7.272832157879756,
+            "BW_W(GB/s)": 0.0
+          }
+        ]
+      },
+      {
+        "Core ID": 2,
+        "Level": 1,
+        "nodes": [
+          {
+            "start": 7151285,
+            "end": 7628018,
+            "Cycles": 476733,
+            "AIFF Busy Cycles": 0,
+            "AIFF Utilization": 0.0,
+            "DMA Busy Cycles": 0,
+            "DMA Read Bytes": 0,
+            "DMA Write Bytes": 0,
+            "stamp": {
+              "aiff0": [],
+              "dma0": [],
+              "tec0": [],
+              "custom0": {},
+              "aiff1": [],
+              "dma1": [],
+              "tec1": [],
+              "custom1": {},
+              "aiff2": [],
+              "dma2": [],
+              "tec2": [],
+              "custom2": {},
+              "aiff3": [],
+              "dma3": [],
+              "tec3": [],
+              "custom3": {}
+            },
+            "core_id": 2,
+            "Layer Name": "subgraph_gemv0",
+            "Input Shapes": "[1,896]",
+            "Output Shapes": "[1,1600][1,1600]",
+            "Plugin Name": "PackedGemv",
+            "AIPU Read Bytes": 2874560,
+            "AIPU Write Bytes": 0,
+            "Constant Read Bytes": 2867200,
+            "MTP0 Busy Cycles": 0,
+            "MTP0 Utilization": 0.0,
+            "MTP1 Busy Cycles": 0,
+            "MTP1 Utilization": 0.0,
+            "ITP Busy Cycles": 0,
+            "ITP Utilization": 0.0,
+            "PTP Busy Cycles": 0,
+            "PTP Utilization": 0.0,
+            "Algorithm Ops(Million)": 0.0,
+            "Cycles Ratio": 0.9821183198637037,
+            "MAC Utilization": 0,
+            "MAC Dtype": "i8",
+            "MAC Scale": 1.0,
+            "BW_RW(GB/s)": 7.235647626658947,
+            "BW_R(GB/s)": 7.235647626658947,
+            "BW_W(GB/s)": 0.0
+          }
+        ]
+      }
+    ],
+    "Total Cycles": 485413,
+    "Total Time(ms@1200MHz)": 0.4045108333333333,
+    "FPS@1200MHz": 2472.1216778289827,
+    "AIPU Read Bytes": 8738304,
+    "AIPU Write Bytes": 0,
+    "Constant Read Bytes": 8716288,
+    "Subgraphs Num": 3,
+    "Layers Num": 3,
+    "Total Ops(Mops)": 0.0,
+    "Ops Data Type": "",
+    "BW_RW(GB/s)": 21.602150745859714,
+    "BW_R(GB/s)": 21.602150745859714,
+    "BW_W(GB/s)": 0.0,
+    "Average MAC Utilization": 0.0,
+    "tec_num": 4,
+    "core_num": 3,
+    "Target": "X2_1204MP3"
+  }
+}
