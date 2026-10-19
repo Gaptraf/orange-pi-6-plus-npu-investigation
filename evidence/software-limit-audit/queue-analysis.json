@@ -1,0 +1,80 @@
+{
+  "source": "artifacts\\mixed-bandwidth-decoded\\mixed-ticks-run0.json",
+  "sha256": "26dfc8e8b347bb563b15538ce0e4cdbeb22ee544ea89504eddab4ab52a08e4d1",
+  "all_dma": {
+    "span_us": 590.545,
+    "mean_open_marker_intervals": 7.724266002873052,
+    "time_percent_by_open_marker_count": {
+      "1": 0.2875874545264685,
+      "2": 0.2816607258267081,
+      "3": 0.2736173083056047,
+      "4": 0.6896172179935484,
+      "5": 0.2668439040773071,
+      "6": 0.6513757066212849,
+      "7": 17.640484637072536,
+      "8": 79.90881304557654
+    },
+    "no_open_marker_interval_us": 0.0
+  },
+  "aiff_envelope": {
+    "span_us": 317.02666666666664,
+    "mean_open_marker_intervals": 7.852162804390797,
+    "time_percent_by_open_marker_count": {
+      "6": 0.633227488749632,
+      "7": 13.517264583420953,
+      "8": 85.84950792782942
+    },
+    "no_open_marker_interval_us": 0.0
+  },
+  "both_aiff": {
+    "span_us": 236.62083333333334,
+    "mean_open_marker_intervals": 7.847213368786209,
+    "time_percent_by_open_marker_count": {
+      "7": 15.27866312137914,
+      "8": 84.72133687862086
+    },
+    "no_open_marker_interval_us": 0.0
+  },
+  "dma_tail": {
+    "span_us": 266.90166666666664,
+    "mean_open_marker_intervals": 7.610846066903541,
+    "time_percent_by_open_marker_count": {
+      "1": 0.63600202321704,
+      "2": 0.622888579439369,
+      "3": 0.6050917628839585,
+      "4": 0.5854215972174521,
+      "5": 0.5901049699951917,
+      "6": 0.5897927451433425,
+      "7": 22.40900206692852,
+      "8": 73.96169625517513
+    },
+    "no_open_marker_interval_us": 0.0
+  },
+  "per_tec": [
+    {
+      "tec": 0,
+      "commands": 56,
+      "next_begin_before_previous_end": 55,
+      "median_next_begin_relative_to_previous_end_us": -6.0325
+    },
+    {
+      "tec": 1,
+      "commands": 56,
+      "next_begin_before_previous_end": 55,
+      "median_next_begin_relative_to_previous_end_us": -6.0325
+    },
+    {
+      "tec": 2,
+      "commands": 56,
+      "next_begin_before_previous_end": 55,
+      "median_next_begin_relative_to_previous_end_us": -6.009166666666666
+    },
+    {
+      "tec": 3,
+      "commands": 56,
+      "next_begin_before_previous_end": 55,
+      "median_next_begin_relative_to_previous_end_us": -6.0225
+    }
+  ],
+  "caveat": "Markers precede DMA instruction and follow WFE; software in-flight descriptors are not AXI outstanding transactions. Hardware can complete before its wait is observed. No physical port utilization is inferred."
+}
