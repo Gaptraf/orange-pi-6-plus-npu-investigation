@@ -3,7 +3,7 @@ from pathlib import Path
 import html,re,urllib.parse
 ROOT=Path(__file__).resolve().parents[1]
 OWNER='Gaptraf'
-REPOSITORY='orange-pi-6-plus-npu-investigation-clean'
+REPOSITORY='orange-pi-6-plus-npu-investigation'
 REPO=f'https://github.com/{OWNER}/{REPOSITORY}'
 def inline(text):
     protected=[]
