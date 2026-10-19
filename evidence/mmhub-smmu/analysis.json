@@ -1,0 +1,951 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Europe/Kaliningrad",
+  "npu_jobs": 0,
+  "temporary_module_loads": 4,
+  "all_temporary_modules_unloaded": true,
+  "frequency_set_calls": 0,
+  "smmu_mode_changes": 0,
+  "original_aipu_module_unchanged": true,
+  "clocks": {
+    "64": {
+      "name": "npu_memclk",
+      "status": 0,
+      "rate_hz": 750000000,
+      "discrete": true,
+      "cached_clock_rates_hz": [
+        61224489,
+        71428571,
+        83333333,
+        85714285,
+        100000000,
+        107142857,
+        120000000,
+        125000000,
+        142857142,
+        150000000,
+        160000000,
+        166666666,
+        171428571,
+        184615384,
+        187500000,
+        3000000000
+      ]
+    },
+    "65": {
+      "name": "npu_sysclk",
+      "status": 0,
+      "rate_hz": 1200000000,
+      "discrete": true,
+      "cached_clock_rates_hz": [
+        150000000,
+        160000000,
+        171428571,
+        184615384,
+        200000000,
+        218181818,
+        240000000,
+        266666666,
+        300000000,
+        342857142,
+        400000000,
+        480000000,
+        600000000,
+        800000000,
+        1200000000
+      ]
+    },
+    "66": {
+      "name": "npu_dbgclk",
+      "status": 0,
+      "rate_hz": 300000000,
+      "discrete": true,
+      "cached_clock_rates_hz": [
+        37500000,
+        40000000,
+        42857142,
+        46153846,
+        50000000,
+        53333333,
+        54545454,
+        57142857,
+        60000000,
+        61538461,
+        66666666,
+        72727272,
+        75000000,
+        80000000,
+        85714285,
+        1200000000
+      ]
+    },
+    "190": {
+      "name": "ci700_gclk0",
+      "status": 0,
+      "rate_hz": 1500000000,
+      "discrete": false,
+      "cached_clock_range": {
+        "min": 500000000,
+        "max": 2000000000,
+        "step": 5
+      }
+    },
+    "268": {
+      "name": "npuclk",
+      "status": 0,
+      "rate_hz": 1200000000,
+      "discrete": true,
+      "cached_clock_rates_hz": [
+        150000000,
+        160000000,
+        171428571,
+        184615384,
+        200000000,
+        218181818,
+        240000000,
+        266666666,
+        300000000,
+        342857142,
+        400000000,
+        480000000,
+        600000000,
+        800000000,
+        1200000000
+      ]
+    },
+    "269": {
+      "name": "ci700_pll",
+      "status": 0,
+      "rate_hz": 1500000000,
+      "discrete": false,
+      "cached_clock_range": {
+        "min": 500000000,
+        "max": 2000000000,
+        "step": 5
+      }
+    },
+    "270": {
+      "name": "mmhub_clk",
+      "status": 0,
+      "rate_hz": 750000000,
+      "discrete": true,
+      "cached_clock_rates_hz": [
+        61224489,
+        71428571,
+        83333333,
+        85714285,
+        100000000,
+        107142857,
+        120000000,
+        125000000,
+        142857142,
+        150000000,
+        166666666,
+        187500000,
+        200000000,
+        214285714,
+        250000000,
+        3000000000
+      ]
+    }
+  },
+  "performance_domains": {
+    "0": {
+      "name": "gpu_core",
+      "set_perf_advertised": true
+    },
+    "1": {
+      "name": "gpu_top",
+      "set_perf_advertised": true
+    },
+    "2": {
+      "name": "lit0_perf",
+      "set_perf_advertised": true
+    },
+    "3": {
+      "name": "big0_perf",
+      "set_perf_advertised": true
+    },
+    "4": {
+      "name": "big1_perf",
+      "set_perf_advertised": true
+    },
+    "5": {
+      "name": "mid0_perf",
+      "set_perf_advertised": true
+    },
+    "6": {
+      "name": "mid1_perf",
+      "set_perf_advertised": true
+    },
+    "7": {
+      "name": "dsu0_perf",
+      "set_perf_advertised": true,
+      "cached_opps": [
+        {
+          "freq_hz": 500000000,
+          "raw_power": 1962
+        },
+        {
+          "freq_hz": 1200000000,
+          "raw_power": 5588
+        }
+      ],
+      "limits_status": -13,
+      "limits": null,
+      "level_status": -5,
+      "level": null,
+      "freq_status": -5,
+      "freq": null
+    },
+    "8": {
+      "name": "npu_dfs",
+      "set_perf_advertised": true,
+      "cached_opps": [
+        {
+          "freq_hz": 400000000,
+          "raw_power": 361
+        },
+        {
+          "freq_hz": 600000000,
+          "raw_power": 539
+        },
+        {
+          "freq_hz": 800000000,
+          "raw_power": 1149
+        },
+        {
+          "freq_hz": 1200000000,
+          "raw_power": 2847
+        }
+      ],
+      "limits_status": -13,
+      "limits": null,
+      "level_status": 0,
+      "level": 1200,
+      "freq_status": 0,
+      "freq": 1200000000
+    },
+    "9": {
+      "name": "vpu_dfs",
+      "set_perf_advertised": true
+    },
+    "10": {
+      "name": "ci700_dfs",
+      "set_perf_advertised": true,
+      "cached_opps": [
+        {
+          "freq_hz": 500000000,
+          "raw_power": 426
+        },
+        {
+          "freq_hz": 750000000,
+          "raw_power": 951
+        },
+        {
+          "freq_hz": 1000000000,
+          "raw_power": 1966
+        },
+        {
+          "freq_hz": 1100000000,
+          "raw_power": 2476
+        },
+        {
+          "freq_hz": 1300000000,
+          "raw_power": 2949
+        },
+        {
+          "freq_hz": 1500000000,
+          "raw_power": 3451
+        }
+      ],
+      "limits_status": -13,
+      "limits": null,
+      "level_status": 0,
+      "level": 1500,
+      "freq_status": 0,
+      "freq": 1500000000
+    },
+    "11": {
+      "name": "mmhub_dfs",
+      "set_perf_advertised": true,
+      "cached_opps": [
+        {
+          "freq_hz": 375000000,
+          "raw_power": 346
+        },
+        {
+          "freq_hz": 600000000,
+          "raw_power": 539
+        },
+        {
+          "freq_hz": 750000000,
+          "raw_power": 993
+        }
+      ],
+      "limits_status": -13,
+      "limits": null,
+      "level_status": 0,
+      "level": 750,
+      "freq_status": 0,
+      "freq": 750000000
+    }
+  },
+  "acpi_get_statuses": {
+    "CLKG:64": -4,
+    "CLKD:64": -4,
+    "CLKG:65": -4,
+    "CLKD:65": -4,
+    "CLKG:190": -4,
+    "CLKD:190": -4,
+    "CLKG:270": -4,
+    "CLKD:270": -4
+  },
+  "acpi_status_interpretation": "-4 SCMI_NOT_FOUND; no rate obtained via this channel",
+  "diagnostic_v1_error": "incorrect union initializer lost argument type; excluded from firmware conclusions; fixed in v2",
+  "iommu": {
+    "type": "DMA",
+    "stream_id": "0x1e",
+    "smmu_base": "0xb1b0000",
+    "page_size_bitmap": "0x40201000",
+    "supported_mapping_sizes_bytes": [
+      4096,
+      2097152,
+      1073741824
+    ],
+    "actual_mapping_sizes_unknown": true,
+    "dma_coherent": false
+  },
+  "iort": {
+    "checksum_valid": true,
+    "node_count": 19,
+    "type_counts": {
+      "0": 1,
+      "4": 2,
+      "2": 1,
+      "1": 14,
+      "6": 1
+    },
+    "pmcg_nodes": 0,
+    "npu": {
+      "offset": 1888,
+      "type": 1,
+      "length": 160,
+      "revision": 0,
+      "identifier": 0,
+      "name": "\\_SB_.NPU0",
+      "address_size_limit_bits": 40,
+      "mappings": [
+        {
+          "input_base": 0,
+          "id_count": 0,
+          "output_base": 30,
+          "output_reference": 220,
+          "flags": 1
+        }
+      ]
+    },
+    "smmu": {
+      "offset": 220,
+      "type": 4,
+      "length": 68,
+      "revision": 2,
+      "identifier": 1,
+      "base": "0xb1b0000",
+      "mappings": []
+    },
+    "nodes": [
+      {
+        "offset": 48,
+        "type": 0,
+        "length": 24,
+        "revision": 0,
+        "identifier": 0,
+        "mappings": []
+      },
+      {
+        "offset": 72,
+        "type": 4,
+        "length": 88,
+        "revision": 2,
+        "identifier": 0,
+        "base": "0xb010000",
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 65535,
+            "output_base": 0,
+            "output_reference": 48,
+            "flags": 0
+          }
+        ]
+      },
+      {
+        "offset": 160,
+        "type": 2,
+        "length": 60,
+        "revision": 0,
+        "identifier": 0,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 65535,
+            "output_base": 0,
+            "output_reference": 72,
+            "flags": 0
+          }
+        ]
+      },
+      {
+        "offset": 220,
+        "type": 4,
+        "length": 68,
+        "revision": 2,
+        "identifier": 1,
+        "base": "0xb1b0000",
+        "mappings": []
+      },
+      {
+        "offset": 288,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.DPU0",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 0,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 1,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 3,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 4,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 5,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 448,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.AEU0",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 2,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 608,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.DPU1",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 6,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 7,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 9,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 10,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 11,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 768,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.AEU1",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 8,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 928,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.DPU2",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 12,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 13,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 15,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 16,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 17,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 1088,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.AEU2",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 14,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 1248,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.DPU3",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 18,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 19,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 21,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 22,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 23,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 1408,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.AEU3",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 20,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 1568,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.DPU4",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 24,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 25,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 27,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 28,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 29,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 1728,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.AEU4",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 26,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 1888,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.NPU0",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 30,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 2048,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.ISPM",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 31,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 2208,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.CBD0",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 33,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 2368,
+        "type": 1,
+        "length": 160,
+        "revision": 0,
+        "identifier": 0,
+        "name": "\\_SB_.CBD2",
+        "address_size_limit_bits": 40,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 34,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      },
+      {
+        "offset": 2528,
+        "type": 6,
+        "length": 248,
+        "revision": 3,
+        "identifier": 0,
+        "mappings": [
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 0,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 1,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 6,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 7,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 12,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 13,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 18,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 19,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 24,
+            "output_reference": 220,
+            "flags": 1
+          },
+          {
+            "input_base": 0,
+            "id_count": 0,
+            "output_base": 25,
+            "output_reference": 220,
+            "flags": 1
+          }
+        ]
+      }
+    ]
+  },
+  "state": {
+    "boot_id": "<HOST_UUID>",
+    "tainted_before": "4100",
+    "tainted_after": "4100",
+    "blocked_before": [
+      {
+        "pid": 101,
+        "comm": "bbox_main"
+      },
+      {
+        "pid": 167,
+        "comm": "irq/132-i2c-CIXH200D:00"
+      },
+      {
+        "pid": 170,
+        "comm": "irq/132-i2c-CIXH200D:01"
+      },
+      {
+        "pid": 1394123,
+        "comm": "kworker/10:1+events"
+      },
+      {
+        "pid": 1394850,
+        "comm": "kworker/u24:2+events_freezable_power_"
+      },
+      {
+        "pid": 1397722,
+        "comm": "cat"
+      }
+    ],
+    "blocked_after": [
+      {
+        "pid": 101,
+        "comm": "bbox_main"
+      },
+      {
+        "pid": 167,
+        "comm": "irq/132-i2c-CIXH200D:00"
+      },
+      {
+        "pid": 170,
+        "comm": "irq/132-i2c-CIXH200D:01"
+      },
+      {
+        "pid": 1394123,
+        "comm": "kworker/10:1+events"
+      },
+      {
+        "pid": 1394850,
+        "comm": "kworker/u24:2+events_freezable_power_"
+      },
+      {
+        "pid": 1397722,
+        "comm": "cat"
+      },
+      {
+        "pid": 1451568,
+        "comm": "kworker/u24:1+events_freezable_power_"
+      }
+    ],
+    "services_unchanged": true,
+    "npu_runtime": "suspended"
+  },
+  "limits": {
+    "physical_24_GBs_cap_proven": false,
+    "software_throughput_limiter_found": false,
+    "current_memclk_at_max_exposed_perf_opp": true,
+    "clock_protocol_rates_are_not_validated_operating_points": true,
+    "under_load_clocks_not_measured_this_stage": true
+  }
+}
