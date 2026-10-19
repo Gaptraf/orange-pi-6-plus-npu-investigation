@@ -1,0 +1,888 @@
+{
+  "date": "2026-10-18",
+  "method": "Offline reanalysis of existing JSON and archived sources; no new hardware runs.",
+  "reports": {
+    "GEMV_RESULTS_RU.md": "630af7196d6b06468866312d81698b197acf53f6cbd0d952665486a25141adc7",
+    "NATIVE_API_RESULTS_RU.md": "f7e35db9f5204c83c904cf072e67cc6a907a7c14b9871365f5dba51062add2da",
+    "PERFORMANCE_RESULTS_RU.md": "c4facc48b68f640a574903d73791d7fd726be8d711a6df100e0a2f8d3eb4a00b",
+    "PROFILE_RESULTS_RU.md": "f92b277c452001261401377f0f821c5615f6b02952a33fd2a80d4a97266ec0d4",
+    "REVIEW_RESULTS_RU.md": "4edd79aabd749520e222533bb3bf4e1d6d8ce4697fdc189bc6a647a1e80e4194",
+    "STAGE1_RESULTS_RU.md": "efd32b6e430dc0b12bcfc7f5055af156664ed0198f6388bc154df38679138831",
+    "STAGE2_RESULTS_RU.md": "c167f18a0d60f389a9a5b200c4205d09767464040714794bac2970a1e420740d"
+  },
+  "inputs": {
+    "artifacts\\profile-decoded\\m1-g0-run0.json": "92ae2b82de1662a899d79421182d23a3547614ea6b91c346b12cd06a04fe6d42",
+    "artifacts\\profile-decoded\\m1-g0-run1.json": "7d693f682691a93b429cf1e53290532df9f7a276ec3bd3ff0d87e2e9464fb3db",
+    "artifacts\\profile-decoded\\m1-g0-run2.json": "ee5a7fae1a6596123a80313fbd49e9eb2045f713adb3a9af4e10057f989a72cb",
+    "artifacts\\profile-decoded\\m1-g0-run3.json": "62d0c72c97beb6dead2c1795122deeff3adb3db48bab6e6e1ec7d96ad511ffb9",
+    "artifacts\\profile-decoded\\m1-g0-run4.json": "6c5ca0fa1234880ecf80b44eb1341872541032033e60d1d16d5087951df78c0e",
+    "artifacts\\profile-decoded\\m1-g1-run0.json": "fa17b3b476675cea67b1bbb105f0bfc3f6f59aad658e4237f759e8a5a2e7de08",
+    "artifacts\\profile-decoded\\m1-g1-run1.json": "c1d67cdb7efe1035a074f912a5222b0b69105f43aea3a873fc8f1a49ce455b46",
+    "artifacts\\profile-decoded\\m1-g1-run2.json": "ee2f2aada6f136f1e56c1ac42ed7a905c05f80ed55f0a87bc8414cd1be75e76a",
+    "artifacts\\profile-decoded\\m1-g1-run3.json": "2c075c5b3b4738fef97563b91fe481316f07a2dd75bfea0e491807a0968a64a0",
+    "artifacts\\profile-decoded\\m1-g1-run4.json": "1d8a321ac59afa43b6330abe19faf35f576fc7deec66b5ae87fb95192081a192",
+    "artifacts\\profile-decoded\\gate-up-m1-run0.json": "606586b5e33092d80d34938008c3f1eba5f66e9c7b4694b927df7d1a7b8bae60",
+    "artifacts\\profile-decoded\\gate-up-m1-run1.json": "5b4663adae3ed5fe8aa7d2dc5eb57ffa1615592326adf3bde0fef68504913f0a",
+    "artifacts\\profile-decoded\\gate-up-m1-run2.json": "06459da55aab9ea0ff874d619101c6918892bb911383163cbd4a3adc5f9d2200",
+    "artifacts\\profile-decoded\\gate-up-m1-run3.json": "f14a00c91f2a5b3b91a5107612bb6154aec9195773352266f2f10075b04ecdbb",
+    "artifacts\\profile-decoded\\gate-up-m1-run4.json": "47de7eaef02c0779066ed4769dc5bf8785e9df7115c1d56726da20a441e59a22",
+    "artifacts\\profile-decoded\\m1-g3-run0.json": "b2984609d2af43aefe203ac0c525aa8d2d989659d7cbd762995cd22809cf0f24",
+    "artifacts\\profile-decoded\\m1-g3-run1.json": "d766d8bd1777fba6ae4da95b8c751e8e9a6dbe6c569e463c36dc797b17563387",
+    "artifacts\\profile-decoded\\m1-g3-run2.json": "90de3ba1c1dabd3a674fe2212fb9546de6e2a17b4a3052a0b5ab54b5915de6fd",
+    "artifacts\\profile-decoded\\m1-g3-run3.json": "6a0159eabcd825d67059100f1785fa134dc3e66a138305d1e3f536c5ac849013",
+    "artifacts\\profile-decoded\\m1-g3-run4.json": "e6d3c6609f2aa324983b1094c0a07973061733a6702c577118c0541845e13ef8",
+    "artifacts\\profile-decoded\\m64-g2-run0.json": "54c7c7cb3a5da5d8a2eb5bb02d2a4ea408dafb6b86ea1a7fbde52d3010dc2fe9",
+    "artifacts\\profile-decoded\\m64-g2-run1.json": "dd602034659d2eb4d0d3c5d948122138e6b71f70446788fe32dba9c85eb5393b",
+    "artifacts\\profile-decoded\\m64-g2-run2.json": "7e86743e009ad41e8ad9368137179f6c69da86ce1d894c37867a59f31dcf359a",
+    "artifacts\\profile-decoded\\m64-g2-run3.json": "9e45102893023d3041f8fa7e4891fddc8a47bb007e108febff8f61226d481e07",
+    "artifacts\\profile-decoded\\m64-g2-run4.json": "14b1aa02631821d93df1e8c004e3efedd775c64bb8e20608d70d29893a4304f4",
+    "artifacts\\profile-decoded\\split-no-concat-profile-run0.json": "20cce8a9434a4e25924b245079e5e4401dc4b8eaae1aa86e6b7584317939429e",
+    "artifacts\\profile-decoded\\split-no-concat-profile-run1.json": "1f9488a70d18afd5d996ea8b08005dba6707a84ff83baa29a4ea1b8cb93e18a7",
+    "artifacts\\profile-decoded\\split-no-concat-profile-run2.json": "f0d938c2df5d7d6fbe2878638e63e67bc0cff09da5308b59e68ef5a8477b9f18",
+    "artifacts\\profile-decoded\\split-no-concat-profile-run3.json": "b67068abf7bce4eb13d26ac3bd230e398977a19139133c4cb4401841bb336fa6",
+    "artifacts\\profile-decoded\\split-no-concat-profile-run4.json": "49891ea4b7086878e5b815b78f3fd4a09eaecd5bfa88dc2c383c8bf3cb921612",
+    "artifacts\\gemv-profile-decoded\\full-prefetch-run0.json": "5479a23b421802a4dafc995889e5e74c6838f8810f9c7b911ed6a7c73a65a683",
+    "artifacts\\gemv-profile-decoded\\full-prefetch-run1.json": "01bfe3b958d238ee081ea1db594c362868e6703592649f7052b04d392bbb7050",
+    "artifacts\\gemv-profile-decoded\\full-prefetch-run2.json": "0ebdcb832e7480570b6a8e3252c666e400442726037edf9f6cb82a580664ae01",
+    "artifacts\\gemv-profile-decoded\\full-prefetch-run3.json": "0c3fe34adb45ee21f845c6525410eb62b750e95f29750779c8bbc417cb71fed2",
+    "artifacts\\gemv-profile-decoded\\full-prefetch-run4.json": "f73ff5f4d731fa62b27076a590fe9882b12f1cf48d9cd778afc313750f2b84e9",
+    "artifacts\\gemv-profile-decoded\\full-prefetch3-run0.json": "7a2ceb51c7c0dd609f4ca0a182dea86bebfbe50c043bdbfe41661be8e44a43e6",
+    "artifacts\\gemv-profile-decoded\\full-prefetch3-run1.json": "308ee57349698549acd90de3fbee0c0b799eacb4817bb00fbd3bcc4529f4f89f",
+    "artifacts\\gemv-profile-decoded\\full-prefetch3-run2.json": "39686ef84702f6ecb62c996746d681b3edb6b2e2ab477acc03b0dd55c2bd64cd",
+    "artifacts\\gemv-profile-decoded\\full-prefetch3-run3.json": "4d46fc5311403e806599c84371fcf405d0d107e565d57e19ba967dc23fd96a3c",
+    "artifacts\\gemv-profile-decoded\\full-prefetch3-run4.json": "68c7c5d51116fc3731dd52da8e591035a48023065f5e5edd7cf0622f3fb7fd80"
+  },
+  "groups": {
+    "m1-g0": {
+      "runs": [
+        {
+          "file": "m1-g0-run0.json",
+          "span_us": 42.766666666666666,
+          "read_bytes": 730880,
+          "read_GBs": 17.089945440374123,
+          "constant_bytes": 714592,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 23378942,
+            "end": 23417570,
+            "span_us": 32.19,
+            "bif_read_counts": 22412,
+            "read_bytes_assuming_32B_unit": 717184,
+            "read_GBs_assuming_32B_unit": 22.279714196955577,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g0-run1.json",
+          "span_us": 42.774166666666666,
+          "read_bytes": 730880,
+          "read_GBs": 17.086948898283623,
+          "constant_bytes": 714592,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 27630070,
+            "end": 27668421,
+            "span_us": 31.95916666666667,
+            "bif_read_counts": 22412,
+            "read_bytes_assuming_32B_unit": 717184,
+            "read_GBs_assuming_32B_unit": 22.440635185523192,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g0-run2.json",
+          "span_us": 42.82083333333333,
+          "read_bytes": 730880,
+          "read_GBs": 17.068327332879246,
+          "constant_bytes": 714592,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 31477417,
+            "end": 31515941,
+            "span_us": 32.10333333333333,
+            "bif_read_counts": 22412,
+            "read_bytes_assuming_32B_unit": 717184,
+            "read_GBs_assuming_32B_unit": 22.339860865953693,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g0-run3.json",
+          "span_us": 42.79083333333333,
+          "read_bytes": 730880,
+          "read_GBs": 17.080293676605194,
+          "constant_bytes": 714592,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 34695368,
+            "end": 34733863,
+            "span_us": 32.079166666666666,
+            "bif_read_counts": 22412,
+            "read_bytes_assuming_32B_unit": 717184,
+            "read_GBs_assuming_32B_unit": 22.356690479283024,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g0-run4.json",
+          "span_us": 43.130833333333335,
+          "read_bytes": 730880,
+          "read_GBs": 16.945649863786542,
+          "constant_bytes": 714592,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 37785332,
+            "end": 37823762,
+            "span_us": 32.025,
+            "bif_read_counts": 22412,
+            "read_bytes_assuming_32B_unit": 717184,
+            "read_GBs_assuming_32B_unit": 22.394504293520686,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        }
+      ],
+      "medians": {
+        "span_us": 42.79083333333333,
+        "read_bytes": 730880,
+        "read_GBs": 17.080293676605194,
+        "constant_bytes": 714592,
+        "event_read_GBs_assuming_32B_unit": 22.356690479283024
+      }
+    },
+    "m1-g1": {
+      "runs": [
+        {
+          "file": "m1-g1-run0.json",
+          "span_us": 33.87083333333333,
+          "read_bytes": 511872,
+          "read_GBs": 15.112471398696028,
+          "constant_bytes": 506528,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 18816113,
+            "end": 18843526,
+            "span_us": 22.844166666666666,
+            "bif_read_counts": 15856,
+            "read_bytes_assuming_32B_unit": 507392,
+            "read_GBs_assuming_32B_unit": 22.211009375114,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g1-run1.json",
+          "span_us": 33.526666666666664,
+          "read_bytes": 511872,
+          "read_GBs": 15.267607874328894,
+          "constant_bytes": 506528,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 21054129,
+            "end": 21081425,
+            "span_us": 22.746666666666666,
+            "bif_read_counts": 15856,
+            "read_bytes_assuming_32B_unit": 507392,
+            "read_GBs_assuming_32B_unit": 22.306213364595546,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g1-run2.json",
+          "span_us": 33.64416666666666,
+          "read_bytes": 511872,
+          "read_GBs": 15.214286775815523,
+          "constant_bytes": 506528,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 23196201,
+            "end": 23223408,
+            "span_us": 22.6725,
+            "bif_read_counts": 15856,
+            "read_bytes_assuming_32B_unit": 507392,
+            "read_GBs_assuming_32B_unit": 22.379181828205976,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g1-run3.json",
+          "span_us": 33.62416666666667,
+          "read_bytes": 511872,
+          "read_GBs": 15.223336389997273,
+          "constant_bytes": 506528,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 24954094,
+            "end": 24981097,
+            "span_us": 22.5025,
+            "bif_read_counts": 15856,
+            "read_bytes_assuming_32B_unit": 507392,
+            "read_GBs_assuming_32B_unit": 22.548250194422838,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g1-run4.json",
+          "span_us": 33.92,
+          "read_bytes": 511872,
+          "read_GBs": 15.090566037735849,
+          "constant_bytes": 506528,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 26859531,
+            "end": 26886709,
+            "span_us": 22.648333333333333,
+            "bif_read_counts": 15856,
+            "read_bytes_assuming_32B_unit": 507392,
+            "read_GBs_assuming_32B_unit": 22.403061299580543,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        }
+      ],
+      "medians": {
+        "span_us": 33.64416666666666,
+        "read_bytes": 511872,
+        "read_GBs": 15.214286775815523,
+        "constant_bytes": 506528,
+        "event_read_GBs_assuming_32B_unit": 22.379181828205976
+      }
+    },
+    "gate-up-m1": {
+      "runs": [
+        {
+          "file": "gate-up-m1-run0.json",
+          "span_us": 259.185,
+          "read_bytes": 5932032,
+          "read_GBs": 22.88725041958447,
+          "constant_bytes": 5911040,
+          "cores": [
+            0,
+            1
+          ],
+          "aiff_event_window": {
+            "start": 5160720,
+            "end": 5458314,
+            "span_us": 247.995,
+            "bif_read_counts": 184774,
+            "read_bytes_assuming_32B_unit": 5912768,
+            "read_GBs_assuming_32B_unit": 23.842287142885944,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "gate-up-m1-run1.json",
+          "span_us": 259.405,
+          "read_bytes": 5932032,
+          "read_GBs": 22.86783986430485,
+          "constant_bytes": 5911040,
+          "cores": [
+            0,
+            1
+          ],
+          "aiff_event_window": {
+            "start": 9900757,
+            "end": 10198220,
+            "span_us": 247.88583333333332,
+            "bif_read_counts": 184774,
+            "read_bytes_assuming_32B_unit": 5912768,
+            "read_GBs_assuming_32B_unit": 23.852787069316186,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "gate-up-m1-run2.json",
+          "span_us": 259.90416666666664,
+          "read_bytes": 5932032,
+          "read_GBs": 22.823920355259155,
+          "constant_bytes": 5911040,
+          "cores": [
+            0,
+            1
+          ],
+          "aiff_event_window": {
+            "start": 13521491,
+            "end": 13818590,
+            "span_us": 247.5825,
+            "bif_read_counts": 184774,
+            "read_bytes_assuming_32B_unit": 5912768,
+            "read_GBs_assuming_32B_unit": 23.882011046822775,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "gate-up-m1-run3.json",
+          "span_us": 259.3333333333333,
+          "read_bytes": 5932032,
+          "read_GBs": 22.87415938303342,
+          "constant_bytes": 5911040,
+          "cores": [
+            0,
+            1
+          ],
+          "aiff_event_window": {
+            "start": 16353352,
+            "end": 16650285,
+            "span_us": 247.44416666666666,
+            "bif_read_counts": 184774,
+            "read_bytes_assuming_32B_unit": 5912768,
+            "read_GBs_assuming_32B_unit": 23.895362253437643,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "gate-up-m1-run4.json",
+          "span_us": 259.45916666666665,
+          "read_bytes": 5932032,
+          "read_GBs": 22.863065800334674,
+          "constant_bytes": 5911040,
+          "cores": [
+            0,
+            1
+          ],
+          "aiff_event_window": {
+            "start": 19130987,
+            "end": 19428405,
+            "span_us": 247.84833333333333,
+            "bif_read_counts": 184774,
+            "read_bytes_assuming_32B_unit": 5912768,
+            "read_GBs_assuming_32B_unit": 23.85639604865879,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        }
+      ],
+      "medians": {
+        "span_us": 259.405,
+        "read_bytes": 5932032,
+        "read_GBs": 22.86783986430485,
+        "constant_bytes": 5911040,
+        "event_read_GBs_assuming_32B_unit": 23.85639604865879
+      }
+    },
+    "m1-g3": {
+      "runs": [
+        {
+          "file": "m1-g3-run0.json",
+          "span_us": 138.62333333333333,
+          "read_bytes": 2967744,
+          "read_GBs": 21.408690215692403,
+          "constant_bytes": 2958432,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 40107366,
+            "end": 40260202,
+            "span_us": 127.36333333333333,
+            "bif_read_counts": 92602,
+            "read_bytes_assuming_32B_unit": 2963264,
+            "read_GBs_assuming_32B_unit": 23.266225234892303,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g3-run1.json",
+          "span_us": 138.8825,
+          "read_bytes": 2967744,
+          "read_GBs": 21.368739762029055,
+          "constant_bytes": 2958432,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 42804627,
+            "end": 42957953,
+            "span_us": 127.77166666666666,
+            "bif_read_counts": 92602,
+            "read_bytes_assuming_32B_unit": 2963264,
+            "read_GBs_assuming_32B_unit": 23.191870915565527,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g3-run2.json",
+          "span_us": 139.4175,
+          "read_bytes": 2967744,
+          "read_GBs": 21.286739469578784,
+          "constant_bytes": 2958432,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 44985586,
+            "end": 45139425,
+            "span_us": 128.19916666666666,
+            "bif_read_counts": 92602,
+            "read_bytes_assuming_32B_unit": 2963264,
+            "read_GBs_assuming_32B_unit": 23.114534025832203,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g3-run3.json",
+          "span_us": 138.0975,
+          "read_bytes": 2967744,
+          "read_GBs": 21.49020800521371,
+          "constant_bytes": 2958432,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 46711565,
+            "end": 46863944,
+            "span_us": 126.9825,
+            "bif_read_counts": 92602,
+            "read_bytes_assuming_32B_unit": 2963264,
+            "read_GBs_assuming_32B_unit": 23.336002992538344,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m1-g3-run4.json",
+          "span_us": 137.42833333333334,
+          "read_bytes": 2967744,
+          "read_GBs": 21.59484822392277,
+          "constant_bytes": 2958432,
+          "cores": [
+            0
+          ],
+          "aiff_event_window": {
+            "start": 48409608,
+            "end": 48561362,
+            "span_us": 126.46166666666667,
+            "bif_read_counts": 92602,
+            "read_bytes_assuming_32B_unit": 2963264,
+            "read_GBs_assuming_32B_unit": 23.432112497858377,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        }
+      ],
+      "medians": {
+        "span_us": 138.62333333333333,
+        "read_bytes": 2967744,
+        "read_GBs": 21.408690215692403,
+        "constant_bytes": 2958432,
+        "event_read_GBs_assuming_32B_unit": 23.266225234892303
+      }
+    },
+    "m64-g2": {
+      "runs": [
+        {
+          "file": "m64-g2-run0.json",
+          "span_us": 993.68,
+          "read_bytes": 17929792,
+          "read_GBs": 18.043828999275423,
+          "constant_bytes": 17616736,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 100757447,
+            "end": 101850614,
+            "span_us": 910.9725,
+            "bif_read_counts": 585717,
+            "read_bytes_assuming_32B_unit": 18742944,
+            "read_GBs_assuming_32B_unit": 20.574654009863085,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m64-g2-run1.json",
+          "span_us": 1005.4883333333333,
+          "read_bytes": 17929760,
+          "read_GBs": 17.831892629286266,
+          "constant_bytes": 17616736,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 115205188,
+            "end": 116317106,
+            "span_us": 926.5983333333334,
+            "bif_read_counts": 585717,
+            "read_bytes_assuming_32B_unit": 18742944,
+            "read_GBs_assuming_32B_unit": 20.22769017139753,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m64-g2-run2.json",
+          "span_us": 996.4916666666667,
+          "read_bytes": 17929696,
+          "read_GBs": 17.99282081301901,
+          "constant_bytes": 17616736,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 128486329,
+            "end": 129587718,
+            "span_us": 917.8241666666667,
+            "bif_read_counts": 585717,
+            "read_bytes_assuming_32B_unit": 18742944,
+            "read_GBs_assuming_32B_unit": 20.421061768367036,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m64-g2-run3.json",
+          "span_us": 1005.495,
+          "read_bytes": 17929888,
+          "read_GBs": 17.831901700157633,
+          "constant_bytes": 17616736,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 140274545,
+            "end": 141381719,
+            "span_us": 922.645,
+            "bif_read_counts": 585717,
+            "read_bytes_assuming_32B_unit": 18742944,
+            "read_GBs_assuming_32B_unit": 20.314361428284986,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "m64-g2-run4.json",
+          "span_us": 992.5575,
+          "read_bytes": 17929888,
+          "read_GBs": 18.06433178934218,
+          "constant_bytes": 17616736,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 152069936,
+            "end": 153167613,
+            "span_us": 914.7308333333333,
+            "bif_read_counts": 585717,
+            "read_bytes_assuming_32B_unit": 18742944,
+            "read_GBs_assuming_32B_unit": 20.49011940671072,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        }
+      ],
+      "medians": {
+        "span_us": 996.4916666666667,
+        "read_bytes": 17929792,
+        "read_GBs": 17.99282081301901,
+        "constant_bytes": 17616736,
+        "event_read_GBs_assuming_32B_unit": 20.421061768367036
+      }
+    },
+    "split-no-concat-profile": {
+      "runs": [
+        {
+          "file": "split-no-concat-profile-run0.json",
+          "span_us": 267.49583333333334,
+          "read_bytes": 5935040,
+          "read_GBs": 22.187411018863223,
+          "constant_bytes": 5911296,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 53043088,
+            "end": 53352100,
+            "span_us": 257.51,
+            "bif_read_counts": 184890,
+            "read_bytes_assuming_32B_unit": 5916480,
+            "read_GBs_assuming_32B_unit": 22.975729097899112,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "split-no-concat-profile-run1.json",
+          "span_us": 267.2025,
+          "read_bytes": 5935104,
+          "read_GBs": 22.21200774693351,
+          "constant_bytes": 5911296,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 57322271,
+            "end": 57631045,
+            "span_us": 257.31166666666667,
+            "bif_read_counts": 184890,
+            "read_bytes_assuming_32B_unit": 5916480,
+            "read_GBs_assuming_32B_unit": 22.9934385667187,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "split-no-concat-profile-run2.json",
+          "span_us": 266.39,
+          "read_bytes": 5935104,
+          "read_GBs": 22.279755246067797,
+          "constant_bytes": 5911296,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 61353384,
+            "end": 61661346,
+            "span_us": 256.635,
+            "bif_read_counts": 184890,
+            "read_bytes_assuming_32B_unit": 5916480,
+            "read_GBs_assuming_32B_unit": 23.054065111929393,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "split-no-concat-profile-run3.json",
+          "span_us": 266.00916666666666,
+          "read_bytes": 5935104,
+          "read_GBs": 22.311652167375186,
+          "constant_bytes": 5911296,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 69396299,
+            "end": 69703470,
+            "span_us": 255.97583333333333,
+            "bif_read_counts": 184890,
+            "read_bytes_assuming_32B_unit": 5916480,
+            "read_GBs_assuming_32B_unit": 23.113431932050876,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        },
+        {
+          "file": "split-no-concat-profile-run4.json",
+          "span_us": 264.6141666666667,
+          "read_bytes": 5935104,
+          "read_GBs": 22.429275328544392,
+          "constant_bytes": 5911296,
+          "cores": [
+            0,
+            1,
+            2
+          ],
+          "aiff_event_window": {
+            "start": 73003170,
+            "end": 73308740,
+            "span_us": 254.64166666666668,
+            "bif_read_counts": 184890,
+            "read_bytes_assuming_32B_unit": 5916480,
+            "read_GBs_assuming_32B_unit": 23.234532185751217,
+            "note": "Union envelope of overlapping events; neither sum of core times nor AXI-active cycles."
+          }
+        }
+      ],
+      "medians": {
+        "span_us": 266.39,
+        "read_bytes": 5935104,
+        "read_GBs": 22.279755246067797,
+        "constant_bytes": 5911296,
+        "event_read_GBs_assuming_32B_unit": 23.054065111929393
+      }
+    },
+    "full-prefetch": {
+      "runs": [
+        {
+          "file": "full-prefetch-run0.json",
+          "span_us": 576.16,
+          "read_bytes": 8730176,
+          "read_GBs": 15.152346570397112,
+          "constant_bytes": 8716288,
+          "cores": [
+            0
+          ]
+        },
+        {
+          "file": "full-prefetch-run1.json",
+          "span_us": 575.4041666666667,
+          "read_bytes": 8730176,
+          "read_GBs": 15.172250229910858,
+          "constant_bytes": 8716288,
+          "cores": [
+            0
+          ]
+        },
+        {
+          "file": "full-prefetch-run2.json",
+          "span_us": 575.4458333333333,
+          "read_bytes": 8730176,
+          "read_GBs": 15.171151643291072,
+          "constant_bytes": 8716288,
+          "cores": [
+            0
+          ]
+        },
+        {
+          "file": "full-prefetch-run3.json",
+          "span_us": 575.6666666666666,
+          "read_bytes": 8730176,
+          "read_GBs": 15.16533178922988,
+          "constant_bytes": 8716288,
+          "cores": [
+            0
+          ]
+        },
+        {
+          "file": "full-prefetch-run4.json",
+          "span_us": 576.2891666666667,
+          "read_bytes": 8730176,
+          "read_GBs": 15.14895039671924,
+          "constant_bytes": 8716288,
+          "cores": [
+            0
+          ]
+        }
+      ],
+      "medians": {
+        "span_us": 575.6666666666666,
+        "read_bytes": 8730176,
+        "read_GBs": 15.16533178922988,
+        "constant_bytes": 8716288
+      }
+    },
+    "full-prefetch3": {
+      "runs": [
+        {
+          "file": "full-prefetch3-run0.json",
+          "span_us": 404.5108333333333,
+          "read_bytes": 8738304,
+          "read_GBs": 21.60215074585971,
+          "constant_bytes": 8716288,
+          "cores": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "file": "full-prefetch3-run1.json",
+          "span_us": 412.9316666666667,
+          "read_bytes": 8738368,
+          "read_GBs": 21.161777372365886,
+          "constant_bytes": 8716288,
+          "cores": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "file": "full-prefetch3-run2.json",
+          "span_us": 414.405,
+          "read_bytes": 8738432,
+          "read_GBs": 21.086695382536412,
+          "constant_bytes": 8716288,
+          "cores": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "file": "full-prefetch3-run3.json",
+          "span_us": 408.51,
+          "read_bytes": 8738368,
+          "read_GBs": 21.390830089838683,
+          "constant_bytes": 8716288,
+          "cores": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "file": "full-prefetch3-run4.json",
+          "span_us": 410.1616666666667,
+          "read_bytes": 8738368,
+          "read_GBs": 21.30469205232083,
+          "constant_bytes": 8716288,
+          "cores": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "medians": {
+        "span_us": 410.1616666666667,
+        "read_bytes": 8738368,
+        "read_GBs": 21.30469205232083,
+        "constant_bytes": 8716288
+      }
+    }
+  },
+  "bif_unit_status": "The additional event-window estimate assumes 32 bytes per BIF count. This is consistent with the stock FC traffic and output sizes, but the conversion was not independently established from a P1 register manual. It must not be cited as proof of a 256-bit physical port.",
+  "source_files": [
+    {
+      "archive": "review-20261016-results.tar.gz",
+      "member": "review-20261016/vendor/Compass_NPU_Driver/Linux/driver/umd/include/standard_api.h",
+      "sha256": "0203e2327f845939a1326ef6ce82a8f485ea56544a85b9fa0d639e78dd926569"
+    },
+    {
+      "archive": "profile-20261016-results.tar.gz",
+      "member": "driver-source/Linux/driver/umd/src/common/context.cpp",
+      "sha256": "e06de6b02f8b7ccacbe4eecd4edfbae71054ea832a85199052f2346d97330515"
+    }
+  ],
+  "saved_clock_evidence": {
+    "clock_tree": {
+      "rc": 0,
+      "stdout": " npuclk                              0       0        0        1200000000  0          0     50000      Y   deviceless                      no_connection_id         \n npu_dbgclk                          0       0        0        300000000   0          0     50000      Y   deviceless                      no_connection_id         \n npu_sysclk                          0       0        0        1200000000  0          0     50000      Y   deviceless                      no_connection_id         \n npu_memclk                          0       0        0        750000000   0          0     50000      Y   deviceless                      no_connection_id         \n dpu4_aclk                           1       1        0        800000000   0          0     50000      Y   CIXH5010:04                     aclk                     \n dpu3_aclk                           1       1        0        800000000   0          0     50000      Y   CIXH5010:03                     aclk                     \n dpu2_aclk                           1       1        0        800000000   0          0     50000      Y   CIXH5010:02                     aclk                     \n dpu1_aclk                           1       1        0        800000000   0          0     50000      Y   CIXH5010:01                     aclk                     \n dpu0_aclk                           1       1        0        800000000   0          0     50000      Y   CIXH5010:00                     aclk                     \n dpuclk                              0       0        0        800000000   0          0     50000      Y   deviceless                      no_connection_id         \n dpu4_pixel1                         0       0        0        0           0          0     50000      Y   CIXH5010:04                     pipeline@1               \n dpu4_pixel0                         0       0        0        0           0          0     50000      Y   CIXH5010:04                     pipeline@0               \n dpu3_pixel1                         0       0        0        0           0          0     50000      Y   CIXH5010:03                     pipeline@1               \n dpu3_pixel0                         0       0        0        0           0          0     50000      Y   CIXH5010:03                     pipeline@0               \n dpu2_pixel1                         0       0        0        0           0          0     50000      Y   CIXH5010:02                     pipeline@1               \n dpu2_pixel0                         0       0        0        0           0          0     50000      Y   CIXH5010:02                     pipeline@0               \n dpu1_pixel1                         0       0        0        0           0          0     50000      Y   CIXH5010:01                     pipeline@1               \n dpu1_pixel0                         0       0        0        0           0          0     50000      Y   CIXH5010:01                     pipeline@0               \n dpu0_pixel1                         0       0        0        0           0          0     50000      Y   CIXH5010:00                     pipeline@1               \n dpu0_pixel0                         0       0        0        0           0          0     50000      Y   CIXH5010:00                     pipeline@0               \n",
+      "stderr": ""
+    }
+  },
+  "hypothetical_port_limits_GBs": {
+    "256bit_750MHz": 24,
+    "512bit_750MHz": 48
+  },
+  "required_256bit_frequency_MHz_ideal": {
+    "40GBs": 1250,
+    "45GBs": 1406.25
+  },
+  "physical_port_width_confirmed": false,
+  "new_npu_tests": 0
+}
